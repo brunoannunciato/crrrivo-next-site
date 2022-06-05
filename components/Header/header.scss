@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 51px 0 20px;
+  border-bottom: 2px solid #000;
+
+  &__content-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 45%;
+  }
+  
+  &__user {
+    color: #D8D8D8;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  &__language-switcher {
+    display: flex;
+    gap: 18px;
+  }
+  
+  &__language-selector {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    &--actived {
+      font-weight: bold;
+    }
+  }
+}
