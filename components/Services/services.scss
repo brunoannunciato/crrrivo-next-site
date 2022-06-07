@@ -1,4 +1,10 @@
 .services {
+  padding-top: 74px;
+
+  .container {
+    border-top: 1px solid #000;
+  }
+
   &__title {
     letter-spacing: 1px;
     font-size: 94px;
