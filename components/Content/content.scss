@@ -1,0 +1,12 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 186px;
+
+  &__title {
+    letter-spacing: .55px;
+    font-size: 55px;
+    line-height: 57px;
+    font-weight: 400;
+  }
+}
