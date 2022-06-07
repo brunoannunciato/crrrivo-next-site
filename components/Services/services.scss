@@ -1,0 +1,49 @@
+.services {
+  &__title {
+    letter-spacing: 1px;
+    font-size: 94px;
+    line-height: 100px;
+    font-weight: 400;
+    margin-bottom: 51px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+    margin-bottom: 76px;
+  }
+
+  &__item {
+    display: flex;
+  }
+  
+  &__arrow {
+    transform: rotate(-90deg);
+  }
+  
+  
+  &__item-name {
+    padding-left: 46px;
+    font-size: 55px;
+    margin: 0;
+    line-height: 57px;
+    font-weight: 400;
+    text-decoration: underline;
+    transition: filter .5s ease;
+
+    &:hover {
+      filter: blur(5px);
+    }
+  }
+
+  &__contact-text {
+    font-size: 55px;
+    line-height: 62px;
+    letter-spacing: 0.55px;
+    margin: 0 0 225px;
+
+  }
+}
