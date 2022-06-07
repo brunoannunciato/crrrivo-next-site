@@ -1,6 +1,26 @@
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+body {
+  background-color: #fff;
+}
+
 .container {
   display: block;
   margin: 0 auto;
   width: 90%;
   max-width: 1750px;
+  position: relative;
+}
+
+.mix-blend {
+  mix-blend-mode: difference;
+  color: white;
 }

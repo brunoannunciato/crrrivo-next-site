@@ -3,6 +3,12 @@
   justify-content: space-between;
   padding: 51px 0 20px;
   border-bottom: 2px solid #000;
+  position: fixed;
+  top: 0;
+  width: 90%;
+  max-width: 1750px;
+  left: 50%;
+  transform: translateX(-50%);
 
   &__content-wrapper {
     display: flex;

@@ -17,12 +17,12 @@ const Services = () => {
   return (
     <section className="services">
       <div className="container">
-        <h2 className="services__title">
+        <h2 className="services__title mix-blend">
           Oferecemos serviços de construção de marcas e sistemas de identidade
           com foco em digital.
         </h2>
 
-        <ul className="services__list">
+        <ul className="services__list mix-blend">
           {servicesList.map((item) => {
             return (
               <li key={item} className="services__item">
@@ -39,7 +39,7 @@ const Services = () => {
           })}
         </ul>
 
-        <p className="services__contact-text">
+        <p className="services__contact-text mix-blend">
           Fale com a gente. <br />
           contato@crrrivo.cc
         </p>

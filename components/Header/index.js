@@ -16,32 +16,30 @@ const Header = () => {
   });
 
   return (
-    <div className="container">
-      <header className="header">
-        <div className="header__logo-wrapper">
-          <Image
-            src="/images/logo.svg"
-            alt="crrrivo"
-            width="272px"
-            height="52px"
-          />
+    <header className="header">
+      <div className="header__logo-wrapper">
+        <Image
+          src="/images/logo.svg"
+          alt="crrrivo"
+          width="272px"
+          height="52px"
+        />
+      </div>
+
+      <div className="header__content-wrapper">
+        <p className="header__user">@CRRRIVO</p>
+
+        <div className="header__language-switcher">
+          <button onClick={() => setLanguage('pt')} className={ptClasses}>
+            PT
+          </button>
+
+          <button onClick={() => setLanguage('en')} className={enClasses}>
+            EN
+          </button>
         </div>
-
-        <div className="header__content-wrapper">
-          <p className="header__user">@CRRRIVO</p>
-
-          <div className="header__language-switcher">
-            <button onClick={() => setLanguage('pt')} className={ptClasses}>
-              PT
-            </button>
-
-            <button onClick={() => setLanguage('en')} className={enClasses}>
-              EN
-            </button>
-          </div>
-        </div>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };
 
