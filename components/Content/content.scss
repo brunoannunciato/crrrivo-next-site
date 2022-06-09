@@ -1,12 +1,60 @@
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 5%;
   padding-top: 186px;
+  position: relative;
 
   &__title {
     letter-spacing: .55px;
     font-size: 55px;
     line-height: 57px;
     font-weight: 400;
+    position: sticky;
+    top: 190px;
   }
+
+  &__store-wrapper {
+    margin-top: calc(100vh - 200px);
+    position: sticky;
+    height: 500px;
+    width: 100%;
+  }
+
+  &__arrow-wrapper {
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    animation: arrowFlick 2s ease infinite;
+    transition: opacity .5s ease;
+
+    &--hide {
+      opacity: 0;
+    }
+  }
+
+  &__mail {
+    margin-top: calc(100vh - 185px);
+    margin-bottom: 235px;
+  }
+
+  &__values-wrapper {
+    margin-bottom: 50vh;
+  }
+
+ 
+}
+
+@keyframes arrowFlick {
+ 0% {
+   transform: translate(-50%, 0);
+ }
+
+ 50% {
+   transform: translate(-50%, 20px);
+ }
+
+ 100% {
+  transform: translate(-50%, 0);
+}
 }
