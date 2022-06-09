@@ -2,12 +2,14 @@
   display: flex;
   justify-content: space-between;
   padding: 51px 0 20px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid white;
   position: fixed;
   top: 0;
   width: 90%;
   max-width: 1750px;
   left: 50%;
+  z-index: 1;
+  mix-blend-mode: difference;
   transform: translateX(-50%);
 
   &__content-wrapper {
@@ -27,11 +29,13 @@
   }
 
   &__language-switcher {
+    color: red;
     display: flex;
     gap: 18px;
   }
   
   &__language-selector {
+    color: white;
     background-color: transparent;
     border: none;
     font-size: 20px;

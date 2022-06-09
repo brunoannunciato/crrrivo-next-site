@@ -5,7 +5,7 @@ const Content = () => {
     <div className="container">
       <section className="content">
         <div className="content__left">
-          <h2 className="content__title mix-blend">
+          <h2 className="content__title">
             <u>
               Somos um estúdio multidisciplinar de design baseado em São Paulo.{' '}
             </u>
