@@ -48,6 +48,7 @@
     left: 50%;
     animation: arrowFlick 2s ease infinite;
     transition: opacity .5s ease;
+    mix-blend-mode: difference;
 
     &--hide {
       opacity: 0;

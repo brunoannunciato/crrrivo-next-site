@@ -11,6 +11,8 @@
     line-height: 100px;
     font-weight: 400;
     margin-bottom: 62px;
+    mix-blend-mode: difference;
+    color: white;
 
     @media(max-width: 1441px) {
       font-size: 62px;
@@ -29,6 +31,8 @@
 
   &__item {
     display: flex;
+    mix-blend-mode: difference;
+    color: white;
   }
   
   &__arrow {
