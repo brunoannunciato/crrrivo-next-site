@@ -39,9 +39,19 @@ const Content = () => {
           {/* <div className="content__store-wrapper">
             <Image src="/images/Pedra_02.svg" alt="crrrivo" layout="fill" />
           </div> */}
+          <div className="content__email-wrapper">
+            <span className="content__fake-text">
+              <u>
+                Somos um estúdio multidisciplinar de design baseado em São
+                Paulo.{' '}
+              </u>
+              Identificamos oportunidades e desenvolvemos projetos consistentes
+              que ajudam a fortalecer marcas.
+            </span>
 
-          <div className="content__mail">
-            <Email />
+            <div className="content__mail">
+              <Email />
+            </div>
           </div>
 
           <div className="content__values-wrapper">

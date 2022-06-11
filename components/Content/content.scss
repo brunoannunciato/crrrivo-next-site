@@ -8,9 +8,14 @@
   &__left,
   &__right {
     margin-top: 30vh;
+
+    @media(max-width: 1441px) {
+      margin-top: 14vh;
+    }
   }
 
-  &__title {
+  &__title,
+  &__fake-text {
     letter-spacing: .55px;
     font-size: 55px;
     line-height: 57px;
@@ -19,10 +24,15 @@
     margin: 0;
     top: 40vh;
   
-    @media (max-width: 1400px) {
+    @media (max-width: 1441px) {
       font-size: 42px;
       line-height: 125%;
     }
+  }
+
+  &__fake-text {
+    opacity: 0;
+    pointer-events: none;
   }
 
   &__store-wrapper {
@@ -44,16 +54,20 @@
     }
   }
 
-  &__mail {
-    margin-top: calc(100vh - 185px);
+  &__email-wrapper {
     margin-bottom: 235px;
+    position: relative;
+  }
+
+  &__mail {
+    position: absolute;
+    bottom: 0;
   }
 
   &__values-wrapper {
     margin-bottom: 50vh;
   }
 
- 
 }
 
 @keyframes arrowFlick {
