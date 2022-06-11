@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useParallax } from 'react-scroll-parallax';
+
 import Image from 'next/image';
 import Email from './components/Email';
 import Values from './components/Values';
@@ -8,6 +10,7 @@ import './content.scss';
 
 const Content = () => {
   const [scrolled, setScrolled] = useState(false);
+  const { ref } = useParallax({ speed: 10 });
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -36,9 +39,9 @@ const Content = () => {
         </div>
 
         <div className="content__right">
-          {/* <div className="content__store-wrapper">
+          <div ref={ref} className="content__stone-wrapper">
             <Image src="/images/Pedra_02.svg" alt="crrrivo" layout="fill" />
-          </div> */}
+          </div>
           <div className="content__email-wrapper">
             <span className="content__fake-text">
               <u>

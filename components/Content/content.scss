@@ -35,8 +35,9 @@
     pointer-events: none;
   }
 
-  &__store-wrapper {
-    margin-top: calc(100vh - 200px);
+  &__stone-wrapper {
+    mix-blend-mode: difference;
+    width: 500px;
     position: sticky;
     height: 500px;
     width: 100%;
