@@ -4,9 +4,17 @@
   margin: 0;
   mix-blend-mode: difference;
   color: white;
+  position: sticky;
+  top: 46vh;
 
    @media(max-width: 1441px) {
       font-size: 68px;
       line-height: 125%;
     } 
+
+    &__wrapper {
+      margin-bottom: 235px;
+      position: relative;
+      height: 150vh;
+    }
 }

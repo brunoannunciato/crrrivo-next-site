@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useParallax } from 'react-scroll-parallax';
 
 import Image from 'next/image';
@@ -10,12 +10,15 @@ import './content.scss';
 
 const Content = () => {
   const [scrolled, setScrolled] = useState(false);
-  const { ref } = useParallax({ speed: 10 });
+  const [titleHeight, setTitleHeight] = useState(0);
+  const leftTitleRef = useRef(null);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       setScrolled(window.scrollY > 50);
     });
+
+    setTitleHeight(leftTitleRef.current.clientHeight);
   }, []);
 
   return (
@@ -29,7 +32,7 @@ const Content = () => {
           <Image src="/images/arrow.svg" alt="" width="56px" height="44px" />
         </div>
         <div className="content__left">
-          <h2 className="content__title">
+          <h2 className="content__title" ref={leftTitleRef}>
             <u>
               Somos um estúdio multidisciplinar de design baseado em São Paulo.{' '}
             </u>
@@ -39,23 +42,7 @@ const Content = () => {
         </div>
 
         <div className="content__right">
-          <div ref={ref} className="content__stone-wrapper">
-            <Image src="/images/Pedra_02.svg" alt="crrrivo" layout="fill" />
-          </div>
-          <div className="content__email-wrapper">
-            <span className="content__fake-text">
-              <u>
-                Somos um estúdio multidisciplinar de design baseado em São
-                Paulo.{' '}
-              </u>
-              Identificamos oportunidades e desenvolvemos projetos consistentes
-              que ajudam a fortalecer marcas.
-            </span>
-
-            <div className="content__mail">
-              <Email />
-            </div>
-          </div>
+          <Email titleHeight={titleHeight} />
 
           <div className="content__values-wrapper">
             <Values />
