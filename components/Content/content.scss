@@ -14,8 +14,11 @@
     }
   }
 
-  &__title,
-  &__fake-text {
+  &__right {
+    position: relative;
+  }
+
+  &__title {
     letter-spacing: .55px;
     font-size: 55px;
     line-height: 57px;
@@ -30,19 +33,6 @@
     }
   }
 
-  &__fake-text {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  &__stone-wrapper {
-    mix-blend-mode: difference;
-    width: 500px;
-    position: sticky;
-    height: 500px;
-    width: 100%;
-  }
-
   &__arrow-wrapper {
     position: absolute;
     top: 90vh;
@@ -54,16 +44,6 @@
     &--hide {
       opacity: 0;
     }
-  }
-
-  &__email-wrapper {
-    margin-bottom: 235px;
-    position: relative;
-  }
-
-  &__mail {
-    position: absolute;
-    bottom: 0;
   }
 
   &__values-wrapper {
