@@ -2,13 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 
 import './email.scss';
 
-const Email = ({ titleHeight }) => {
+const Email = ({ titleHeight, mailRef }) => {
   const [marginSize, setMarginSize] = useState(0);
-  const mailRef = useRef(null);
 
   useEffect(() => {
     setMarginSize(titleHeight - mailRef.current.clientHeight);
-  }, [titleHeight]);
+  }, [titleHeight, mailRef]);
 
   return (
     <div className="mail__wrapper">

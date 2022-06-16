@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { useParallax } from 'react-scroll-parallax';
+import { useInView } from 'react-intersection-observer';
 
 import Image from 'next/image';
 import Email from './components/Email';
@@ -7,15 +7,25 @@ import Values from './components/Values';
 import classNames from 'classnames';
 
 import './content.scss';
+import Stone from './components/Stone';
 
 const Content = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [parallaxAble, setParallaxAble] = useState(false);
   const [titleHeight, setTitleHeight] = useState(0);
   const leftTitleRef = useRef(null);
+  const containerRef = useRef(null);
+  const mailRef = useRef(null);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       setScrolled(window.scrollY > 50);
+
+      const mailOffset = mailRef.current.offsetTop;
+      const containerHeight = containerRef.current.clientHeight;
+      const stonePosition = Math.floor(containerHeight * 0.4);
+
+      setParallaxAble(mailOffset >= stonePosition);
     });
 
     setTitleHeight(leftTitleRef.current.clientHeight);
@@ -41,8 +51,10 @@ const Content = () => {
           </h2>
         </div>
 
-        <div className="content__right">
-          <Email titleHeight={titleHeight} />
+        <div className="content__right" ref={containerRef}>
+          <Email titleHeight={titleHeight} mailRef={mailRef} />
+
+          <Stone turnOnParallax={parallaxAble} />
 
           <div className="content__values-wrapper">
             <Values />
