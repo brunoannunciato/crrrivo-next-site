@@ -23,7 +23,7 @@ const Content = () => {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const scrollOffset = window.scrollY;
-      setScrolled(scrollOffset > 250);
+      setScrolled(scrollOffset > 1);
 
       const mailOffset = mailRef.current.offsetTop;
       const valuesOffset = valuesRef.current.offsetTop;
