@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
 
+import isClient from '../../utils/isClient';
 import Image from 'next/image';
 import Email from './components/Email';
 import Values from './components/Values';
@@ -14,18 +14,30 @@ const Content = () => {
   const [parallaxAble, setParallaxAble] = useState(false);
   const [titleHeight, setTitleHeight] = useState(0);
   const leftTitleRef = useRef(null);
+  const valuesRef = useRef(null);
   const containerRef = useRef(null);
   const mailRef = useRef(null);
+  const stoneAnimation = isClient() && document.getElementById('stoneAnim');
+  const changeStone = useRef(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      setScrolled(window.scrollY > 50);
+      const scrollOffset = window.scrollY;
+      setScrolled(scrollOffset > 250);
 
       const mailOffset = mailRef.current.offsetTop;
+      const valuesOffset = valuesRef.current.offsetTop;
       const containerHeight = containerRef.current.clientHeight;
       const stonePosition = Math.floor(containerHeight * 0.4);
 
       setParallaxAble(mailOffset >= stonePosition);
+
+      if (scrollOffset > valuesOffset + 100) {
+        if (!changeStone.current) {
+          stoneAnimation.beginElement();
+          changeStone.current = true;
+        }
+      }
     });
 
     setTitleHeight(leftTitleRef.current.clientHeight);
@@ -57,7 +69,7 @@ const Content = () => {
           <Stone turnOnParallax={parallaxAble} />
 
           <div className="content__values-wrapper">
-            <Values />
+            <Values valuesRef={valuesRef} />
           </div>
         </div>
       </section>

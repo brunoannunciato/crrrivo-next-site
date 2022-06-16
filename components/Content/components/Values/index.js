@@ -15,9 +15,9 @@ const valuesList = [
   },
 ];
 
-const Values = () => {
+const Values = ({ valuesRef }) => {
   return (
-    <div className="values">
+    <div ref={valuesRef} className="values">
       {valuesList.map((value) => {
         return (
           <div key={value.title} className="values__item">
