@@ -1,0 +1,14 @@
+.stone {
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 40%;
+
+  > div {
+    transition: transform .3s linear;
+  }
+
+  &__wrapper {
+    width: 500px;
+    height: 500px;
+  }
+}
