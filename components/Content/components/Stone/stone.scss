@@ -2,6 +2,7 @@
   mix-blend-mode: difference;
   position: absolute;
   top: 40%;
+  color: #ffffff;
 
   > div {
     transition: transform .3s linear;
@@ -10,5 +11,18 @@
   &__wrapper {
     width: 500px;
     height: 500px;
+    animation: stoneSpin 20s ease infinite;
+  }
+}
+
+@keyframes stoneSpin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(14deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }

@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
 
-import isClient from '../../utils/isClient';
 import Image from 'next/image';
 import Email from './components/Email';
 import Values from './components/Values';
@@ -11,33 +10,16 @@ import Stone from './components/Stone';
 
 const Content = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [parallaxAble, setParallaxAble] = useState(false);
   const [titleHeight, setTitleHeight] = useState(0);
   const leftTitleRef = useRef(null);
   const valuesRef = useRef(null);
   const containerRef = useRef(null);
   const mailRef = useRef(null);
-  const stoneAnimation = isClient() && document.getElementById('stoneAnim');
-  const changeStone = useRef(false);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const scrollOffset = window.scrollY;
       setScrolled(scrollOffset > 1);
-
-      const mailOffset = mailRef.current.offsetTop;
-      const valuesOffset = valuesRef.current.offsetTop;
-      const containerHeight = containerRef.current.clientHeight;
-      const stonePosition = Math.floor(containerHeight * 0.4);
-
-      setParallaxAble(mailOffset >= stonePosition);
-
-      if (scrollOffset > valuesOffset + 100) {
-        if (!changeStone.current) {
-          stoneAnimation.beginElement();
-          changeStone.current = true;
-        }
-      }
     });
 
     setTitleHeight(leftTitleRef.current.clientHeight);
@@ -66,7 +48,7 @@ const Content = () => {
         <div className="content__right" ref={containerRef}>
           <Email titleHeight={titleHeight} mailRef={mailRef} />
 
-          <Stone turnOnParallax={parallaxAble} />
+          <Stone />
 
           <div className="content__values-wrapper">
             <Values valuesRef={valuesRef} />
