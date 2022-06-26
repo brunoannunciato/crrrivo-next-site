@@ -5,6 +5,14 @@
   padding-top: 186px;
   position: relative;
 
+  &--sticky {
+    position: absolute;
+  }
+  
+  &__wrapper {
+    // height: 4000px;
+  }
+
   &__left,
   &__right {
     margin-top: 30vh;
@@ -16,6 +24,7 @@
 
   &__right {
     position: relative;
+    padding-bottom: 200vh;
   }
 
   &__title {
@@ -49,6 +58,11 @@
 
   &__values-wrapper {
     margin-bottom: -32px;
+    transition: all .01s ease;
+
+    &--fixed {
+      position: fixed;
+    }
   }
 
 }

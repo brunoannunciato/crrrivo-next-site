@@ -11,15 +11,39 @@ import Stone from './components/Stone';
 const Content = () => {
   const [scrolled, setScrolled] = useState(false);
   const [titleHeight, setTitleHeight] = useState(0);
+  const [stickyContent, setStickyContent] = useState(false);
+  const [bottomMargin, setBottomMargin] = useState(0);
+
+  const naturalHeight = useRef(0);
   const leftTitleRef = useRef(null);
-  const valuesRef = useRef(null);
   const containerRef = useRef(null);
   const mailRef = useRef(null);
+  const valuesWrapperRef = useRef(null);
 
   useEffect(() => {
+    const title = leftTitleRef.current;
+    const values = valuesWrapperRef.current;
+    const windowHeight = window.outerHeight;
+    const titleTotalHeight =
+      windowHeight * 0.46 + leftTitleRef.current.clientHeight;
+
+    setBottomMargin(windowHeight - titleTotalHeight);
+
     window.addEventListener('scroll', () => {
       const scrollOffset = window.scrollY;
-      setScrolled(scrollOffset > 1);
+      setScrolled(scrollOffset > 50);
+
+      const titlePos = title?.clientHeight + title?.offsetTop;
+      const valuesPos = values?.clientHeight + values?.offsetTop + 367;
+
+      console.log({ titlePos, valuesPos: valuesPos - 360 });
+
+      if (titlePos >= valuesPos && naturalHeight !== 0) {
+        naturalHeight.current = valuesPos;
+        setStickyContent(true);
+      } else if (titlePos <= naturalHeight.current) {
+        setStickyContent(false);
+      }
     });
 
     setTitleHeight(leftTitleRef.current.clientHeight);
@@ -27,34 +51,43 @@ const Content = () => {
 
   return (
     <div className="container">
-      <section className="content">
-        <div
-          className={classNames('content__arrow-wrapper', {
-            'content__arrow-wrapper--hide': scrolled,
-          })}
-        >
-          <Image src="/images/arrow.svg" alt="" width="56px" height="44px" />
-        </div>
-        <div className="content__left">
-          <h2 className="content__title" ref={leftTitleRef}>
-            <u>
-              Somos um estúdio multidisciplinar de design baseado em São Paulo.{' '}
-            </u>
-            Identificamos oportunidades e desenvolvemos projetos consistentes
-            que ajudam a fortalecer marcas.
-          </h2>
-        </div>
-
-        <div className="content__right" ref={containerRef}>
-          <Email titleHeight={titleHeight} mailRef={mailRef} />
-
-          <Stone />
-
-          <div className="content__values-wrapper">
-            <Values valuesRef={valuesRef} />
+      <div className="content__wrapper">
+        <section className="content">
+          <div
+            className={classNames('content__arrow-wrapper', {
+              'content__arrow-wrapper--hide': scrolled,
+            })}
+          >
+            <Image src="/images/arrow.svg" alt="" width="56px" height="44px" />
           </div>
-        </div>
-      </section>
+          <div className="content__left">
+            <h2 className="content__title" ref={leftTitleRef}>
+              <u>
+                Somos um estúdio multidisciplinar de design baseado em São
+                Paulo.{' '}
+              </u>
+              Identificamos oportunidades e desenvolvemos projetos consistentes
+              que ajudam a fortalecer marcas.
+            </h2>
+          </div>
+
+          <div className="content__right" ref={containerRef}>
+            <Email titleHeight={titleHeight} mailRef={mailRef} />
+
+            <Stone />
+
+            <div
+              className={classNames('content__values-wrapper', {
+                'content__values-wrapper--fixed': stickyContent,
+              })}
+              style={{ bottom: bottomMargin }}
+              ref={valuesWrapperRef}
+            >
+              <Values />
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 };
