@@ -4,17 +4,31 @@
   gap: 5%;
   padding-top: 186px;
   position: relative;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 
   &--sticky {
     position: absolute;
   }
   
+  &__left {
+    @media (max-width: 768px) {
+      height: 100vh;
+    }
+  }
+
   &__left,
   &__right {
     margin-top: 30vh;
 
     @media(max-width: 1441px) {
       margin-top: 14vh;
+    }
+
+    @media(max-width: 768px) {
+      width: 100%;
     }
   }
 
@@ -35,6 +49,10 @@
     @media (max-width: 1441px) {
       font-size: 42px;
       line-height: 125%;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 24px;
     }
   }
 

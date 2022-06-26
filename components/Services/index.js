@@ -26,13 +26,15 @@ const Services = () => {
           {servicesList.map((item) => {
             return (
               <li key={item} className="services__item">
-                <Image
-                  src="/images/arrow.svg"
-                  alt=""
-                  width="56px"
-                  height="44px"
-                  className="services__arrow"
-                />
+                <div className="services__icon">
+                  <Image
+                    src="/images/arrow.svg"
+                    alt=""
+                    width="56px"
+                    height="44px"
+                    className="services__arrow"
+                  />
+                </div>
                 <h3 className="services__item-name">{item}</h3>
               </li>
             );

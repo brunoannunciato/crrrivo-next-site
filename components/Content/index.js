@@ -36,8 +36,6 @@ const Content = () => {
       const titlePos = title?.clientHeight + title?.offsetTop;
       const valuesPos = values?.clientHeight + values?.offsetTop + 367;
 
-      console.log({ titlePos, valuesPos: valuesPos - 360 });
-
       if (titlePos >= valuesPos && naturalHeight !== 0) {
         naturalHeight.current = valuesPos;
         setStickyContent(true);

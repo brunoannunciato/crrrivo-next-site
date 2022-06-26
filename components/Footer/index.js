@@ -43,7 +43,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="footer__text">copyright © 2022 crrrivo</p>
+          <p className="footer__text footer__copyright">
+            copyright © 2022 crrrivo
+          </p>
         </div>
       </div>
     </footer>
