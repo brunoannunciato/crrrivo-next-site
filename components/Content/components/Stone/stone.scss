@@ -1,10 +1,10 @@
 .stone {
   mix-blend-mode: difference;
   position: absolute;
-  top: 40%;
+  top: 33%;
   color: #ffffff;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1441px) {
     top: 25%;
   }
 
