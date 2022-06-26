@@ -23,8 +23,22 @@ const Footer = () => {
               </div>
 
               <div className="footer__section">
-                <a className="footer__text">Linkedin</a>
-                <a className="footer__text">Instagram</a>
+                <a
+                  className="footer__text"
+                  href="https://www.linkedin.com/company/estudiocrrrivo/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Linkedin
+                </a>
+                <a
+                  className="footer__text"
+                  href="https://www.instagram.com/crrrivo/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
               </div>
             </div>
           </div>
