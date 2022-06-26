@@ -77,10 +77,7 @@ const Content = () => {
             <Stone />
 
             <div
-              className={classNames('content__values-wrapper', {
-                'content__values-wrapper--fixed': stickyContent,
-              })}
-              style={{ bottom: bottomMargin }}
+              className={classNames('content__values-wrapper', {})}
               ref={valuesWrapperRef}
             >
               <Values />
