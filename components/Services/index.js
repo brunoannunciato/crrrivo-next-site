@@ -1,8 +1,11 @@
 import Image from 'next/image';
+import isClient from '../../utils/isClient';
 
 import './services.scss';
 
 const Services = () => {
+  const isMobile = isClient() && window.outerWidth < 768;
+
   const servicesList = [
     'Branding',
     'Digital',
@@ -30,8 +33,8 @@ const Services = () => {
                   <Image
                     src="/images/arrow.svg"
                     alt=""
-                    width="56px"
-                    height="44px"
+                    width={isMobile ? '28px' : '56px'}
+                    height={isMobile ? '14px' : '44px'}
                     className="services__arrow"
                   />
                 </div>

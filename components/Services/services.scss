@@ -44,12 +44,14 @@
   &__item {
     display: flex;
     mix-blend-mode: difference;
+    align-items: center;
     color: white;
   }
 
   &__icon {
     @media (max-width: 768px) {
-      display: none !important;
+      width: 28px;
+      height: 14px;
     }
   }
   
