@@ -27,7 +27,14 @@ const Header = () => {
       </div>
 
       <div className="header__content-wrapper">
-        <p className="header__user">@CRRRIVO</p>
+        <a
+          href="https://www.instagram.com/crrrivo/"
+          target="_blank"
+          rel="noreferrer"
+          className="header__user"
+        >
+          @CRRRIVO
+        </a>
 
         <div className="header__language-switcher">
           <button onClick={() => setLanguage('pt')} className={ptClasses}>
