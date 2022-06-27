@@ -22,10 +22,10 @@
 
   &__left,
   &__right {
-    margin-top: 30vh;
+    margin-top: 15vh;
 
     @media(max-width: 1441px) {
-      margin-top: 14vh;
+      margin-top: 6vh;
     }
 
     @media(max-width: 768px) {
@@ -48,13 +48,13 @@
     font-weight: 400;
     position: sticky;
     margin: 0;
-    top: 46vh;
+    top: 32vh;
     width: 84%;
   
     @media (max-width: 1441px) {
       font-size: 42px;
       line-height: 125%;
-      top: 20vh;
+      top: 30vh;
     }
 
     @media (max-width: 768px) {
