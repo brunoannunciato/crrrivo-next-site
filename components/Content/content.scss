@@ -7,6 +7,7 @@
   
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 0;
   }
 
   &--sticky {
@@ -34,6 +35,10 @@
 
   &__right {
     position: relative;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+    }
   }
 
   &__title {
