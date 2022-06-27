@@ -46,7 +46,9 @@ const Services = () => {
 
         <p className="services__contact-text">
           Fale com a gente. <br />
-          contato@crrrivo.cc
+          <a href="mailto:contato@crrrivo.cc" className="services__mail-link">
+            contato@crrrivo.cc
+          </a>
         </p>
       </div>
     </section>
