@@ -11,15 +11,15 @@
   > div {
     transition: transform .3s linear;
   }
+}
 
-  &__wrapper {
-    width: 500px;
-    height: 500px;
-    animation: stoneSpin 20s ease infinite;
+.wrapper {
+  width: 500px;
+  height: 500px;
+  animation: stoneSpin 20s ease infinite;
 
-    @media (max-width: 768px) {
-      width: 300px;
-    }
+  @media (max-width: 768px) {
+    width: 300px;
   }
 }
 

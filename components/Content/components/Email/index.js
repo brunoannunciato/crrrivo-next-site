@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import './email.scss';
+import * as S from './email.module.scss';
 
 const Email = ({ titleHeight, mailRef }) => {
   const [marginSize, setMarginSize] = useState(0);
@@ -10,9 +10,9 @@ const Email = ({ titleHeight, mailRef }) => {
   }, [titleHeight, mailRef]);
 
   return (
-    <div className="mail__wrapper">
+    <div className={S.wrapper}>
       <p
-        className="mail"
+        className={S.mail}
         ref={mailRef}
         style={{ top: `calc(32vh + ${marginSize}px)` }}
       >

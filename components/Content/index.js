@@ -5,7 +5,7 @@ import Email from './components/Email';
 import Values from './components/Values';
 import classNames from 'classnames';
 
-import './content.scss';
+import * as S from './content.scss';
 import Stone from './components/Stone';
 
 const Content = () => {
@@ -48,9 +48,9 @@ const Content = () => {
   }, []);
 
   return (
-    <div className="container">
-      <div className="content__wrapper">
-        <section className="content">
+    <div className={S.container}>
+      <div className={S.wrapper}>
+        <section className={S.content}>
           <div
             className={classNames('content__arrow-wrapper', {
               'content__arrow-wrapper--hide': scrolled,
@@ -58,8 +58,8 @@ const Content = () => {
           >
             <Image src="/images/arrow.svg" alt="" width="56px" height="44px" />
           </div>
-          <div className="content__left">
-            <h2 className="content__title" ref={leftTitleRef}>
+          <div className={S.left}>
+            <h2 className={S.title} ref={leftTitleRef}>
               <u>
                 Somos um estúdio multidisciplinar de design baseado em São
                 Paulo.{' '}
@@ -69,7 +69,7 @@ const Content = () => {
             </h2>
           </div>
 
-          <div className="content__right" ref={containerRef}>
+          <div className={S.right} ref={containerRef}>
             <Email titleHeight={titleHeight} mailRef={mailRef} />
 
             <Stone />

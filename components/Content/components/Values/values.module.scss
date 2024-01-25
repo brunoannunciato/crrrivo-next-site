@@ -1,0 +1,37 @@
+.values {
+  width: 566px;
+
+  @media (max-width: 768px) {
+    width: initial;
+  }
+}
+
+.item {
+  margin-bottom: 38px;
+
+}
+
+.title {
+  text-decoration: underline;
+  margin: 0 0 24px;
+  font-size: 55px;
+  line-height: 82px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+
+  
+  @media(max-width: 1441px) {
+    font-size: 42px;
+    line-height: 125%;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 125%;
+  }
+}
+
+.text {
+  font-size: 25px;
+  line-height: 35px;
+}

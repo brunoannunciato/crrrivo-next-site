@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import './footer.scss';
+import * as S from './footer.module.scss';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer__wrapper">
-          <div className="footer__content">
+    <footer className={S.footer}>
+      <div className={S.container}>
+        <div className={S.wrapper}>
+          <div className={S.content}>
             <Image
               src="/images/rrr.svg"
               alt="(rrr)"
@@ -15,16 +15,16 @@ const Footer = () => {
               height="106px"
             />
 
-            <div className="footer__contact-wrapper">
-              <div className="footer__section">
-                <p className="footer__text">São Paulo-SP</p>
+            <div className={S.contact-wrapper}>
+              <div className={S.section}>
+                <p className={S.text}>São Paulo-SP</p>
 
-                <p className="footer__text">Brasil</p>
+                <p className={S.text}>Brasil</p>
               </div>
 
-              <div className="footer__section">
+              <div className={S.section}>
                 <a
-                  className="footer__text"
+                  className={S.text}
                   href="https://www.linkedin.com/company/estudiocrrrivo/"
                   target="_blank"
                   rel="noreferrer"
@@ -32,7 +32,7 @@ const Footer = () => {
                   Linkedin
                 </a>
                 <a
-                  className="footer__text"
+                  className={S.text}
                   href="https://www.instagram.com/crrrivo/"
                   target="_blank"
                   rel="noreferrer"
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <p className="footer__text footer__copyright">
+          <p className={`${S.text} ${S.copyright}`}>
             copyright © 2022 crrrivo
           </p>
         </div>

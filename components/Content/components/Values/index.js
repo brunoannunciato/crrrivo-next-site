@@ -1,4 +1,4 @@
-import './values.scss';
+import * as S from './values.module.scss';
 
 const valuesList = [
   {
@@ -17,12 +17,12 @@ const valuesList = [
 
 const Values = () => {
   return (
-    <div className="values">
+    <div className={S.values}>
       {valuesList.map((value) => {
         return (
-          <div key={value.title} className="values__item">
-            <h3 className="values__title">{value.title}</h3>
-            <p className="values__text">{value.text}</p>
+          <div key={value.title} className={S.item}>
+            <h3 className={S.title}>{value.title}</h3>
+            <p className={S.text}>{value.text}</p>
           </div>
         );
       })}

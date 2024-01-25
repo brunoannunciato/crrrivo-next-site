@@ -1,9 +1,9 @@
-import './stone.scss';
+import * as S from './stone.module.scss';
 
 const Stone = ({ turnOnParallax }) => {
   return (
-    <div className="stone">
-      <div className="stone__wrapper">
+    <div className={S.stone}>
+      <div className={S.wrapper}>
         <svg
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
