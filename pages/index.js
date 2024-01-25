@@ -3,6 +3,7 @@ import Content from '../components/Content';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Services from '../components/Services';
+import ProjectsNav from '../components/ProjectsNav';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Header />
       <Content />
       <Services />
+      <ProjectsNav />
       <Footer />
     </div>
   );

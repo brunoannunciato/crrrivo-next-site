@@ -11,7 +11,7 @@ const Services = () => {
     'Digital',
     'Estratégia',
     'Websites',
-    'Identidade',
+    'Propaganda',
     'Direção de arte',
     'Impressos',
     'Motion',
