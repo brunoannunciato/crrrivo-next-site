@@ -1,11 +1,15 @@
-import '../styles/index.scss';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import { AnimatePresence } from 'framer-motion'
 
-function MyApp({ Component, pageProps }) {
+import '../styles/index.scss';
+
+function MyApp({ Component, pageProps, router }) {
   return (
-    <ParallaxProvider>
-      <Component {...pageProps} />
-    </ParallaxProvider>
+    <AnimatePresence mode="wait" initial={false} onExitComplete={() => window.scrollTo(0, 0)}>
+      <ParallaxProvider>
+        <Component {...pageProps} key={router.asPath}/>
+      </ParallaxProvider>
+    </AnimatePresence>
   );
 }
 

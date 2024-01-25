@@ -4,10 +4,11 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Services from '../components/Services';
 import ProjectsNav from '../components/ProjectsNav';
+import Layout from '../components/Layout';
 
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Crrrivo</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -29,6 +30,6 @@ export default function Home() {
       <Services />
       <ProjectsNav />
       <Footer />
-    </div>
+    </Layout>
   );
 }

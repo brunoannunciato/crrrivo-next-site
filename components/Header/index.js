@@ -3,8 +3,9 @@ import Image from 'next/image';
 import classNames from 'classnames';
 
 import './header.scss';
+import Link from 'next/link';
 
-const Header = () => {
+const Header = ({hideAt = false}) => {
   const [language, setLanguage] = useState('pt');
 
   const enClasses = classNames('header__language-selector', {
@@ -18,15 +19,19 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__logo-wrapper">
+        <Link href="/" scroll={false}>
         <Image
           src="/images/logo.svg"
           alt="crrrivo"
           width="272px"
           height="52px"
         />
+        </Link>
       </div>
 
-      <div className="header__content-wrapper">
+      {
+        !hideAt ?
+        <div className="header__content-wrapper">
         <a
           href="https://www.instagram.com/crrrivo/"
           target="_blank"
@@ -46,6 +51,10 @@ const Header = () => {
           </button>
         </div>
       </div>
+      : null
+
+      }
+      
     </header>
   );
 };
