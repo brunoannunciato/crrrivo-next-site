@@ -1,31 +1,30 @@
 import { useState } from 'react';
-import Image from 'next/image';
+import { ReactSVG } from 'react-svg';
 import classNames from 'classnames';
 
 import './header.scss';
 import Link from 'next/link';
 
-const Header = ({hideAt = false}) => {
+const Header = ({hideAt = false, color = "#ffffff", disableMixBlendMode}) => {
   const [language, setLanguage] = useState('pt');
 
   const enClasses = classNames('header__language-selector', {
     'header__language-selector--actived': language === 'en',
   });
 
-  const ptClasses = classNames('header__language-selector', {
+  const ptClasses = classNames('header__language-selector', { 
     'header__language-selector--actived': language === 'pt',
   });
 
+  const headerClass = classNames('header', {
+    '--disabled': disableMixBlendMode
+  })
+
   return (
-    <header className="header">
+    <header className={headerClass} style={{ color }}>
       <div className="header__logo-wrapper">
-        <Link href="/" scroll={false}>
-        <Image
-          src="/images/logo.svg"
-          alt="crrrivo"
-          width="272px"
-          height="52px"
-        />
+        <Link href="/">
+         <ReactSVG src='/images/logo.svg'/>
         </Link>
       </div>
 

@@ -12,6 +12,10 @@
   mix-blend-mode: difference;
   transform: translateX(-50%);
 
+  &.--disabled {
+    mix-blend-mode: initial;
+  }
+
   &__content-wrapper {
     display: flex;
     align-items: flex-end;

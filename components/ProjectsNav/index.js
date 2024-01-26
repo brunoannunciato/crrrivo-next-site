@@ -10,7 +10,7 @@ const ProjectsNav = () => {
     return (
         <section className="projects-nav">
             
-            <Link href="/projects" scroll={false}>
+            <Link href="/projects">
                 <div className="projects-nav__container">
                         <h1 className="projects-nav__title">
                             Projetos
