@@ -34,7 +34,7 @@ export default function Projects() {
           {
             projects.map(({id, image, title, description}) => {
               return (
-                <div className='projects__project' hey={id}>
+                <div className='projects__project' key={id}>
                   <div className="projects__project-image">
                     <Image
                       src={image}

@@ -98,7 +98,7 @@ export default function Leo() {
         <div className="leo__color-grid">
           {
             colors.map(color => {
-              return <ColorCard {...color}/>
+              return <ColorCard key={color.index} {...color}/>
             })
           }
         </div>
