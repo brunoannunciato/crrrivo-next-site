@@ -5,4 +5,26 @@
     padding-top: 132px;
     display: flex;
     justify-content: space-between;
+
+    &__button {
+        cursor: click;
+    }
+
+    &__content {
+        align-items: center;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__arrow {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 20px;
+            height: 26px;
+        }
+    }
 }

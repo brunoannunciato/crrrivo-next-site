@@ -3,6 +3,8 @@ import Image from 'next/image';
 import isClient from '../../utils/isClient';
 
 import "./projects-nav.scss"
+import { ReactSVG } from 'react-svg';
+import Container from '../Container';
 
 const ProjectsNav = () => {
     const isMobile = isClient() && window.outerWidth < 768;
@@ -11,19 +13,13 @@ const ProjectsNav = () => {
         <section className="projects-nav">
             
             <Link href="/projects">
-                <div className="projects-nav__container">
+                <Container className="projects-nav__container">
                         <h1 className="projects-nav__title">
                             Projetos
                         </h1>
 
-                        <Image
-                            src="/images/arrow.svg"
-                            alt=""
-                            width={isMobile ? '28px' : '20px'}
-                            height={isMobile ? '14px' : '26px'}
-                            className="projects-nav__arrow"
-                        />
-                </div>
+                        <ReactSVG src="/images/arrow.svg" className="projects-nav__arrow" />
+                </Container>
             </Link>
         </section>
     )
