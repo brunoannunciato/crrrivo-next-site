@@ -66,6 +66,8 @@ export default function Leo() {
             src="/projects/leo/hero.png"
             width={1764}
             height={1224}
+            quality={100}
+            priority
           />
         </div>
 
@@ -75,6 +77,8 @@ export default function Leo() {
               src="/projects/leo/notebook.png"
               width={1852}
               height={1036}
+              quality={100}
+              priority
             />
           </div>
         </Parallax>
@@ -88,6 +92,8 @@ export default function Leo() {
             src="/projects/leo/logo.png"
             width={434}
             height={253}
+            quality={100}
+            priority
           />
         </div>
       </Container>
@@ -110,12 +116,16 @@ export default function Leo() {
               src="/projects/leo/card-1.png"
               width={416}
               height={416}
+              quality={100}
+              priority
             />
 
             <Image
               src="/projects/leo/card-2.png"
               width={416}
               height={416}
+              quality={100}
+              priority
             />
           </div>
 
@@ -127,6 +137,8 @@ export default function Leo() {
               src="/projects/leo/bag.png"
               width={2070}
               height={1380}
+              quality={100}
+              priority
             />
         </div>
       </Parallax>
