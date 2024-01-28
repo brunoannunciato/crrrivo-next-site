@@ -1,11 +1,10 @@
-import Image from "next/image"
-import isClient from '../../../../utils/isClient';
-
-import "./sub-header.scss"
 import Link from "next/link";
 import { ReactSVG } from "react-svg";
-import Container from "../../../../components/Container";
 
+import isClient from '../../utils/isClient';
+import Container from "../Container";
+
+import "./sub-header.scss"
 const SubHeader = ({color = "#ffffff", projectName}) => {
     const isMobile = isClient() && window.outerWidth < 768;
 
