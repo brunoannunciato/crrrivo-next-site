@@ -105,11 +105,13 @@ const Gol = () => {
 
                 <div className="gol__bag">
                     <Parallax speed={13}>
-                        <Image
-                            src="/projects/gol/bag.png"
-                            width={1280}
-                            height={719}
-                        />
+                        <div className="gol__bag-wrapper">
+                            <Image
+                                src="/projects/gol/bag.png"
+                                width={1280}
+                                height={719}
+                            />
+                        </div>
                     </Parallax>
                 </div>
             </div>

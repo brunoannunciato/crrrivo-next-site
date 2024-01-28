@@ -5,10 +5,19 @@
     &__hero {
         margin-top: 68px;
         margin-bottom: 134px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 28px;
+        }
     }
 
     &__stamp {
         margin-bottom: 68px;
+
+        @media (max-width: 768px) {
+            width: 30%;
+            margin-bottom: 28px;
+        }
     }
 
     &__description {
@@ -16,6 +25,13 @@
         color: white;
         font-size: 32px;
         margin-bottom: 80px;
+
+        @media (max-width: 768px) {
+            font-size: 22px;
+            text-align: justify;
+            width: 100%;
+            margin-bottom: 42px;
+        }
 
         u {
             display: block;
@@ -26,15 +42,30 @@
         display: flex;
         gap: 68px;
         margin-bottom: 80px;
+
+        @media (max-width: 768px) {
+           flex-direction: column; 
+        }
     }
 
     &__posters {
         margin-bottom: 80px;
     }
 
+    &__poster {
+        @media (max-width: 768px) {
+            width: 50%;
+        }
+    }
+
+
     &__products-wrapper {
         display: flex;
         margin-bottom: 85px;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__card {
@@ -49,8 +80,13 @@
     }
 
     &__bag {
+        overflow: hidden;
         margin-top: -3px;
         background-color: #949495;
+
+        &-wrapper {
+            transform: scale(2);
+        }
     }
 
     &__notebook {
