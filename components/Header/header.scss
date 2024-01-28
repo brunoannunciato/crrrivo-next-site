@@ -8,9 +8,10 @@
   width: 90%;
   max-width: 1750px;
   left: 50%;
-  z-index: 1;
+  z-index: 10;
   mix-blend-mode: difference;
   transform: translateX(-50%);
+
 
   &.--disabled {
     mix-blend-mode: initial;
