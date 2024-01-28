@@ -53,4 +53,12 @@
       margin-top: 32px;
     }
   }
+
+  &__logo {
+    & > div {
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+  }
 }

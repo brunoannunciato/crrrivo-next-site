@@ -85,7 +85,9 @@
         background-color: #949495;
 
         &-wrapper {
-            transform: scale(2);
+            @media (max-width: 768px) {
+                transform: scale(2);
+            }
         }
     }
 

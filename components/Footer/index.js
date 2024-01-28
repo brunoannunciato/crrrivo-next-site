@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './footer.scss';
 import { ReactSVG } from 'react-svg';
 
@@ -7,12 +8,15 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
       <div className="container">
         <div className="footer__wrapper">
           <div className="footer__content">
-            <ReactSVG 
-                src="/images/rrr.svg"
-                alt="(rrr)"
-                width="190px"
-                height="106px"
-            />
+            <Link href="/">
+              <ReactSVG 
+                  src="/images/rrr.svg"
+                  alt="(rrr)"
+                  width="190px"
+                  height="106px"
+                  className='footer__logo'
+              />
+            </Link>
 
             <div className="footer__contact-wrapper">
               <div className="footer__section">
