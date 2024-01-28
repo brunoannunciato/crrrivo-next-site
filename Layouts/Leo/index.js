@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Parallax } from 'react-scroll-parallax';
 
 import Header from '../../components/Header';
+import Footer from '../../components/Footer'
 import SubHeader from '../../components/SubHeader';
 import Container from '../../components/Container';
 import ColorCard from './components/ColorCard';
@@ -88,14 +89,6 @@ export default function Leo() {
           <p className="leo__description">
             A Crrrivo e a Leo tem uma parceria sólida, onde criamos campanhas institucionais, além de peças de e-commerce e redes sociais. É um projeto 360º, onde trabalhamos em várias frentes. O resultado dessa parceria é que sempre estamos batendo recorde de vendas e resultados incríveis. 
           </p>
-
-          <Image
-            src="/projects/leo/logo.png"
-            width={434}
-            height={253}
-            quality={100}
-            priority
-          />
         </div>
       </Container>
 
@@ -143,6 +136,8 @@ export default function Leo() {
             />
         </div>
       </Parallax>
+
+      <Footer color='#E7B228' backgroundColor='#193d27'/>
     </div>
   );
 }

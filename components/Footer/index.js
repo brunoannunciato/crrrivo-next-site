@@ -1,18 +1,17 @@
-import Image from 'next/image';
-
 import './footer.scss';
+import { ReactSVG } from 'react-svg';
 
-const Footer = () => {
+const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={{color, backgroundColor}}>
       <div className="container">
         <div className="footer__wrapper">
           <div className="footer__content">
-            <Image
-              src="/images/rrr.svg"
-              alt="(rrr)"
-              width="190px"
-              height="106px"
+            <ReactSVG 
+                src="/images/rrr.svg"
+                alt="(rrr)"
+                width="190px"
+                height="106px"
             />
 
             <div className="footer__contact-wrapper">
