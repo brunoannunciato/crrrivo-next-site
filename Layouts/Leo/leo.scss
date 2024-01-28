@@ -9,6 +9,11 @@
     &__notebook {
         margin-top: -340px;
         margin-bottom: -160px;
+
+        @media (max-width: 768px) {
+            margin-top: -148px;
+            margin-bottom: 24px;
+        }
     }
 
     &__description-wrapper {
@@ -23,6 +28,13 @@
         width: 70%;
         max-width: 1096px;
         margin-right: 72px;
+
+        @media (max-width: 768px) {
+            font-size: 22px;
+            width: 100%;
+            margin-right: 0;
+            text-align: justify;
+        }
     }
 
     &__bus-stop {
@@ -37,6 +49,10 @@
         background-repeat: no-repeat;
         margin: 114px auto 0;
         overflow: hidden;
+
+        @media (max-width: 768px) {
+            margin-top: 42px;
+        }
     }
 
     &__color-grid {
@@ -50,6 +66,12 @@
         margin: -340px auto 92px;
         z-index: 10;
         position: relative;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            z-index: 1;
+        }
 
         .color-card {
             &:nth-child(1) {
@@ -78,6 +100,12 @@
         background-repeat: no-repeat;
         background-position: -84px 25%;
 
+        @media (max-width: 768px) {
+            margin-top: -240px;
+            background-position: 0 25%;
+            margin-bottom: -240px;
+        }
+
         span:nth-child(1) {
             grid-area: 1 / 1 / 2 / 2;
             max-width: 416px !important;
@@ -94,5 +122,9 @@
     &__bag {
         margin-top: -1000px;
         margin-bottom: -220px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }

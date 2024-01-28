@@ -72,7 +72,7 @@ export default function Leo() {
             priority
           />
         </div>
-
+ 
         <Parallax speed={80}>
           <div className="leo__notebook">
             <Image
@@ -89,7 +89,7 @@ export default function Leo() {
           <p className="leo__description">
             A Crrrivo e a Leo tem uma parceria sólida, onde criamos campanhas institucionais, além de peças de e-commerce e redes sociais. É um projeto 360º, onde trabalhamos em várias frentes. O resultado dessa parceria é que sempre estamos batendo recorde de vendas e resultados incríveis. 
           </p>
-        </div>
+        </div> 
       </Container>
 
       <span className="leo__bus-stop" />
