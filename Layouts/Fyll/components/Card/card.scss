@@ -1,0 +1,27 @@
+.fyll-card {
+    &__logo {
+        margin: 0 0  22px 47px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 47px;
+        box-sizing: border-box;
+        margin-top: 28px;
+    }
+
+    &__image {
+        transition: transform .4s ease;
+        
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    &__left {
+        display: flex;
+        gap: 16px;
+    }
+}
