@@ -35,6 +35,8 @@ const Gol = () => {
 
         <div className="gol__hero">
             <Image
+                quality={100}
+                priority
                 src="/projects/gol/hero.png"
                 width={1920}
                 height={1072}
@@ -44,6 +46,8 @@ const Gol = () => {
         <Container>
         <div className="gol__stamp">
             <Image
+                quality={100}
+                priority
                 src="/projects/gol/stamp.png"
                 width={340}
                 height={140}
@@ -58,6 +62,8 @@ const Gol = () => {
         <div className="gol__cards">
             <div className="gol__card">
                 <Image
+                    quality={100}
+                    priority
                     src="/projects/gol/card-1.png"
                     width={844}
                     height={475}
@@ -66,6 +72,8 @@ const Gol = () => {
 
             <div className="gol__card">
                 <Image
+                    quality={100}
+                    priority
                     src="/projects/gol/card-2.png"
                     width={844}
                     height={475}
@@ -77,6 +85,8 @@ const Gol = () => {
         <Marquee autoFill className="gol__posters">
             <div className="gol__poster">
                 <Image
+                    quality={100}
+                    priority
                     src="/projects/gol/poster.png"
                     width={583}
                     height={806}
@@ -87,6 +97,8 @@ const Gol = () => {
         <Container>
             <div className="gol__outdoor">
                 <Image
+                    quality={100}
+                    priority
                     src="/projects/gol/outdoor.png"
                     width={1760}
                     height={990}
@@ -96,6 +108,8 @@ const Gol = () => {
                 <div className="gol__card">
                     <Parallax speed={-13}>
                         <Image
+                            quality={100}
+                            priority
                             src="/projects/gol/card.png"
                             width={391}
                             height={638}
@@ -107,6 +121,8 @@ const Gol = () => {
                     <Parallax speed={13}>
                         <div className="gol__bag-wrapper">
                             <Image
+                                quality={100}
+                                priority
                                 src="/projects/gol/bag.png"
                                 width={1280}
                                 height={719}
@@ -118,6 +134,8 @@ const Gol = () => {
 
             <div className="gol__notebook">
                     <Image
+                        quality={100}
+                        priority
                         src="/projects/gol/notebook.png"
                         width={1760}
                         height={990}

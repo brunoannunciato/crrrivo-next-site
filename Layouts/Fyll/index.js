@@ -66,6 +66,8 @@ const Fyll = () => {
             <Container>
                 <div className="fyll__hero">
                     <Image
+                        quality={100}
+                        priority
                         src="/projects/fyll/hero.png"
                         width={1150}
                         height={815}
@@ -80,6 +82,8 @@ const Fyll = () => {
 
                     <div className="fyll__logo">
                         <Image
+                            quality={100}
+                            priority
                             src="/projects/fyll/logo.png"
                             width={540}
                             height={282}
@@ -97,6 +101,8 @@ const Fyll = () => {
                     <div className="fyll__player-row">
                         <div className="fyll__player">
                             <Image
+                                quality={100}
+                                priority
                                 src="/projects/fyll/player-1.png"
                                 width={410}
                                 height={728}
@@ -105,6 +111,8 @@ const Fyll = () => {
                         
                         <div className="fyll__player">
                             <Image
+                                quality={100}
+                            priority
                                 src="/projects/fyll/player-2.png"
                                 width={410}
                                 height={728}
@@ -113,6 +121,8 @@ const Fyll = () => {
 
                         <div className="fyll__player">
                             <Image
+                                quality={100}
+                            priority
                                 src="/projects/fyll/player-3.png"
                                 width={410}
                                 height={728}
@@ -125,6 +135,8 @@ const Fyll = () => {
                     <Parallax speed={20}>
                         <div className="fyll__phone">
                             <Image
+                                quality={100}
+                            priority
                                 src="/projects/fyll/phone-transparent.png"
                                 width={363}
                                 height={584}
@@ -146,6 +158,8 @@ const Fyll = () => {
                 <Container className="fyll__land-container">
                     <div className="fyll__k">
                         <Image
+                            quality={100}
+                            priority
                             src="/projects/fyll/k.png"
                             width={441}
                             height={594}
@@ -163,6 +177,8 @@ const Fyll = () => {
             <Container>
                 <div className="fyll__logo-bg">
                     <Image
+                        quality={100}
+                        priority
                         src="/projects/fyll/logo-bg.png"
                         width={1758}
                         height={988}
@@ -171,6 +187,8 @@ const Fyll = () => {
 
                 <div className="fyll__logo-guide">
                     <Image
+                        quality={100}
+                        priority
                         src="/projects/fyll/logo-guide.png"
                         width={793}
                         height={390}
