@@ -11,6 +11,10 @@
         max-width: 100%;
         margin-top: 68px;
 
+        @media (max-width: 768px) {
+            background-size: cover;
+        }
+
         &-container {
             display: flex;
             justify-content: flex-end;
@@ -25,6 +29,12 @@
         font-size: 32px;
         color: white;
         width: 60%;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            width: 100%;
+            text-align: justify;
+        }
     }
 
     &__container {
@@ -40,7 +50,6 @@
         display: flex;
         justify-content: center;
         position: relative;
-        overflow: hidden;
 
         &::after {
             content: url(/projects/ana/knife.png);
@@ -49,6 +58,12 @@
             left: -250px;
             top: -2%;
             transform: rotate(90deg) scale(0.8);
+
+            @media (max-width: 768px) {
+                top: -25%;
+                left: -380px;
+                transform: rotate(90deg) scale(0.35);
+            }
         }
     }
 
@@ -100,10 +115,29 @@
         > div:nth-child(6) { grid-area: 2 / 3 / 3 / 4; }
         > div:nth-child(7) { grid-area: 2 / 4 / 3 / 5; }
         > div:nth-child(8) { grid-area: 2 / 5 / 3 / 6; }
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            height: initial;
+            margin-bottom: 68px;
+        }
     }
 
     &__variants {
         text-align: center;
+
+        &-content {
+            @media (max-width: 768px) {
+                padding: 0 12px;
+                width: 200%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            overflow: scroll;
+            width: 100%;
+        }
     }
 
     &__second-part {

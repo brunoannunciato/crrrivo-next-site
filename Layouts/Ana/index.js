@@ -127,13 +127,15 @@ const Gol = () => {
                 </Container>
 
                 <div className="ana__variants">
-                    <Image
-                        src="/projects/ana/variants.png"
-                        width={1234}
-                        height={611}
-                        quality={100}
-                        priority
-                    />
+                    <div className="ana__variants-content">
+                        <Image
+                            src="/projects/ana/variants.png"
+                            width={1234}
+                            height={611}
+                            quality={100}
+                            priority
+                        />
+                    </div>
                 </div>
 
                 <div className="ana__phone">
