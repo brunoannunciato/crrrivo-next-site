@@ -94,28 +94,30 @@ const Fyll = () => {
                 </div>
 
                 <div className="fyll__player-wrapper">
-                    <div className="fyll__player">
-                        <Image
-                            src="/projects/fyll/player-1.png"
-                            width={410}
-                            height={728}
-                        />
-                    </div>
-                    
-                    <div className="fyll__player">
-                        <Image
-                            src="/projects/fyll/player-2.png"
-                            width={410}
-                            height={728}
-                        />
-                    </div>
+                    <div className="fyll__player-row">
+                        <div className="fyll__player">
+                            <Image
+                                src="/projects/fyll/player-1.png"
+                                width={410}
+                                height={728}
+                            />
+                        </div>
+                        
+                        <div className="fyll__player">
+                            <Image
+                                src="/projects/fyll/player-2.png"
+                                width={410}
+                                height={728}
+                            />
+                        </div>
 
-                    <div className="fyll__player">
-                        <Image
-                            src="/projects/fyll/player-3.png"
-                            width={410}
-                            height={728}
-                        />
+                        <div className="fyll__player">
+                            <Image
+                                src="/projects/fyll/player-3.png"
+                                width={410}
+                                height={728}
+                            />
+                        </div>
                     </div>
                 </div>
 

@@ -8,6 +8,10 @@
         text-align: center;
         padding-left: 5%;
         margin-bottom: 210px;
+        
+        @media (max-width: 768px) {
+            margin-bottom: 68px;
+        }
     }
 
     &__description-wrapper {
@@ -23,24 +27,44 @@
         font-size: 32px;
         max-width: 60%;
         line-height: 145%;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+        }
     }
 
     &__cards-shelf {
         display: flex;
         justify-content: space-between;
-        gap: 32px;
         margin-bottom: 120px;
+        gap: 32px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 52px;
+        }
     }
 
     &__player-wrapper {
         background-color: #00534E;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
         border-top-left-radius: 60px;
         border-top-right-radius: 60px;
         padding-top: 131px;
         padding-bottom: 131px;
+
+        @media (max-width: 768px) {
+            overflow: scroll;
+            padding-top: 62px;
+            padding-bottom: 62px;
+        }
+    }
+
+    &__player-row {
+        display: flex;
+        justify-content: center;
+        overflow: scroll;
+        gap: 20px;
+        width: 250%;
     }
 
     &__phone-wrapper {
@@ -69,6 +93,7 @@
             display: flex;
             flex-direction: column;
             z-index: 1;
+            margin-bottom: -20px;
         }
 
         .color-card {
@@ -86,6 +111,12 @@
         }
     }
 
+    &__k {
+        @media (max-width:768px) {
+            max-width: 30%;
+        }
+    }
+
     &__land-wrapper {
         background-image: url('/projects/fyll/landscape.png');
         max-width: 100%;
@@ -94,6 +125,11 @@
         margin-bottom: -220px;
         filter: grayscale(.4);
         transition: filter .7s ease;
+
+        @media (max-width:768px) {
+            margin-bottom: -10px;
+            background-size: cover; 
+        }
 
         &:hover {
             filter: grayscale(0);
@@ -111,6 +147,11 @@
         color: #FFE2D9;
         font-size: 55px;
         margin-top: 300px;
+
+        @media (max-width:768px) {
+            margin-top: 80px;
+            font-size: 22px;
+        }
     }
 
     &__logo-guide {
@@ -118,5 +159,9 @@
         text-align: center;
         margin-top: 200px;
         margin-bottom: 68px;
+
+        @media (max-width:768px) {
+            margin-top: 68px;
+        }
     }
 }
