@@ -124,93 +124,95 @@ const Gol = () => {
             </div>
 
             <div className="gioh__grid">
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-1.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
-                </div>
+                <div className="gioh__grid-wrapper">
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-1.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
 
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-2.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
-                </div>
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-2.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
 
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-3.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
-                </div>
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-3.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
 
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-4.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
-                </div>
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-4.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
 
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-5.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
-                </div>
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-5.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
 
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-6.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
-                </div>
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-6.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
 
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-7.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
-                </div>
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-7.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
 
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-8.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
-                </div>
-                <div className="gioh__card">
-                    <Image
-                        src="/projects/gioh/card-9.png"
-                        width={358}
-                        height={358}
-                        quality={100}
-                        priority
-                    />
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-8.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
+                    <div className="gioh__card">
+                        <Image
+                            src="/projects/gioh/card-9.png"
+                            width={358}
+                            height={358}
+                            quality={100}
+                            priority
+                        />
+                    </div>
                 </div>
             </div>
 
