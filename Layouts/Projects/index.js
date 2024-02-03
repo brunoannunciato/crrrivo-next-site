@@ -6,48 +6,62 @@ import Layout from '../../components/Layout';
 import SubHeader from '../../components/SubHeader';
 
 import "./projects.scss"
+import Link from 'next/link';
 
 const projects = [
   {
       id: 1,
-      image: "/images/placeholder.png",
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi tempore sapiente. Quod nulla eos, totam rem explicabo deserunt minus sit harum eaque ducimus expedita voluptates natus dignissimos, a error."
+      image: "/images/thumb-leo.png",
+      title: "Leo Madeiras",
+      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      link: "/projects/leo"
   },
 
   {
       id: 2,
-      image: "/images/placeholder.png",
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi tempore sapiente. Quod nulla eos, totam rem explicabo deserunt minus sit harum eaque ducimus expedita voluptates natus dignissimos, a error."
+      image: "/images/thumb-gol.png",
+      title: "Gol Smiles",
+      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      link: "/projects/gol"
   },
 
   {
       id: 3,
-      image: "/images/placeholder.png",
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi tempore sapiente. Quod nulla eos, totam rem explicabo deserunt minus sit harum eaque ducimus expedita voluptates natus dignissimos, a error."
+      image: "/images/thumb-lifelab.png",
+      title: "Lifelab",
+      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      link: "/projects/life-lab"
   },
 
   {
       id: 4,
-      image: "/images/placeholder.png",
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi tempore sapiente. Quod nulla eos, totam rem explicabo deserunt minus sit harum eaque ducimus expedita voluptates natus dignissimos, a error."
+      image: "/images/thumb-gioh.png",
+      title: "Gioh",
+      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      link: "/projects/gioh"
   },
 
   {
       id: 5,
-      image: "/images/placeholder.png",
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi tempore sapiente. Quod nulla eos, totam rem explicabo deserunt minus sit harum eaque ducimus expedita voluptates natus dignissimos, a error."
+      image: "/images/thumb-fyll.png",
+      title: "Fyll",
+      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      link: "/projects/fyll"
   },
 
   {
       id: 6,
-      image: "/images/placeholder.png",
-      title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore modi tempore sapiente. Quod nulla eos, totam rem explicabo deserunt minus sit harum eaque ducimus expedita voluptates natus dignissimos, a error."
+      image: "/images/thumb-ana.png",
+      title: "Ana Hirata",
+      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      link: "/projects/ana-hirata"
+  },
+  {
+    id: 7,
+    image: "/images/thumb-cafe.png",
+    title: "Café na cama ",
+    description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+    link: "/projects/cafe-na-cama"
   },
 ]
 
@@ -76,7 +90,7 @@ export default function Projects() {
       <div className="projects__container">
         <div className="projects__shelf">
           {
-            projects.map(({id, image, title, description}) => {
+            projects.map(({id, image, title, description, link}) => {
               return (
                 <div className='projects__project' key={id}>
                   <div className="projects__project-image">
@@ -87,9 +101,11 @@ export default function Projects() {
                   </div>
 
                   <div className="projects__project-content">
-                    <div className="projects__project-title">
-                      {title}
-                    </div>
+                    <Link href={link}>
+                      <div className="projects__project-title">
+                        {title}
+                      </div>
+                    </Link>
 
                     <div className="projects__project-description">
                       {description}
