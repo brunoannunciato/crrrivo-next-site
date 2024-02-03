@@ -6,6 +6,10 @@
     flex-direction: column;
     text-transform: uppercase;
 
+    @media (max-width: 768px) {
+        height: 300px;
+    }
+
     &__ico {
         margin-bottom: 18px;
     }
