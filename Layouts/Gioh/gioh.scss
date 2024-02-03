@@ -172,11 +172,16 @@
 
     &__grid {
         margin: 0 auto 140px;
-
+        
         @media (max-width:768px) {
             width: 100%;
             overflow: scroll;
             margin-bottom: 48px;
+        }
+        
+        @media (min-width: 769px) {
+            display: flex;
+            justify-content: center;
         }
 
         &-wrapper {

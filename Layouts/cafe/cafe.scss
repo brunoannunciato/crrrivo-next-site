@@ -1,0 +1,82 @@
+.cafe {
+    background-color: #EAE9E5;
+    min-height: 100vh;
+
+    &__description-wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: 105px 0;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__description {
+        font-size: 32px;
+        max-width: 55%;
+        line-height: 145%;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            max-width: 100%;
+            line-height: 120%;
+            text-align: justify;
+            height: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__hero {
+        margin-top: 68px;
+    }
+
+    &__card-grid {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 68px;
+    }
+
+    &__color-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 57%;
+        margin: -150px auto 0;
+        position: relative;
+        margin-bottom: -650px;
+
+        >div:nth-child(1) { grid-area: 1 / 1 / 2 / 3; }
+        >div:nth-child(2) { grid-area: 2 / 1 / 3 / 3; }
+        >div:nth-child(3) { grid-area: 1 / 3 / 2 / 4; }
+        >div:nth-child(4) { grid-area: 2 / 3 / 3 / 4; }
+        >div:nth-child(5) { grid-area: 1 / 4 / 2 / 5; }
+        >div:nth-child(6) { grid-area: 2 / 4 / 3 / 5; }
+        >div:nth-child(7) { grid-area: 1 / 5 / 2 / 6; }
+        >div:nth-child(8) { grid-area: 2 / 5 / 3 / 6; }
+    }
+
+    &__seal-shelf {
+        display: flex;
+        justify-content: space-between;
+        z-index: 3;
+        position: relative;
+        margin-bottom: 550px;
+    }
+
+    &__logos {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 148px;
+    }
+
+    &__colors-footer {
+        width: 70%;
+        height: 70px;
+        background: linear-gradient(90deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 33%, rgba(77,104,71,1) 33%, rgba(77,104,71,1) 55%, rgba(32,58,122,1) 55%, rgba(32,58,122,1) 77%, rgba(237,164,191,1) 77%, rgba(237,164,191,1) 100%);
+        margin: 0 auto;
+    }
+}

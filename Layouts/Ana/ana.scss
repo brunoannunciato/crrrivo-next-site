@@ -35,6 +35,10 @@
             width: 100%;
             text-align: justify;
         }
+
+        @media (min-width: 2350px) {
+            margin-bottom: 100px;
+        }
     }
 
     &__container {
@@ -142,5 +146,9 @@
 
     &__second-part {
         background-color: #EEEEEE;
+    }
+
+    &__phone {
+        text-align: center;
     }
 }

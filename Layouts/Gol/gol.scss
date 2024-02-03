@@ -84,6 +84,7 @@
         overflow: hidden;
         margin-top: -3px;
         background-color: #949495;
+        flex-grow: 1;
 
         &-wrapper {
             @media (max-width: 768px) {

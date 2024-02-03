@@ -60,11 +60,14 @@
     }
 
     &__player-row {
+        gap: 20px;
         display: flex;
         justify-content: center;
-        overflow: scroll;
-        gap: 20px;
-        width: 250%;
+        
+        @media (max-width: 768px) {
+            overflow: scroll;
+            width: 250%;
+        }
     }
 
     &__phone-wrapper {
@@ -119,6 +122,8 @@
 
     &__land-wrapper {
         background-image: url('/projects/fyll/landscape.png');
+        background-repeat: no-repeat;
+        background-size: cover;
         max-width: 100%;
         width: 100vw;
         height: 66vw;

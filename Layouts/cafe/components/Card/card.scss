@@ -1,0 +1,17 @@
+.card-cafe {
+    height: 518px;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-transform: uppercase;
+
+    &__ico {
+        margin-bottom: 18px;
+    }
+
+    &__name,
+    &__rbg {
+        margin: 0;
+    }
+}
