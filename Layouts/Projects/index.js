@@ -94,10 +94,12 @@ export default function Projects() {
               return (
                 <div className='projects__project' key={id}>
                   <div className="projects__project-image">
-                    <Image
-                      src={image}
-                      layout='fill'
-                    />
+                    <Link href={link}>
+                      <Image
+                        src={image}
+                        layout='fill'
+                      />
+                    </Link>
                   </div>
 
                   <div className="projects__project-content">
