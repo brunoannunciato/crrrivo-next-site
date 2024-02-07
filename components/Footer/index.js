@@ -32,7 +32,7 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Linkedin
+                  LINKEDIN
                 </a>
                 <a
                   className="footer__text"
@@ -40,7 +40,7 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Instagram
+                  INSTAGRAM
                 </a>
               </div>
             </div>

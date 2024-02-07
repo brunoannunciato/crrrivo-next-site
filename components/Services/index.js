@@ -2,19 +2,21 @@ import Image from 'next/image';
 import isClient from '../../utils/isClient';
 
 import './services.scss';
+import { ReactSVG } from 'react-svg';
 
 const Services = () => {
   const isMobile = isClient() && window.outerWidth < 768;
 
   const servicesList = [
     'Branding',
-    'Digital',
-    'Estratégia',
-    'Websites',
     'Propaganda',
-    'Direção de arte',
+    'Websites',
+    'Identidade',
     'Impressos',
-    'Motion',
+    'Direção de arte',
+    'Estratégia',
+    'Digital',
+    'Motion'
   ];
 
   return (
@@ -30,7 +32,7 @@ const Services = () => {
             return (
               <li key={item} className="services__item">
                 <div className="services__icon">
-                  <Image
+                  <ReactSVG
                     src="/images/arrow.svg"
                     alt=""
                     width={isMobile ? '28px' : '56px'}

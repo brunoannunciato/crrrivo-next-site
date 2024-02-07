@@ -20,19 +20,6 @@
     }
   }
 
-  &__left,
-  &__right {
-    margin-top: 15vh;
-
-    @media(max-width: 1441px) {
-      margin-top: 6vh;
-    }
-
-    @media(max-width: 768px) {
-      width: 100%;
-    }
-  }
-
   &__right {
     position: relative;
 
@@ -43,7 +30,7 @@
 
   &__title {
     letter-spacing: .55px;
-    font-size: 55px;
+    font-size: 48px;
     line-height: 57px;
     font-weight: 400;
     position: sticky;
@@ -52,7 +39,7 @@
     width: 84%;
   
     @media (max-width: 1441px) {
-      font-size: 42px;
+      font-size: 38px;
       line-height: 125%;
       top: 30vh;
     }
