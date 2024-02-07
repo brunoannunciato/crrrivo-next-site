@@ -47,7 +47,7 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
           </div>
 
           <p className="footer__text footer__copyright">
-            copyright © 2022 crrrivo
+            copyright © CRRRIVO
           </p>
         </div>
       </div>

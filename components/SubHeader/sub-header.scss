@@ -5,9 +5,15 @@
     padding-top: 132px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 10;
 
     &__title {
         font-size: 16px;
+        cursor: pointer;
     }
 
     &__button {

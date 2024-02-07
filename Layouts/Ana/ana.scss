@@ -1,6 +1,7 @@
 .ana {
     background-color: #E9E9E9;
     min-height: 100vh;
+    padding-top: 210px;
 
     &__hero {
         background-image: url("/projects/ana/hero.png");
@@ -9,7 +10,7 @@
         width: 100vw;
         height: 60vw;
         max-width: 100%;
-        margin-top: 68px;
+        box-sizing: border-box;
 
         @media (max-width: 768px) {
             background-size: cover;
