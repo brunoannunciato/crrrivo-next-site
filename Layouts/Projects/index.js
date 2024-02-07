@@ -7,6 +7,8 @@ import SubHeader from '../../components/SubHeader';
 
 import "./projects.scss"
 import Link from 'next/link';
+import { ReactSVG } from 'react-svg';
+
 
 const projects = [
   {
@@ -64,8 +66,15 @@ const projects = [
     link: "/projects/cafe-na-cama"
   },
 ]
-
 export default function Projects() {
+  const scrollToTop = () => {
+    window.scroll({
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth'
+    });
+  }
+
   return (
     <Layout className="projects">
       <Head>
@@ -97,7 +106,8 @@ export default function Projects() {
                     <Link href={link}>
                       <Image
                         src={image}
-                        layout='fill'
+                        width={849}
+                        height={478}
                       />
                     </Link>
                   </div>
@@ -117,6 +127,18 @@ export default function Projects() {
               )
             })
           }
+        </div>
+
+        <div className="projects__arrow-wrapper" onClick={scrollToTop}>
+          <div className="projects__arrow">
+            <ReactSVG
+              src='/images/arrow.svg'
+            />
+          </div>
+
+          <p className="projects__arrow-text">
+            Topo
+          </p>
         </div>
       </div>
       
