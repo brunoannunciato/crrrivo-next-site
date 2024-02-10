@@ -1,36 +1,41 @@
 .footer {
-  padding: 32px 0;
+  padding: 16px 0;
   position: relative;
   z-index: 10;
 
+  
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-
+    
     @media (max-width: 768px) {
       flex-direction: column;
     }
   }
-
+  
   &__content {
     display: flex;
     gap: 56px;
-
+    
     @media (max-width: 768px) {
       flex-direction: column;
     }
   }
-
+  
   &__contact-wrapper {
     align-items: center;
     display: flex;
     gap: 56px;
   }
-
+  
   &__section {
     display: flex;
     flex-direction: column;
+  }
+
+  &__logo {
+    transform: scale(.95);
   }
 
   &__text {

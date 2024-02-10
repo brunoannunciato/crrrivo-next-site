@@ -9,6 +9,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 import './cafe.scss'
 import Image from 'next/image'
+import { ReactSVG } from 'react-svg'
 
 const colors = [
     {
@@ -82,23 +83,27 @@ const Cafe = () => {
                 />
             </Head>
             <Header hideAt color='#000000' disableMixBlendMode/>
-            <SubHeader color='#000000' projectName="Café na cama"/>
+            <SubHeader color='#000000' projectName="Café na Cama"/>
 
             <Container>
-                <div className="cafe__hero">
-                    <Image
-                        src="/projects/cafe/hero.png"
-                        width={1764}
-                        height={1224}
-                        quality={100}
-                        priority
-                    />
+                <div className="cafe__hero-wrapper">
+                    <div className="cafe__hero">
+                        <Parallax speed={-80}>
+                            <Image
+                                src="/projects/cafe/hero.png"
+                                width={1764}
+                                height={1224}
+                                quality={100}
+                                priority
+                            />
+                        </Parallax>
+                    </div>
                 </div>
 
                 <div className="cafe__description-wrapper">
                     <div className="cafe__logo">
-                        <Image
-                            src="/projects/cafe/logo.png"
+                        <ReactSVG
+                            src="/projects/cafe/logo.svg"
                             width={558}
                             height={294}
                             quality={100}
@@ -107,7 +112,7 @@ const Cafe = () => {
                     </div>
                     
                     <p className="cafe__description">
-                        <u>Gióh é um projeto que surgiu para ressignificar o mercado de acupuntura no Brasil.</u> Andando totalmente na contramão do setor, inovando em design, gestão e com foco em bem estar. A marca busca originalidade, além da qualidade do serviço.
+                        <u>Branding para o Café na Cama.</u> A ideia é posicionar a marca como referência para clientes de classe A. Busca proporcionar uma experiência de hotel de luxo em casa.
                     </p>
                 </div>
 

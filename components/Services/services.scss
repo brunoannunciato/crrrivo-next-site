@@ -5,18 +5,14 @@
     margin-top: 120px;
   }
 
-  .container {
-    border-top: 1px solid #000;
-  }
-
   &__title {
     letter-spacing: 1px;
-    line-height: 140%;
+    line-height: 57px;
+    font-size: 48px;
     font-weight: 400;
     margin-bottom: 62px; 
     mix-blend-mode: difference;
     color: white;
-    font-size: 48px;
     width: 70%;
 
     @media(max-width: 1441px) {
@@ -51,29 +47,30 @@
 
   &__icon {
     @media (max-width: 768px) {
-      width: 28px;
-      height: 14px;
+      width: 14px;
+      height: 7px;
       margin: 24px 0;
     }
   }
   
   &__arrow {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) scale(0.8);
 
   }
   
   
   &__item-name {
-    padding-left: 46px;
-    font-size: 55px;
+    padding-left: 24px;
     margin: 0;
-    line-height: 57px;
+    line-height: 140%;
+    font-size: 48px;
     font-weight: 400;
     text-decoration: underline;
     transition: filter .5s ease;
     
     @media(max-width: 1441px) {
-      font-size: 42px;
+      font-size: 38px;
+      line-height: 125%;
     }
     
     @media (max-width: 768px) {
@@ -87,7 +84,7 @@
     font-size: 55px;
     line-height: 62px;
     letter-spacing: 0.55px;
-    margin: 0 0 225px;
+    margin: 0 0 70px;
 
     @media(max-width: 1441px) {
       font-size: 46px;

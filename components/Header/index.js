@@ -24,7 +24,7 @@ const Header = ({hideAt = false, color = "#ffffff", disableMixBlendMode}) => {
     <header className={headerClass} style={{ color, borderColor: color }}>
       <div className="header__logo-wrapper">
         <Link href="/">
-         <ReactSVG src='/images/logo.svg'/>
+         <ReactSVG src='/images/logo.svg' className="header__logo" />
         </Link>
       </div>
 

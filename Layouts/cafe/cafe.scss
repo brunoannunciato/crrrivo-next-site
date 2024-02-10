@@ -1,12 +1,15 @@
 .cafe {
     background-color: #EAE9E5;
     min-height: 100vh;
+    color: #212121;
+    padding-top: 210px;
 
     &__description-wrapper {
         align-items: center;
         display: flex;
         justify-content: space-between;
         margin: 105px 0;
+        overflow: hidden;
 
         @media (max-width: 768px) {
             flex-direction: column;
@@ -29,8 +32,17 @@
     }
 
     &__hero {
-        padding-top: 210px;
-        padding-bottom: 68px;
+        overflow: hidden;
+        padding-top: 400px;
+        max-height: 900px;
+
+        &-wrapper {
+            box-sizing: content-box;
+            border-radius: 92px;
+            background-color: #203A7A;
+            max-height: 900px;
+            overflow: hidden;
+        }
     }
 
     &__card-grid {
@@ -89,12 +101,18 @@
     &__logos {
         display: flex;
         justify-content: space-around;
-        margin-bottom: 148px;
+        margin: 0 auto 148px;
+        max-width: 75%;
+        gap:60px;
 
         @media (max-width: 768px) {
             flex-direction: column;
             gap: 100px;
         }
+    }
+
+    &__logo:nth-child(2) {
+        margin-top: 20px;
     }
 
     &__colors-footer {

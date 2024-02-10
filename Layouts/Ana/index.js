@@ -77,11 +77,31 @@ const Gol = () => {
             </div>
 
             <Container className="ana__container">
-                <div className="ana__portifolio">
+                <div className="ana__portifolio-1">
                     <Image
-                        src="/projects/ana/portifolio.png"
-                        width={1321}
-                        height={1322}
+                        src="/projects/ana/portifolio-1.png"
+                        width={273}
+                        height={99}
+                        quality={100}
+                        priority
+                    />
+                </div>
+
+                <div className="ana__portifolio-2">
+                    <Image
+                        src="/projects/ana/portifolio-2.png"
+                        width={933}
+                        height={539}
+                        quality={100}
+                        priority
+                    />
+                </div>
+
+                <div className="ana__portifolio-3">
+                    <Image
+                        src="/projects/ana/portifolio-3.png"
+                        width={296}
+                        height={170}
                         quality={100}
                         priority
                     />

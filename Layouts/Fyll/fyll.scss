@@ -14,6 +14,10 @@
         }
     }
 
+    &__logo {
+        max-width: 420px;
+    }
+
     &__description-wrapper {
         align-items:  center;
         display: flex;
@@ -80,6 +84,11 @@
         padding-bottom: 131px;
     }
 
+    &__parallax {
+        position: relative;
+        z-index: 1;
+    }
+
     &__color-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -89,7 +98,7 @@
         max-width: 1341px;
         width: 90%;
         margin: -100px auto -100px;
-        z-index: 10;
+        z-index: 12;
         position: relative;
 
         @media (max-width: 768px) {
@@ -164,6 +173,8 @@
         text-align: center;
         margin-top: 200px;
         margin-bottom: 68px;
+        max-width: 560px;
+        margin: 68px auto;
 
         @media (max-width:768px) {
             margin-top: 68px;

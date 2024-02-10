@@ -144,14 +144,16 @@ const Fyll = () => {
                         </div>
                     </Parallax>
                 </div>
-
-                <div className="fyll__color-grid">
-                    {
-                        colors.map(color => {
-                        return <ColorCard key={color.index} {...color}/>
-                        })
-                    }
-                </div>
+                
+                <Parallax speed={60} className="fyll__parallax">
+                    <div className="fyll__color-grid">
+                        {
+                            colors.map(color => {
+                            return <ColorCard key={color.index} {...color}/>
+                            })
+                        }
+                    </div>
+                </Parallax>
             </Container>
 
             <div className="fyll__land-wrapper">

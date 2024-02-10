@@ -8,21 +8,23 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
       <div className="container">
         <div className="footer__wrapper">
           <div className="footer__content">
-            <Link href="/">
-              <ReactSVG 
-                  src="/images/rrr.svg"
-                  alt="(rrr)"
-                  width="190px"
-                  height="106px"
-                  className='footer__logo'
-              />
-            </Link>
+            <div className="footer__logo">
+              <Link href="/">
+                <ReactSVG 
+                    src="/images/rrr.svg"
+                    alt="(rrr)"
+                    width="135px"
+                    height="76px"
+                    className='footer__logo'
+                />
+              </Link>
+            </div>
 
             <div className="footer__contact-wrapper">
               <div className="footer__section">
-                <p className="footer__text">São Paulo-SP</p>
+                <p className="footer__text">SÃO PAULO-SP</p>
 
-                <p className="footer__text">Brasil</p>
+                <p className="footer__text">BRASIL</p>
               </div>
 
               <div className="footer__section">
@@ -47,7 +49,7 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
           </div>
 
           <p className="footer__text footer__copyright">
-            copyright © CRRRIVO
+            COPYRIGHT © CRRRIVO
           </p>
         </div>
       </div>

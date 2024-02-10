@@ -80,7 +80,6 @@ export default function Leo() {
               width={1852}
               height={1036}
               quality={100}
-              priority
             />
           </div>
         </Parallax>

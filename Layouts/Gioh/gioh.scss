@@ -1,4 +1,5 @@
 .gioh {
+    color: #211C18;
     background-color: #c19d85;
     min-height: 100vh;
     
@@ -19,6 +20,10 @@
         @media (max-width: 768px) {
             flex-direction: column;
         }
+    }
+
+    &__logo {
+        max-width: 460px;
     }
 
     &__description {
@@ -164,6 +169,7 @@
 
     &__sign {
         margin-top: 68px;
+        margin-bottom: -4px;
     }
 
     &__candle {
@@ -208,6 +214,7 @@
         display: block;
         margin: 0 auto 120px;
         text-align: center;
+        max-width: 590px;
 
         @media (max-width: 768px) {
             margin-bottom: 40px;

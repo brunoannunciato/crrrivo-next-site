@@ -99,6 +99,7 @@
         background-size: 150%;
         background-repeat: no-repeat;
         background-position: -84px 25%;
+        margin-bottom: -800px;
 
         @media (max-width: 768px) {
             margin-top: -240px;
@@ -120,8 +121,7 @@
     }
 
     &__bag {
-        margin-top: -1000px;
-        margin-bottom: -220px;
+        // margin-top: -1000px;
 
         @media (max-width: 768px) {
             display: none;
