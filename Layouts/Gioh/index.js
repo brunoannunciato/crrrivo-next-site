@@ -7,6 +7,7 @@ import Footer from '../../components/Footer'
 import './gioh.scss'
 import Container from '../../components/Container'
 import Image from 'next/image'
+import { Parallax } from 'react-scroll-parallax'
 
 const Gol = () => {
     return (
@@ -31,14 +32,18 @@ const Gol = () => {
             <SubHeader color='#211C18' projectName="Gióh Acupuntura"/>
 
             <Container>
-                <div className="gioh__hero">
-                    <Image
-                        src="/projects/gioh/hero.png"
-                        width={1764}
-                        height={1224}
-                        quality={100}
-                        priority
-                    />
+                <div className="gioh__hero-wrapper">
+                    <div className="gioh__hero">
+                        <Parallax speed={-20}>
+                            <Image
+                                src="/projects/gioh/hero.png"
+                                width={1764}
+                                height={1224}
+                                quality={100}
+                                priority
+                            />
+                        </Parallax>
+                    </div>
                 </div>
 
                 <div className="gioh__description-wrapper">
@@ -104,23 +109,28 @@ const Gol = () => {
 
             <Container>
             <div className="gioh__sign">
-                <Image
-                    src="/projects/gioh/sign.png"
-                    width={1760}
-                    height={990}
-                    quality={100}
-                    priority
-                />
+                <Parallax speed={-20}>
+                    <Image
+                        src="/projects/gioh/sign.png"
+                        width={1760}
+                        height={990}
+                        quality={100}
+                        priority
+                    />
+
+                </Parallax>
             </div>
 
             <div className="gioh__candle">
-                <Image
-                    src="/projects/gioh/candle.png"
-                    width={1760}
-                    height={990}
-                    quality={100}
-                    priority
-                />
+                <Parallax speed={-20}>
+                    <Image
+                        src="/projects/gioh/candle.png"
+                        width={1760}
+                        height={990}
+                        quality={100}
+                        priority
+                    />
+                </Parallax>
             </div>
 
             <div className="gioh__grid">

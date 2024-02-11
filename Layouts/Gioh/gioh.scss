@@ -2,10 +2,13 @@
     color: #211C18;
     background-color: #c19d85;
     min-height: 100vh;
+    padding-top: 210px;
     
     &__hero {
-        padding-top: 210px;
         margin-bottom: 156px;
+        border-radius: 92px;
+        overflow: hidden;
+        max-height: 1100px;
 
         @media (max-width: 768px) {
             margin-bottom: 40px;
@@ -58,7 +61,8 @@
 
     &__color {
         &:nth-child(1) {
-            border: 1px solid #211C18;
+            background-image: url('/projects/gioh/tijolos.jpg');
+            background-size: contain;
             background-color: #C19D85;
             height: 275px;
             width: 60%;
@@ -170,10 +174,14 @@
     &__sign {
         margin-top: 68px;
         margin-bottom: -4px;
+        border-radius: 92px;
+        overflow: hidden;
     }
 
     &__candle {
         margin-bottom: 68px;
+        border-radius: 92px;
+        overflow: hidden;
     }
 
     &__grid {
