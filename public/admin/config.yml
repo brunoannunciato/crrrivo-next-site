@@ -19,19 +19,66 @@ collections:
             name: 'leo'
             widget: object
             fields:
-              - { label: Header, name: header, widget: string, default: 'Image Gallery' }
-              - { label: Template, name: template, widget: string, default: 'carousel.html' }
-              - label: Images
-                name: images
-                widget: list
-                field: { label: Image, name: image, widget: image }
-          - label: 'Gol'
-            name: 'gol'
-            widget: object
-            fields:
-              - { label: Teste, name: header, widget: string, default: 'Image Gallery' }
-              - { label: Teste, name: template, widget: string, default: 'carousel.html' }
-              - label: Images
-                name: images
-                widget: list
-                field: { label: Image, name: image, widget: image }
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#204f32' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#F4E84F' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#193D27' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#E7B228' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Leo Madeiras' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero (1764 x 1224)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - label: Imagem Parallax (1852 x 1036)
+                name: parallaxImage
+                widget: image
+                allow_multiple: false
+              - { label: Descrição do projeto, name: description, widget: text, default: 'A Crrrivo e a Leo tem uma parceria sólida, onde criamos campanhas institucionais, além de peças de e-commerce e redes sociais. É um projeto 360º, onde trabalhamos em várias frentes. O resultado dessa parceria é que sempre estamos batendo recorde de vendas e resultados incríveis.' }
+              - label: Imagem cheia (1920 x 1330)
+                name: fullImage
+                widget: image
+                allow_multiple: false
+              - { label: Grid cor - 1, name: color1, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 1, name: colorName1, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 1, name: colorRole1, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 1, name: colorText1, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 2, name: color2, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 2, name: colorName2, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 2, name: colorRole2, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 2, name: colorText2, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 3, name: color3, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 3, name: colorName3, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 3, name: colorRole3, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 3, name: colorText3, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 4, name: color4, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 4, name: colorName4, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 4, name: colorRole4, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 4, name: colorText4, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 5, name: color5, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 5, name: colorName5, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 5, name: colorRole5, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 5, name: colorText5, widget: string, default: '#FFFFFF' }
+              - label: Imagem Card de cima (416 x 416)
+                name: card1
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card de baixo (416 x 416)
+                name: card2
+                widget: image
+                allow_multiple: false
+              - label: Imagem direita dos cards (2884 x 1622)
+                name: card3
+                widget: image
+                allow_multiple: false
+              - label: Imagem Parallax Final (2070 x 1380)
+                name: cardParallax
+                widget: image
+                allow_multiple: false
+
+
+              
+
