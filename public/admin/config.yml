@@ -5,19 +5,33 @@ backend:
 media_folder: public/images
 public_folder: images
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
-          widget: list
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
+  - name: "project"
+    label: "Projetos"
+    folder: "_content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Tema"
+        name: "theme"
+        widget: "list"
+        types:
+          - label: 'Leo'
+            name: 'leo'
+            widget: object
+            fields:
+              - { label: Header, name: header, widget: string, default: 'Image Gallery' }
+              - { label: Template, name: template, widget: string, default: 'carousel.html' }
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
+          - label: 'Gol'
+            name: 'gol'
+            widget: object
+            fields:
+              - { label: Teste, name: header, widget: string, default: 'Image Gallery' }
+              - { label: Teste, name: template, widget: string, default: 'carousel.html' }
+              - label: Images
+                name: images
+                widget: list
+                field: { label: Image, name: image, widget: image }
