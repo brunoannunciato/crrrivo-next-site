@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  name: github
+  repo: brunoannunciato/crrrivo-next-site
+  branch: stage # Branch to update (optional; defaults to master)
 media_folder: public/images
 public_folder: images
 collections:
