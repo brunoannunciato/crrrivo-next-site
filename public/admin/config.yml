@@ -79,3 +79,56 @@ collections:
                 name: cardParallax
                 widget: image
                 allow_multiple: false
+          - label: 'Gol'
+            name: 'gol'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#7c7c7c' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#6F6F6F' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#FFFFFF' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Gol Smiles' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero (1920 x 1072)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - label: Logo
+                name: logo
+                widget: image
+                allow_multiple: false
+              - { label: Descrição do projeto, name: description, widget: text, default: '<u>Campanha de endomarketing para a Gol Smiles.</u> <br/> Um evento anual para os parceiros e colaboradores, que foi criado com o intuito de abrir portas para o próximo destino: a inovação.' }
+              - label: Card esquerda (844 x 475)
+                name: card1
+                widget: image
+                allow_multiple: false
+              - label: Card direita (844 x 475)
+                name: card2
+                widget: image
+                allow_multiple: false
+              - label: Poster (583 x 806)
+                name: poster
+                widget: image
+                allow_multiple: false
+              - label: Imagem pós poster (1760 x 990)
+                name: postPoster
+                widget: image
+                allow_multiple: false
+              - label: Imagem Parallax esquerda (391 x 638)
+                name: parallax1
+                widget: image
+                allow_multiple: false
+              - { label: Background parallax esquerda, name: parallax1Background, widget: string, default: 'linear-gradient(38deg,#8f8f90 50%,#6e6e6e);' }
+              - label: Imagem Parallax direita (1280 x 719)
+                name: parallax2
+                widget: image
+                allow_multiple: false
+              - { label: Background parallax direita, name: parallax2Background, widget: string, default: '#949495' }
+              - label: Imagem final (1760 x 990)
+                name: fullImage
+                widget: image
+                allow_multiple: false
