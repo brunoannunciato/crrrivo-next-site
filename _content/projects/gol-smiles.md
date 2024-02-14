@@ -6,7 +6,7 @@ theme:
     projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
       mudanças são a base do nosso raciocínio criativo e estratégico, que parte
       das pessoas ao mesmo tempo em que as coloca no centro de tudo.
-    parallax1Background: linear-gradient(38deg,#8f8f90 50%,#6e6e6e);
+    parallax1Background: linear-gradient(38deg,#8f8f90 50%,#6e6e6e)
     footerColor: "#FFFFFF"
     parallax2Background: "#949495"
     footerBackground: "#6F6F6F"
@@ -21,7 +21,7 @@ theme:
     type: gol
     hero: images/gol-hero.png
     parallax2: images/gol-bag.png
-    description: "<u>Campanha de endomarketing para a Gol Smiles.</u> <br/> Um
+    description: "<u>Campanha de endomarketing para a Gol Smiles.</u> Um
       evento anual para os parceiros e colaboradores, que foi criado com o
       intuito de abrir portas para o próximo destino: a inovação."
     projectTitle: Gol Smiles

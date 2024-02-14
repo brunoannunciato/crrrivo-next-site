@@ -12,7 +12,7 @@ import './leo.scss';
 
 export default function Leo({data}) {
   const theme = data.theme[0]
-console.log(theme)
+
   const colors = [
     {
       index: 1,
