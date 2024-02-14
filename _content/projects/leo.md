@@ -10,32 +10,32 @@ theme:
       mudanças são a base do nosso raciocínio criativo e estratégico, que parte
       das pessoas ao mesmo tempo em que as coloca no centro de tudo.
     card3: images/iphone.png
-    colorName2: Verde Leo
+    colorName2: Verde
     parallaxImage: images/notebook.png
     colorText4: "#FFFFFF"
-    colorName3: Verde Leo
+    colorName3: Amarelo
     colorText5: "#FFFFFF"
-    colorName4: Verde Leo
+    colorName4: Azul
     cardParallax: images/bag.png
-    colorName5: Verde Leo
+    colorName5: Rosa
     footerColor: "#E7B228"
     footerBackground: "#193D27"
     fullImage: images/bus-stop.png
     thumbnail: images/thumb-leo.png
     color1: "#204F32"
-    color2: "#204F32"
-    color3: "#204F32"
-    color4: "#204F32"
-    color5: "#204F32"
+    color2: "#009A31"
+    color3: "#E7B228"
+    color4: "#0191c2"
+    color5: "#8c1278"
     backgroundColor: "#204f32"
     headerColor: "#F4E84F"
     colorRole1: Principal
-    colorRole2: Principal
-    colorRole3: Principal
+    colorRole2: secundária
+    colorRole3: secundária
     type: leo
     hero: images/hero.png
-    colorRole4: Principal
-    colorRole5: Principal
+    colorRole4: apoio
+    colorRole5: apoio
     description: A Crrrivo e a Leo tem uma parceria sólida, onde criamos campanhas
       institucionais, além de peças de e-commerce e redes sociais. É um projeto
       360º, onde trabalhamos em várias frentes. O resultado dessa parceria é que
