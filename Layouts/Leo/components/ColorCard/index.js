@@ -1,8 +1,8 @@
 import "./color-card.scss"
 
-const ColorCard = ({index, color, title, support}) => {
+const ColorCard = ({index, color, title, support, colorText}) => {
     return (
-        <div className="color-card" style={{backgroundColor: color}}>
+        <div className="color-card" style={{backgroundColor: color, color: colorText}}>
             <span className="color-card__index">
                 { index }
             </span>

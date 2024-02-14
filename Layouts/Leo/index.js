@@ -10,38 +10,45 @@ import ColorCard from './components/ColorCard';
 
 import './leo.scss';
 
-export default function Leo() {
+export default function Leo({data}) {
+  const theme = data.theme[0]
+console.log(theme)
   const colors = [
     {
       index: 1,
-      title: "Verde Leo",
-      color: "#204F32",
-      support: "principal"
+      title: theme.colorName1,
+      color: theme.color1,
+      support: theme.colorRole1,
+      colorText: theme.colorText1
     }, {
       index: 2,
-      title: "Verde",
-      color: "#009A31",
-      support: "secundária"
+      title: theme.colorName2,
+      color: theme.color2,
+      support: theme.colorRole2,
+      colorText: theme.colorText2
     }, {
       index: 3,
-      title: "Amarelo",
-      color: "#E7B228",
-      support: "secundária"
+      title: theme.colorName3,
+      color: theme.color3,
+      support: theme.colorRole3,
+      colorText: theme.colorText3
     }, {
       index: 4,
-      title: "Azul",
-      color: "#0191C2",
-      support: "apoio"
+      title: theme.colorName4,
+      color: theme.color4,
+      support: theme.colorRole4,
+      colorText: theme.colorText4
     }, {
       index: 5,
-      title: "Rosa",
-      color: "#8C1278",
-      support: "apoio"
+      title: theme.colorName5,
+      color: theme.color5,
+      support: theme.colorRole5,
+      colorText: theme.colorText5
     },
   ]
 
   return (
-    <div className="leo">
+    <div className="leo" style={{backgroundColor: theme.backgroundColor }}>
       <Head>
         <title>Crrrivo</title>
         <link rel="shortcut icon" href="/favicon.ico" />
@@ -58,14 +65,14 @@ export default function Leo() {
           href="/favicon-16x16.png"
         />
       </Head>
-      <Header hideAt color='#F4E84F' disableMixBlendMode/>
-      <SubHeader color='#F4E84F' projectName="Leo Madeiras"/>
+      <Header hideAt color={theme.headerColor} disableMixBlendMode/>
+      <SubHeader color={theme.headerColor} projectName="Leo Madeiras"/>
 
 
       <Container>
         <div className="leo__hero">
           <Image
-            src="/projects/leo/hero.png"
+            src={`/${theme.hero}`}
             width={1764}
             height={1224}
             quality={100}
@@ -76,7 +83,7 @@ export default function Leo() {
         <Parallax speed={80}>
           <div className="leo__notebook">
             <Image
-              src="/projects/leo/notebook.png"
+              src={`/${theme.parallaxImage}`}
               width={1852}
               height={1036}
               quality={100}
@@ -85,13 +92,11 @@ export default function Leo() {
         </Parallax>
 
         <div className="leo__description-wrapper">
-          <p className="leo__description">
-            A Crrrivo e a Leo tem uma parceria sólida, onde criamos campanhas institucionais, além de peças de e-commerce e redes sociais. É um projeto 360º, onde trabalhamos em várias frentes. O resultado dessa parceria é que sempre estamos batendo recorde de vendas e resultados incríveis. 
-          </p>
+          <p className="leo__description" dangerouslySetInnerHTML={{__html: theme.description}}/>
         </div> 
       </Container>
 
-      <span className="leo__bus-stop" />
+      <span className="leo__bus-stop" style={{backgroundImage: `url(/${theme.fullImage})`}}/>
 
       <Parallax speed={80}>
         <div className="leo__color-grid">
@@ -102,11 +107,10 @@ export default function Leo() {
           }
         </div>
       </Parallax>
-
       <Container>
-          <div className="leo__product-grid">
+          <div className="leo__product-grid" style={{backgroundImage: `url(/${theme.card3})`}}>
             <Image
-              src="/projects/leo/card-1.png"
+              src={`/${theme.card1}`}
               width={416}
               height={416}
               quality={100}
@@ -114,7 +118,7 @@ export default function Leo() {
             />
 
             <Image
-              src="/projects/leo/card-2.png"
+              src={`/${theme.card2}`}
               width={416}
               height={416}
               quality={100}
@@ -127,7 +131,7 @@ export default function Leo() {
       <Parallax speed={80}>
         <div className="leo__bag">
             <Image
-              src="/projects/leo/bag.png"
+              src={`/${theme.cardParallax}`}
               width={2070}
               height={1380}
               quality={100}
@@ -136,7 +140,7 @@ export default function Leo() {
         </div>
       </Parallax>
 
-      <Footer color='#E7B228' backgroundColor='#193d27'/>
+      <Footer color={theme.footerColor} backgroundColor={theme.footerBackground}/>
     </div>
   );
 }
