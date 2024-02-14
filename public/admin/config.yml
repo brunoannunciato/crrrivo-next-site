@@ -30,8 +30,12 @@ collections:
                 allow_multiple: false
               - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Leo Madeiras' }
               - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
-              - label: Hero (1764 x 1224)
-                name: hero
+              - label: Hero - esquerda (653 x 274)
+                name: heroLeft
+                widget: image
+                allow_multiple: false
+              - label: Hero - direita (1117 x 1072)
+                name: heroRight
                 widget: image
                 allow_multiple: false
               - label: Imagem Parallax (1852 x 1036)
@@ -166,7 +170,7 @@ collections:
                 widget: image
                 allow_multiple: false
               - label: Título de grid de cor (393 x 112)
-                name: postParallaxImage
+                name: colorGridTitle
                 widget: image
                 allow_multiple: false
               - label: Cor grid imagem 1 (666 x 375)
@@ -212,5 +216,3 @@ collections:
                 widget: image
                 allow_multiple: false
               - { label: Cor fundo parallax final, name: finalParallaxBackground, widget: string, default: '#f50' }
-
-              
