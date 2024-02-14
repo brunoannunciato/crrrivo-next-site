@@ -1,4 +1,5 @@
 ---
+title: leo
 theme:
   - colorText1: "#FFFFFF"
     card1: images/card-1.png
