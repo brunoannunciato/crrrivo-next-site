@@ -132,3 +132,85 @@ collections:
                 name: fullImage
                 widget: image
                 allow_multiple: false
+          - label: 'Lifelab'
+            name: 'lifelab'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#7c7c7c' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#103ae1' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#FFFFFF' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Gol Smiles' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero (1920 x 1072)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - { label: Descrição, name: description, widget: string, default: '<u>A Lifelab é uma lab de curadoria de conteúdo.</u> <br/>
+                        O desafio era criar uma marca que desse “voz” às pessoas - por isso as aspas abertas, - que representam as experiências colaborativas dos que buscam crescimento individual e humano. ' }
+              - label: DescriptionImage (195 x 126)
+                name: descriptionImage
+                widget: image
+                allow_multiple: false
+              - label: Parallax Image (1920 x 1080)
+                name: parallaxImage
+                widget: image
+                allow_multiple: false
+              - { label: Cor de fundo do Parallax, name: parallaxBackground, widget: string, default: '#f5f5f5' }
+              - label: Imagem após parallax (1760 x 1080)
+                name: postParallaxImage
+                widget: image
+                allow_multiple: false
+              - label: Título de grid de cor (393 x 112)
+                name: postParallaxImage
+                widget: image
+                allow_multiple: false
+              - label: Cor grid imagem 1 (666 x 375)
+                name: colorGridImage1
+                widget: image
+                allow_multiple: false
+              - { label: Cor hex 1, name: colorGridHex1, widget: string, default: '#0047FD' }
+              - { label: Cor nome 1, name: colorGridName1, widget: string, default: 'azul' }
+              - { label: Cor descrição 1, name: colorGridDesc1, widget: text, default: 'contentamento, <br />
+                            lealdade, paz, <br />
+                            <span>tranquilidade</span>, calma, <br />
+                            estabilidade, harmonia,<br />
+                            unidade, conﬁança,<br />
+                            verdade, segurança,<br />
+                            ordem e tecnologia. <br />' }
+              - label: Cor grid imagem 2 (672 x 375)
+                name: colorGridImage2
+                widget: image
+                allow_multiple: false
+              - { label: Cor hex 2, name: colorGridHex2, widget: string, default: '#FF6400' }
+              - { label: Cor nome 2, name: colorGridName2, widget: string, default: 'laranja' }
+              - { label: Cor descrição 2, name: colorGridDesc2, widget: text, default: 'humor, <span>energia, </span> <br />
+                            equilíbrio, calor, <br />
+                            entusiasmo, <br />
+                            <span>vibração,</span> expansão,<br />
+                            extravagância, <br />
+                            excessivo e <br />
+                            ﬂamejante' }
+              - label: Cor grid imagem 3 (111 x 262)
+                name: colorGridImage3
+                widget: image
+                allow_multiple: false
+              - { label: Cor hex 3, name: colorGridHex3, widget: string, default: '#000000' }
+              - { label: Cor nome 3, name: colorGridName3, widget: string, default: 'black' }
+              - { label: Cor descrição 3, name: colorGridDesc3, widget: text, default: 'poder, <br />
+                            sofisticação, <br />
+                            elegância, <br />
+                            riqueza, mistério <br />
+                            <span>profundidade </span>e <br />
+                            estilo.' }
+              - label: Imagem Parallax Final (1763 x 991)
+                name: imageParallaxFinal
+                widget: image
+                allow_multiple: false
+              - { label: Cor fundo parallax final, name: finalParallaxBackground, widget: string, default: '#f50' }
+
+              

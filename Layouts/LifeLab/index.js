@@ -9,7 +9,7 @@ import { Parallax } from 'react-scroll-parallax'
 import './life-lab.scss'
 import Container from '../../components/Container'
 
-const Gol = () => {
+const Lifelab = () => {
     return (
         <div className="life-lab">
             <Head>
@@ -222,4 +222,4 @@ const Gol = () => {
     )
 }
 
-export default Gol
+export default Lifelab
