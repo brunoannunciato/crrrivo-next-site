@@ -11,6 +11,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - { label: url do projeto, name: title, widget: string, default: 'leo' }
       - label: "Tema"
         name: "theme"
         widget: "list"
@@ -78,7 +79,3 @@ collections:
                 name: cardParallax
                 widget: image
                 allow_multiple: false
-
-
-              
-
