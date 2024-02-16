@@ -11,7 +11,7 @@ import ColorCard from './components/ColorCard';
 import './leo.scss';
 
 export default function Leo({data}) {
-  const theme = data.theme[0]
+  const theme = data.theme[0] && data.theme[0]
 
   const colors = [
     {
