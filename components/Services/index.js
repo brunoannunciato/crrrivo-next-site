@@ -9,7 +9,7 @@ const Services = () => {
 
   const servicesList = [
     'Branding',
-    'Propaganda',
+    'Publicidade',
     'Websites',
     'Identidade',
     'Impressos',
