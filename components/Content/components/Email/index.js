@@ -14,7 +14,7 @@ const Email = ({ titleHeight, mailRef }) => {
       <p
         className="mail"
         ref={mailRef}
-        style={{ top: `calc(32vh + ${marginSize}px)` }}
+        style={{ top: `${marginSize}px` }}
       >
         CONTATO@
         <br />

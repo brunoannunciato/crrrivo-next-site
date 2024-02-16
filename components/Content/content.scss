@@ -35,13 +35,12 @@
     font-weight: 400;
     position: sticky;
     margin: 0;
-    top: 32vh;
+    top: 15vh;
     width: 84%;
   
     @media (max-width: 1441px) {
       font-size: 38px;
       line-height: 125%;
-      top: 30vh;
     }
 
     @media (max-width: 768px) {
