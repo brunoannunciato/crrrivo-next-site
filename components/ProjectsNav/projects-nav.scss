@@ -1,7 +1,7 @@
 .projects-nav {
     position: fixed;
     bottom: 0;
-    width: 98vw;
+    width: calc(100vw - 30px);
     background: #000;
     padding: 28px 0;
     z-index: 1;
