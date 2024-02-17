@@ -1,22 +1,218 @@
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  name: github
+  repo: brunoannunciato/crrrivo-next-site
+  branch: stage # Branch to update (optional; defaults to master)
 media_folder: public/images
 public_folder: images
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
-          widget: list
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
+  - name: "project"
+    label: "Projetos"
+    folder: "_content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: url do projeto, name: title, widget: string, default: 'leo' }
+      - label: "Tema"
+        name: "theme"
+        widget: "list"
+        types:
+          - label: 'Leo'
+            name: 'leo'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#204f32' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#F4E84F' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#193D27' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#E7B228' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Leo Madeiras' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero - esquerda (653 x 274)
+                name: heroLeft
+                widget: image
+                allow_multiple: false
+              - label: Hero - direita (1117 x 1072)
+                name: heroRight
+                widget: image
+                allow_multiple: false
+              - label: Imagem Parallax (1852 x 1036)
+                name: parallaxImage
+                widget: image
+                allow_multiple: false
+              - { label: Descrição do projeto, name: description, widget: text, default: 'A Crrrivo e a Leo tem uma parceria sólida, onde criamos campanhas institucionais, além de peças de e-commerce e redes sociais. É um projeto 360º, onde trabalhamos em várias frentes. O resultado dessa parceria é que sempre estamos batendo recorde de vendas e resultados incríveis.' }
+              - label: Imagem cheia (1920 x 1330)
+                name: fullImage
+                widget: image
+                allow_multiple: false
+              - { label: Grid cor - 1, name: color1, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 1, name: colorName1, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 1, name: colorRole1, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 1, name: colorText1, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 2, name: color2, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 2, name: colorName2, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 2, name: colorRole2, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 2, name: colorText2, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 3, name: color3, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 3, name: colorName3, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 3, name: colorRole3, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 3, name: colorText3, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 4, name: color4, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 4, name: colorName4, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 4, name: colorRole4, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 4, name: colorText4, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 5, name: color5, widget: string, default: '#204F32' }
+              - { label: Grid cor nome - 5, name: colorName5, widget: string, default: 'Verde Leo' }
+              - { label: Grid cor função - 5, name: colorRole5, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 5, name: colorText5, widget: string, default: '#FFFFFF' }
+              - label: Imagem Card de cima (416 x 416)
+                name: card1
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card de baixo (416 x 416)
+                name: card2
+                widget: image
+                allow_multiple: false
+              - label: Imagem direita dos cards (2884 x 1622)
+                name: card3
+                widget: image
+                allow_multiple: false
+              - label: Imagem Parallax Final (2070 x 1380)
+                name: cardParallax
+                widget: image
+                allow_multiple: false
+          - label: 'Gol'
+            name: 'gol'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#7c7c7c' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#6F6F6F' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#FFFFFF' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Gol Smiles' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero (1920 x 1072)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - label: Logo
+                name: logo
+                widget: image
+                allow_multiple: false
+              - { label: Descrição do projeto, name: description, widget: text, default: '<u>Campanha de endomarketing para a Gol Smiles.</u> <br/> Um evento anual para os parceiros e colaboradores, que foi criado com o intuito de abrir portas para o próximo destino: a inovação.' }
+              - label: Card esquerda (844 x 475)
+                name: card1
+                widget: image
+                allow_multiple: false
+              - label: Card direita (844 x 475)
+                name: card2
+                widget: image
+                allow_multiple: false
+              - label: Poster (583 x 806)
+                name: poster
+                widget: image
+                allow_multiple: false
+              - label: Imagem pós poster (1760 x 990)
+                name: postPoster
+                widget: image
+                allow_multiple: false
+              - label: Imagem Parallax esquerda (391 x 638)
+                name: parallax1
+                widget: image
+                allow_multiple: false
+              - { label: Background parallax esquerda, name: parallax1Background, widget: string, default: 'linear-gradient(38deg,#8f8f90 50%,#6e6e6e);' }
+              - label: Imagem Parallax direita (1280 x 719)
+                name: parallax2
+                widget: image
+                allow_multiple: false
+              - { label: Background parallax direita, name: parallax2Background, widget: string, default: '#949495' }
+              - label: Imagem final (1760 x 990)
+                name: fullImage
+                widget: image
+                allow_multiple: false
+          - label: 'Lifelab'
+            name: 'lifelab'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#7c7c7c' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#103ae1' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#FFFFFF' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Gol Smiles' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero (1920 x 1072)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - { label: Descrição, name: description, widget: string, default: '<u>A Lifelab é uma lab de curadoria de conteúdo.</u> <br/>
+                        O desafio era criar uma marca que desse “voz” às pessoas - por isso as aspas abertas, - que representam as experiências colaborativas dos que buscam crescimento individual e humano. ' }
+              - label: DescriptionImage (195 x 126)
+                name: descriptionImage
+                widget: image
+                allow_multiple: false
+              - label: Parallax Image (1920 x 1080)
+                name: parallaxImage
+                widget: image
+                allow_multiple: false
+              - { label: Cor de fundo do Parallax, name: parallaxBackground, widget: string, default: '#f5f5f5' }
+              - label: Imagem após parallax (1760 x 1080)
+                name: postParallaxImage
+                widget: image
+                allow_multiple: false
+              - label: Título de grid de cor (393 x 112)
+                name: colorGridTitle
+                widget: image
+                allow_multiple: false
+              - label: Cor grid imagem 1 (666 x 375)
+                name: colorGridImage1
+                widget: image
+                allow_multiple: false
+              - { label: Cor hex 1, name: colorGridHex1, widget: string, default: '#0047FD' }
+              - { label: Cor nome 1, name: colorGridName1, widget: string, default: 'azul' }
+              - { label: Cor descrição 1, name: colorGridDesc1, widget: text, default: 'contentamento, <br />
+                            lealdade, paz, <br />
+                            <span>tranquilidade</span>, calma, <br />
+                            estabilidade, harmonia,<br />
+                            unidade, conﬁança,<br />
+                            verdade, segurança,<br />
+                            ordem e tecnologia. <br />' }
+              - label: Cor grid imagem 2 (672 x 375)
+                name: colorGridImage2
+                widget: image
+                allow_multiple: false
+              - { label: Cor hex 2, name: colorGridHex2, widget: string, default: '#FF6400' }
+              - { label: Cor nome 2, name: colorGridName2, widget: string, default: 'laranja' }
+              - { label: Cor descrição 2, name: colorGridDesc2, widget: text, default: 'humor, <span>energia, </span> <br />
+                            equilíbrio, calor, <br />
+                            entusiasmo, <br />
+                            <span>vibração,</span> expansão,<br />
+                            extravagância, <br />
+                            excessivo e <br />
+                            ﬂamejante' }
+              - label: Cor grid imagem 3 (111 x 262)
+                name: colorGridImage3
+                widget: image
+                allow_multiple: false
+              - { label: Cor hex 3, name: colorGridHex3, widget: string, default: '#000000' }
+              - { label: Cor nome 3, name: colorGridName3, widget: string, default: 'black' }
+              - { label: Cor descrição 3, name: colorGridDesc3, widget: text, default: 'poder, <br />
+                            sofisticação, <br />
+                            elegância, <br />
+                            riqueza, mistério <br />
+                            <span>profundidade </span>e <br />
+                            estilo.' }
+              - label: Imagem Parallax Final (1763 x 991)
+                name: imageParallaxFinal
+                widget: image
+                allow_multiple: false
+              - { label: Cor fundo parallax final, name: finalParallaxBackground, widget: string, default: '#f50' }

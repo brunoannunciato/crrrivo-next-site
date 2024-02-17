@@ -16,7 +16,7 @@ const projects = [
       image: "/images/thumb-leo.png",
       title: "Leo Madeiras",
       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projects/leo"
+      link: "/projetos/leo"
   },
 
   {
@@ -24,7 +24,7 @@ const projects = [
       image: "/images/thumb-gol.png",
       title: "Gol Smiles",
       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projects/gol"
+      link: "/projetos/gol-smiles"
   },
 
   {
@@ -38,7 +38,7 @@ const projects = [
   {
       id: 4,
       image: "/images/thumb-gioh.png",
-      title: "Gioh",
+      title: "Gióh",
       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
       link: "/projects/gioh"
   },

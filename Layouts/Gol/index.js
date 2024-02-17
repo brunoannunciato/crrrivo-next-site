@@ -11,9 +11,11 @@ import Image from 'next/image'
 import Container from '../../components/Container'
 import { Parallax } from 'react-scroll-parallax';
 
-const Gol = () => {
+const Gol = ({data}) => {
+    const theme = data.theme[0]
+    console.log(theme)
     return (
-        <div className="gol">
+        <div className="gol" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
             <title>Crrrivo</title>
             <link rel="shortcut icon" href="/favicon.ico" />
@@ -30,14 +32,14 @@ const Gol = () => {
             href="/favicon-16x16.png"
             />
         </Head>
-        <Header hideAt color='#FFFFFF' disableMixBlendMode/>
-        <SubHeader color='#FFFFFF' projectName="Gol Smiles"/>
+        <Header hideAt color={theme?.headerColor} disableMixBlendMode/>
+        <SubHeader color={theme?.headerColor} projectName="Gol Smiles"/>
 
         <div className="gol__hero">
             <Image
                 quality={100}
                 priority
-                src="/projects/gol/hero.png"
+                src={`/${theme?.hero}`}
                 width={1920}
                 height={1072}
             />
@@ -48,23 +50,20 @@ const Gol = () => {
             <Image
                 quality={100}
                 priority
-                src="/projects/gol/stamp.png"
+                src={`/${theme?.logo}`}
                 width={340}
                 height={140}
             />
         </div>
 
-        <p className="gol__description">
-            <u>Campanha de endomarketing para a Gol Smiles.</u>
-            Um evento anual para os parceiros e colaboradores, que foi criado com o intuito de abrir portas para o próximo destino: a inovação.
-        </p>
+        <p className="gol__description" dangerouslySetInnerHTML={{__html: theme?.description }}/>
 
         <div className="gol__cards">
             <div className="gol__card">
                 <Image
                     quality={100}
                     priority
-                    src="/projects/gol/card-1.png"
+                    src={`/${theme?.card1}`}
                     width={844}
                     height={475}
                 />
@@ -74,7 +73,7 @@ const Gol = () => {
                 <Image
                     quality={100}
                     priority
-                    src="/projects/gol/card-2.png"
+                    src={`/${theme?.card2}`}
                     width={844}
                     height={475}
                 />
@@ -87,7 +86,7 @@ const Gol = () => {
                 <Image
                     quality={100}
                     priority
-                    src="/projects/gol/poster.png"
+                    src={`/${theme?.poster}`}
                     width={583}
                     height={806}
                 />
@@ -99,31 +98,31 @@ const Gol = () => {
                 <Image
                     quality={100}
                     priority
-                    src="/projects/gol/outdoor.png"
+                    src={`/${theme?.postPoster}`}
                     width={1760}
                     height={990}
                 />
             </div>
             <div className="gol__products-wrapper">
-                <div className="gol__card">
+                <div className="gol__card" style={{background: theme?.parallax1Background}}>
                     <Parallax speed={-13}>
                         <Image
                             quality={100}
                             priority
-                            src="/projects/gol/card.png"
+                            src={`/${theme?.parallax1}`}
                             width={391}
                             height={638}
                         />
                     </Parallax>
                 </div>
 
-                <div className="gol__bag">
+                <div className="gol__bag" style={{background: theme?.parallax2Background}}>
                     <Parallax speed={13}>
                         <div className="gol__bag-wrapper">
                             <Image
                                 quality={100}
                                 priority
-                                src="/projects/gol/bag.png"
+                                src={`/${theme?.parallax2}`}
                                 width={1280}
                                 height={719}
                             />
@@ -136,14 +135,14 @@ const Gol = () => {
                     <Image
                         quality={100}
                         priority
-                        src="/projects/gol/notebook.png"
+                        src={`/${theme?.fullImage}`}
                         width={1760}
                         height={990}
                     />
                 </div>
         </Container>
 
-        <Footer color='#FFFFFF' backgroundColor='#6F6F6F'/>
+        <Footer color={theme?.footerColor} backgroundColor={theme?.footerBackground}/>
         </div>
     )
 }

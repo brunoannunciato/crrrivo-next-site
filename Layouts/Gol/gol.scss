@@ -1,5 +1,4 @@
 .gol {
-    background-color: #7C7C7C;
     min-height: 100vh;
 
     &__hero {
@@ -73,8 +72,6 @@
     &__card {
         margin-top: -3px;
         overflow: hidden;
-        background: rgb(143,143,144);
-        background: linear-gradient(38deg, rgba(143,143,144,1) 50%, rgba(110,110,110,1) 100%);
 
         > div {
             margin-top: -40px;
@@ -84,7 +81,6 @@
     &__bag {
         overflow: hidden;
         margin-top: -3px;
-        background-color: #949495;
         flex-grow: 1;
 
         &-wrapper {
