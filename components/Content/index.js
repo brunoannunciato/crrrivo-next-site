@@ -44,7 +44,7 @@ const Content = () => {
       }
     });
 
-    setTitleHeight(leftTitleRef.current.clientHeight);
+    setTitleHeight(leftTitleRef.current.offsetHeight);
   }, []);
 
   return (

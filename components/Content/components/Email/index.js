@@ -6,7 +6,9 @@ const Email = ({ titleHeight, mailRef }) => {
   const [marginSize, setMarginSize] = useState(0);
 
   useEffect(() => {
-    setMarginSize(titleHeight - mailRef.current.clientHeight);
+    const mailHeight = mailRef.current.offsetHeight
+    setMarginSize(titleHeight - mailHeight);
+
   }, [titleHeight, mailRef]);
 
   return (
@@ -14,7 +16,7 @@ const Email = ({ titleHeight, mailRef }) => {
       <p
         className="mail"
         ref={mailRef}
-        style={{ top: `${marginSize}px` }}
+        style={{ top: `calc(15vh + ${marginSize}px + 55px)` }}
       >
         CONTATO@
         <br />
