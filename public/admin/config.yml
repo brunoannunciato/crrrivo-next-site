@@ -90,7 +90,7 @@ collections:
               - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#7c7c7c' }
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#6F6F6F' }
-              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de texto do rodapé, name: footerTextColor, widget: string, default: '#FFFFFF' }
               - label: Thumbnail página de projetos (849 x 478)
                 name: thumbnail
                 widget: image
@@ -217,7 +217,7 @@ collections:
                 allow_multiple: false
               - { label: Cor fundo parallax final, name: finalParallaxBackground, widget: string, default: '#f50' }
           - label: 'Gioh'
-            name: 'lifelab'
+            name: 'Gioh'
             widget: object
             fields:
               - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#c19d85' }
@@ -308,7 +308,7 @@ collections:
                 widget: image
                 allow_multiple: false
               - label: Imagem antes do footer (214 x 69)
-                name: imagePostCards
+                name: imagePreFooter
                 widget: image
                 allow_multiple: false
               - { label: Texto antes do footer, name: preFooterText, widget: string, default: "versão reduzida<br />2cm de altura" }

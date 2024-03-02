@@ -9,9 +9,11 @@ import Container from '../../components/Container'
 import Image from 'next/image'
 import { Parallax } from 'react-scroll-parallax'
 
-const Gol = () => {
+const Gioh = ({data}) => {
+    const theme = data.theme[0] && data.theme[0]
+    console.log(theme)
     return (
-        <div className="gioh">
+        <div className="gioh" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
                 <title>Crrrivo</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
@@ -28,15 +30,15 @@ const Gol = () => {
                 href="/favicon-16x16.png"
                 />
             </Head>
-            <Header hideAt color='#211C18' disableMixBlendMode/>
-            <SubHeader color='#211C18' projectName="Gióh Acupuntura"/>
+            <Header hideAt color={theme?.headerColor} disableMixBlendMode/>
+            <SubHeader color={theme?.headerColor} projectName="Gióh Acupuntura"/>
 
             <Container>
                 <div className="gioh__hero-wrapper">
                     <div className="gioh__hero">
                         <Parallax speed={-20}>
                             <Image
-                                src="/projects/gioh/hero.png"
+                                src={`/${theme?.hero}`}
                                 width={1764}
                                 height={1224}
                                 quality={100}
@@ -49,7 +51,7 @@ const Gol = () => {
                 <div className="gioh__description-wrapper">
                     <div className="gioh__logo">
                         <Image
-                            src="/projects/gioh/logo.png"
+                            src={`/${theme?.descriptionImage}`}
                             width={571}
                             height={310}
                             quality={100}
@@ -57,28 +59,26 @@ const Gol = () => {
                         />
                     </div>
                     
-                    <p className="gioh__description">
-                        <u>Gióh é um projeto que surgiu para ressignificar o mercado de acupuntura no Brasil.</u> Andando totalmente na contramão do setor, inovando em design, gestão e com foco em bem estar. A marca busca originalidade, além da qualidade do serviço.
-                    </p>
+                    <p className="gioh__description" style={{color: theme?.descriptionColor}} dangerouslySetInnerHTML={{__html: theme?.description}}/>
                 </div>
             </Container>
 
             <div className="gioh__color-grid">
-                <div className="gioh__color">
-                    <p className="gioh__color-text">
-                        #C19D85
+                <div className="gioh__color" style={{backgroundImage: theme?.color1Image}}>
+                    <p className="gioh__color-text" style={{color: theme?.color1TextColor}}>
+                        {theme?.color1hex}
                     </p>
                 </div>
 
-                <div className="gioh__color">
-                    <p className="gioh__color-text">
-                        #FFDCC5
+                <div className="gioh__color" style={{backgroundColor: theme?.color2background}}>
+                    <p className="gioh__color-text" style={{color: theme?.color2TextColor}}>
+                        {theme?.color2hex}
                     </p>
                 </div>
 
-                <div className="gioh__color">
-                    <p className="gioh__color-text">
-                        #211C18
+                <div className="gioh__color" style={{backgroundColor: theme?.color3background}}>
+                    <p className="gioh__color-text" style={{color: theme?.color3TextColor}}>
+                        {theme?.color3hex}
                     </p>
                 </div>
             </div>
@@ -88,7 +88,7 @@ const Gol = () => {
                 <Container className="gioh__oooh">
                     <div className="gioh__oooh-image">
                         <Image
-                            src="/projects/gioh/oooh.png"
+                            src={`/${theme?.centralImage}`}
                             width={1307}
                             height={192}
                             quality={100}
@@ -97,11 +97,9 @@ const Gol = () => {
                     </div>
 
                     <div className="gioh__oooh-text-wrapper">
-                        <p className="gioh__oooh-text">
-                            nós pensamos em um espaço onde você se sinta segura, confortável e livre para cuidar do seu corpo e mente. a gióh é um lugar para o seu autocuidado. 
-                        <span className="gioh__at">
-                            @giohacupuntura
-                        </span>
+                        <p className="gioh__oooh-text" style={{color: theme?.centralTextColor}}>
+                            <div dangerouslySetInnerHTML={{__html: theme?.centralText}}/>
+                        <span className="gioh__at" dangerouslySetInnerHTML={{__html: theme?.centralAt}}/>
                         </p>
                     </div>
                 </Container>
@@ -111,7 +109,7 @@ const Gol = () => {
             <div className="gioh__sign">
                 <Parallax speed={-20}>
                     <Image
-                        src="/projects/gioh/sign.png"
+                        src={`/${theme?.parallax1}`}
                         width={1760}
                         height={990}
                         quality={100}
@@ -124,7 +122,7 @@ const Gol = () => {
             <div className="gioh__candle">
                 <Parallax speed={-20}>
                     <Image
-                        src="/projects/gioh/candle.png"
+                        src={`/${theme?.parallax2}`}
                         width={1760}
                         height={990}
                         quality={100}
@@ -137,7 +135,7 @@ const Gol = () => {
                 <div className="gioh__grid-wrapper">
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-1.png"
+                            src={`/${theme?.card1}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -147,7 +145,7 @@ const Gol = () => {
 
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-2.png"
+                            src={`/${theme?.card2}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -157,7 +155,7 @@ const Gol = () => {
 
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-3.png"
+                            src={`/${theme?.card3}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -167,7 +165,7 @@ const Gol = () => {
 
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-4.png"
+                            src={`/${theme?.card4}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -177,7 +175,7 @@ const Gol = () => {
 
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-5.png"
+                            src={`/${theme?.card5}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -187,7 +185,7 @@ const Gol = () => {
 
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-6.png"
+                            src={`/${theme?.card6}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -197,7 +195,7 @@ const Gol = () => {
 
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-7.png"
+                            src={`/${theme?.card7}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -207,7 +205,7 @@ const Gol = () => {
 
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-8.png"
+                            src={`/${theme?.card8}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -216,7 +214,7 @@ const Gol = () => {
                     </div>
                     <div className="gioh__card">
                         <Image
-                            src="/projects/gioh/card-9.png"
+                            src={`/${theme?.card9}`}
                             width={358}
                             height={358}
                             quality={100}
@@ -228,7 +226,7 @@ const Gol = () => {
 
             <div className="gioh__logo-grid">
                 <Image
-                    src="/projects/gioh/logo-grid.png"
+                    src={`/${theme?.imagePostCards}`}
                     width={830}
                     height={395}
                     quality={100}
@@ -237,13 +235,10 @@ const Gol = () => {
             </div>
 
             <div className="gioh__footer">
-                <p className="gioh__footer-text">
-                    versão reduzida <br />
-                    2cm de altura
-                </p>
+                <p className="gioh__footer-text" style={{color: theme?.preFooterTextColor}} dangerouslySetInnerHTML={{__html: theme?.preFooterText}}/>
                 <div className="gioh__logo-mini">
                     <Image
-                        src="/projects/gioh/logo-mini.png"
+                        src={`/${theme?.imagePreFooter}`}
                         width={214}
                         height={69}
                         quality={100}
@@ -254,9 +249,9 @@ const Gol = () => {
             </Container>
 
 
-            <Footer color='#211C18' backgroundColor='#b88f74'/>
+            <Footer color={theme?.footerColor} backgroundColor={theme?.footerBackground}/>
         </div>
     )
 }
 
-export default Gol
+export default Gioh
