@@ -148,15 +148,15 @@ collections:
                 name: thumbnail
                 widget: image
                 allow_multiple: false
-              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Gol Smiles' }
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Lifelab' }
               - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Hero (1920 x 1072)
                 name: hero
                 widget: image
                 allow_multiple: false
-              - { label: Descrição, name: description, widget: string, default: '<u>A Lifelab é uma lab de curadoria de conteúdo.</u> <br/>
+              - { label: Descrição, name: description, widget: Text, default: '<u>A Lifelab é uma lab de curadoria de conteúdo.</u> <br/>
                         O desafio era criar uma marca que desse “voz” às pessoas - por isso as aspas abertas, - que representam as experiências colaborativas dos que buscam crescimento individual e humano. ' }
-              - label: DescriptionImage (195 x 126)
+              - label: Imagem da descrição (195 x 126)
                 name: descriptionImage
                 widget: image
                 allow_multiple: false

@@ -1,11 +1,13 @@
 import { getAllPostIds, getPostData } from "../../utils/projects"
 import Leo from '../../Layouts/Leo'
+import LifeLab from '../../Layouts/LifeLab'
 import Gol from '../../Layouts/Gol'
 
 
 const  themes = {
     leo: Leo,
-    gol: Gol
+    gol: Gol,
+    lifelab: LifeLab
 }
 
 const Project = (data) => {

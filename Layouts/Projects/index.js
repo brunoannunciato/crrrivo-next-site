@@ -32,7 +32,7 @@ const projects = [
       image: "/images/thumb-lifelab.png",
       title: "Lifelab",
       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projects/life-lab"
+      link: "/projetos/lifelab"
   },
 
   {
