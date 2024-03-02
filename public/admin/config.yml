@@ -216,3 +216,102 @@ collections:
                 widget: image
                 allow_multiple: false
               - { label: Cor fundo parallax final, name: finalParallaxBackground, widget: string, default: '#f50' }
+          - label: 'Gioh'
+            name: 'lifelab'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#c19d85' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#211C18' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#b88f74' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#211C18' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Gióh' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero (1764 x 1224)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - { label: Descrição, name: description, widget: Text, default: '<u>Gióh é um projeto que surgiu para ressignificar o mercado de acupuntura no Brasil.</u> Andando totalmente na contramão do setor, inovando em design, gestão e com foco em bem estar. A marca busca originalidade, além da qualidade do serviço.' }
+              - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#211C18" } 
+              - label: Imagem da descrição (571 x 310)
+                name: descriptionImage
+                widget: image
+                allow_multiple: false
+              - { label: hexadecimal da primeira cor, name: color1Hex, widget: string, default: "#C19D85" } 
+              - { label: cor de texto da primeira cor, name: color1TextColor, widget: string, default: "#FFDCC5" } 
+              - label: Imagem da cor
+                name: color1Image
+                widget: image
+                allow_multiple: false
+              - { label: hexadecimal da segunda cor, name: color2Hex, widget: string, default: "#C19D85" } 
+              - { label: cor de texto da segunda cor, name: color2TextColor, widget: string, default: "#C19D85" }
+              - { label: cor de fundo da segunda cor, name: color2background, widget: string, default: "#FFDCC5" }
+              - { label: hexadecimal da terceira cor, name: color3Hex, widget: string, default: "#211C18" } 
+              - { label: cor de texto da terceira cor, name: color3TextColor, widget: string, default: "#E5C6B1" }
+              - { label: cor de fundo da terceira cor, name: color3background, widget: string, default: "#211C18" }
+              - label: Imagem central (1307 x 192)
+                name: centralImage
+                widget: image
+                allow_multiple: false
+              - { label: Texto central, name: centralText, widget: text, default: "nós pensamos em um espaço onde você se sinta segura, confortável e livre para cuidar do seu corpo e mente. a gióh é um lugar para o seu autocuidado. " }
+              - { label: Arroba central, name: centralAt, widget: string, default: "@giohacupuntura" }
+              - { label: Cor de texto central, name: centralTextColor, widget: string, default: "#ffffff" }
+              - label: Imagem Parallax 1 (1760 x 990)
+                name: parallax1
+                widget: image
+                allow_multiple: false
+              - label: Imagem Parallax 2 (1760 x 990)
+                name: parallax2
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 1 (358 x 358)
+                name: card1
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 2 (358 x 358)
+                name: card2
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 3 (358 x 358)
+                name: card3
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 4 (358 x 358)
+                name: card4
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 5 (358 x 358)
+                name: card5
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 6 (358 x 358)
+                name: card6
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 7 (358 x 358)
+                name: card7
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 8 (358 x 358)
+                name: card8
+                widget: image
+                allow_multiple: false
+              - label: Imagem Card 9 (358 x 358)
+                name: card9
+                widget: image
+                allow_multiple: false
+              - label: Imagem pós cards (830 x 395)
+                name: imagePostCards
+                widget: image
+                allow_multiple: false
+              - label: Imagem antes do footer (214 x 69)
+                name: imagePostCards
+                widget: image
+                allow_multiple: false
+              - { label: Texto antes do footer, name: preFooterText, widget: string, default: "versão reduzida<br />2cm de altura" }
+              - { label: cor do texto antes do footer, name: preFooterTextColor, widget: string, default: "#FFDCC5" }
+
+              
