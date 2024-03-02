@@ -66,19 +66,19 @@ const Gioh = ({data}) => {
             <div className="gioh__color-grid">
                 <div className="gioh__color" style={{backgroundImage: theme?.color1Image}}>
                     <p className="gioh__color-text" style={{color: theme?.color1TextColor}}>
-                        {theme?.color1hex}
+                        {theme?.color1Hex}
                     </p>
                 </div>
 
                 <div className="gioh__color" style={{backgroundColor: theme?.color2background}}>
                     <p className="gioh__color-text" style={{color: theme?.color2TextColor}}>
-                        {theme?.color2hex}
+                        {theme?.color2Hex}
                     </p>
                 </div>
 
                 <div className="gioh__color" style={{backgroundColor: theme?.color3background}}>
                     <p className="gioh__color-text" style={{color: theme?.color3TextColor}}>
-                        {theme?.color3hex}
+                        {theme?.color3Hex}
                     </p>
                 </div>
             </div>
