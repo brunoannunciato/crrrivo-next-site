@@ -317,5 +317,117 @@ collections:
                 allow_multiple: false
               - { label: Texto antes do footer, name: preFooterText, widget: string, default: "versão reduzida<br />2cm de altura" }
               - { label: cor do texto antes do footer, name: preFooterTextColor, widget: string, default: "#FFDCC5" }
-
+          - label: 'Fyll'
+            name: 'Fyll'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#C26A48' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#ffffff' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#b45e3c' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#ffffff' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Fyll' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero (1150 x 815)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - { label: Descrição, name: description, widget: Text, default: "Uma empresa sobre RH: relações humanas. Diferente de todas as outras, a Fyll surgiu, não para falar de recursos humanos, mas em relações. Veio da necessidade de sentir as pessoas, além de trazer um apoio e uma escuta ativa nos seus movimentos. Projeto de branding baseado em pessoas." }
+              - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#ffffff" } 
+              - label: Imagem da descrição (540 x 282)
+                name: descriptionImage
+                widget: image
+                allow_multiple: false
+              - label: Posts imagem perfil (86 x 48)
+                name: postProfile
+                widget: image
+                allow_multiple: false
+              - label: Posts like icone (27 x 26)
+                name: postLike
+                widget: image
+                allow_multiple: false
+              - label: Posts comentário icone (26 x 26)
+                name: postComment
+                widget: image
+                allow_multiple: false
+              - label: Posts compartilhar icone (27 x 24)
+                name: postShare
+                widget: image
+                allow_multiple: false
+              - label: Posts salvar icone (20 x 25)
+                name: postShare
+                widget: image
+                allow_multiple: false
+              - label: Card 1 (535 x 535)
+                name: post1
+                widget: image
+                allow_multiple: false
+              - label: Card 2 (535 x 535)
+                name: post2
+                widget: image
+                allow_multiple: false
+              - label: Card 3 (535 x 535)
+                name: post3
+                widget: image
+                allow_multiple: false
+              - { label: Cor de background das telas, name: screensBackground, widget: string, default: "#00534E" }
+              - label: Tela 1 (410 x 728)
+                name: screen1
+                widget: image
+                allow_multiple: false
+              - label: Tela 2 (410 x 728)
+                name: screen2
+                widget: image
+                allow_multiple: false
+              - label: Tela 3 (410 x 728)
+                name: screen3
+                widget: image
+                allow_multiple: false
+              - { label: Cor de background do parallax, name: parallaxBackground, widget: string, default: "#FFFFFF" }
+              - label: Imagem parallax (363 x 584)
+                name: parallaxImage
+                widget: image
+                allow_multiple: false
+              - { label: Grid cor - 1, name: color1, widget: string, default: '#00534E' }
+              - { label: Grid cor nome - 1, name: colorName1, widget: string, default: 'Verde floresta' }
+              - { label: Grid cor função - 1, name: colorRole1, widget: string, default: 'Principal' }
+              - { label: Grid cor de texto - 1, name: colorText1, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 2, name: color2, widget: string, default: '#C26A48' }
+              - { label: Grid cor nome - 2, name: colorName2, widget: string, default: 'marrom terra' }
+              - { label: Grid cor função - 2, name: colorRole2, widget: string, default: 'secundária' }
+              - { label: Grid cor de texto - 2, name: colorText2, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 3, name: color3, widget: string, default: '#203F72' }
+              - { label: Grid cor nome - 3, name: colorName3, widget: string, default: 'azul oceano' }
+              - { label: Grid cor função - 3, name: colorRole3, widget: string, default: 'secundária' }
+              - { label: Grid cor de texto - 3, name: colorText3, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor - 4, name: color4, widget: string, default: '##FFE2D9' }
+              - { label: Grid cor nome - 4, name: colorName4, widget: string, default: 'Bege areia' }
+              - { label: Grid cor função - 4, name: colorRole4, widget: string, default: 'apoio' }
+              - { label: Grid cor de texto - 4, name: colorText4, widget: string, default: '#DDB2A6' }
+              - { label: Grid cor - 5, name: color5, widget: string, default: '#BC6282' }
+              - { label: Grid cor nome - 5, name: colorName5, widget: string, default: 'Rosa flor' }
+              - { label: Grid cor função - 5, name: colorRole5, widget: string, default: 'apoio' }
+              - { label: Grid cor de texto - 5, name: colorText5, widget: string, default: '#FFFFFF' }
+              - label: Sobreposição background (1920 x 1280)
+                name: backgroundImage
+                widget: image
+                allow_multiple: false
+              - label: Logo em sobreposição (441 x 594)
+                name: backgroundLogo
+                widget: image
+                allow_multiple: false
+              - { label: Texto de sobreposição, name: rightText, widget: text, default: 'simplificando<br />as relações<br />entre pessoas.' }
+              - { label: Cor do texto de sobreposição, name: rightTextColor, widget: string, default: '#ffffff' }
+              - label: Imagem pós sobreposição (1758 x 988)
+                name: postImage
+                widget: image
+                allow_multiple: false
+              - label: Imagem pré footer (793 x 390)
+                name: preImage
+                widget: image
+                allow_multiple: false
               
+             
