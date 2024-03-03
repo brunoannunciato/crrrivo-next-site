@@ -15,7 +15,6 @@ const  themes = {
 const Project = (data) => {
     const theme = data.theme[0].type
     const Layout = themes[theme]
-    console.log(data)
     return(
         <Layout data={data} />
     )

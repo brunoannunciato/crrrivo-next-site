@@ -11,7 +11,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 const Gioh = ({data}) => {
     const theme = data.theme[0] && data.theme[0]
-    console.log(theme)
+    
     return (
         <div className="gioh" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>

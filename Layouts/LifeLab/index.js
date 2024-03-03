@@ -9,9 +9,11 @@ import { Parallax } from 'react-scroll-parallax'
 import './life-lab.scss'
 import Container from '../../components/Container'
 
-const Lifelab = () => {
+const Lifelab = ({data}) => {
+    const theme = data.theme[0]
+    console.log(theme)
     return (
-        <div className="life-lab">
+        <div className="life-lab" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
                 <title>Crrrivo</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
@@ -27,13 +29,13 @@ const Lifelab = () => {
                 href="/favicon-16x16.png"
                 />
             </Head>
-            <Header hideAt color='#FFFFFF' disableMixBlendMode/>
-            <SubHeader color='#FFFFFF' projectName="LifeLab"/>
+            <Header hideAt color={theme?.headerColor} disableMixBlendMode/>
+            <SubHeader color={theme?.headerColor} projectName="LifeLab"/>
 
             <div className="life-lab__hero">
                 <div className="life-lab__hero-logo">
                     <Image
-                        src="/projects/lifelab/hero-logo.png"
+                        src={`/${theme?.heroLogo}`}
                         width={653}
                         height={274}
                         priority
@@ -42,7 +44,7 @@ const Lifelab = () => {
 
                 <div className="life-lab__hero-right">
                     <Image
-                        src="/projects/lifelab/hero-right.png"
+                        src={`/${theme?.hero}`}
                         width={1117}
                         height={1072}
                         priority
@@ -52,14 +54,11 @@ const Lifelab = () => {
 
             <Container>
                 <div className="life-lab__description-wrapper">
-                    <p className="life-lab__description">
-                        <u>A Lifelab é uma lab de curadoria de conteúdo.</u> <br/>
-                        O desafio era criar uma marca que desse “voz” às pessoas - por isso as aspas abertas, - que representam as experiências colaborativas dos que buscam crescimento individual e humano. 
-                    </p>
+                    <p className="life-lab__description" dangerouslySetInnerHTML={{__html: theme?.description}} />
 
                     <div className="life-lab__quote">
                         <Image
-                            src="/projects/lifelab/quote.png"
+                            src={`/${theme?.descriptionImage}`}
                             width={195}
                             height={126}
                             priority
@@ -68,11 +67,11 @@ const Lifelab = () => {
                 </div>
             </Container>
 
-            <div className="life-lab__plastic-wrapper">
+            <div className="life-lab__plastic-wrapper" style={{backgroundColor: theme?.parallaxBackground}}>
                 <Parallax speed={-20}>
                     <div className="life-lab__plastic">
                         <Image
-                            src="/projects/lifelab/plastic.png"
+                            src={`/${theme?.parallaxImage}`}
                             width={1920}
                             height={1080}
                             priority
@@ -96,7 +95,7 @@ const Lifelab = () => {
             <div className="life-lab__colors">
                 <div className="life-lab__colors-title">
                     <Image
-                        src="/projects/lifelab/colors-title.png"
+                        src={`/${theme?.colorGridTitle}`}
                         width={393}
                         height={112}
                         quality={100}
@@ -107,7 +106,7 @@ const Lifelab = () => {
                 <div className="life-lab__colors-life">
                     <div className="life-lab__colors-life-image">
                         <Image
-                            src="/projects/lifelab/life-logo.png"
+                            src={`/${theme?.colorGridImage1}`}
                             width={666}
                             height={375}
                             quality={100}
@@ -117,29 +116,21 @@ const Lifelab = () => {
 
                     <div className="life-lab__colors-description">
                         <p className="life-lab__colors-sup">
-                            azul
+                            {theme?.colorGridName1}
                         </p>
 
                         <p className="life-lab__colors-hex">
-                            #0047FD
+                            {theme?.colorGridHex1}
                         </p>
 
-                        <p className="life-lab__colors-desc">
-                            contentamento, <br />
-                            lealdade, paz, <br />
-                            <span>tranquilidade</span>, calma, <br />
-                            estabilidade, harmonia,<br />
-                            unidade, conﬁança,<br />
-                            verdade, segurança,<br />
-                            ordem e tecnologia. <br />
-                        </p>
+                        <p className="life-lab__colors-desc" dangerouslySetInnerHTML={{__html: theme?.colorGridDesc1}} />
                     </div>
                 </div>
 
-                <div className="life-lab__colors-lab">
+                <div className="life-lab__colors-lab" style={{background: theme?.colorGridHex2}}>
                     <div className="life-lab__colors-lab-image">
                         <Image
-                            src="/projects/lifelab/lab-logo.png"
+                            src={`/${theme?.colorGridImage2}`}
                             width={672}
                             height={375}
                             quality={100}
@@ -149,29 +140,21 @@ const Lifelab = () => {
 
                     <div className="life-lab__colors-description">
                         <p className="life-lab__colors-sup">
-                            laranja
+                            {theme?.colorGridName2}
                         </p>
 
                         <p className="life-lab__colors-hex">
-                            #FF6400
+                            {theme?.colorGridHex2}
                         </p>
 
-                        <p className="life-lab__colors-desc">
-                            humor, <span>energia, </span> <br />
-                            equilíbrio, calor, <br />
-                            entusiasmo, <br />
-                            <span>vibração,</span> expansão,<br />
-                            extravagância, <br />
-                            excessivo e <br />
-                            ﬂamejante
-                        </p> 
+                        <p className="life-lab__colors-desc" dangerouslySetInnerHTML={{__html: theme?.colorGridDesc2}} />
                     </div> 
                 </div>
 
-                <div className="life-lab__colors-expo">
+                <div className="life-lab__colors-expo" style={{background: theme?.colorGridHex3}}>
                     <div className="life-lab__colors-expo-image">
                         <Image
-                            src="/projects/lifelab/expo.png"
+                            src={`/${theme?.colorGridImage3}`}
                             width={111}
                             height={262}
                             quality={100}
@@ -181,21 +164,14 @@ const Lifelab = () => {
 
                     <div className="life-lab__colors-description">
                         <p className="life-lab__colors-sup">
-                            black
+                        {theme?.colorGridName3}
                         </p>
 
                         <p className="life-lab__colors-hex">
-                            #000000
+                            {theme?.colorGridHex3}
                         </p>
 
-                        <p className="life-lab__colors-desc">
-                            poder, <br />
-                            sofisticação, <br />
-                            elegância, <br />
-                            riqueza, mistério <br />
-                            <span>profundidade </span>e <br />
-                            estilo.
-                        </p>
+                        <p className="life-lab__colors-desc" dangerouslySetInnerHTML={{__html: theme?.colorGridDesc3}} />
                     </div> 
                 </div>
             </div>
@@ -203,9 +179,9 @@ const Lifelab = () => {
             <Container>
                 <div className="life-lab__stickers-wrapper">
                     <Parallax speed={-30}>
-                        <div className="life-lab__stickers">
+                        <div className="life-lab__stickers" style={{backgroundColor: theme?.finalParallaxBackground}}>
                             <Image
-                                src="/projects/lifelab/stickers.png"
+                                src={`/${theme?.imageParallaxFinal}`}
                                 width={1763}
                                 height={991}
                                 quality={100}
@@ -217,7 +193,7 @@ const Lifelab = () => {
             </Container>
 
 
-            <Footer color='#FFFFFF' backgroundColor='#103ae1'/>
+            <Footer color={theme?.footerColor} backgroundColor={theme?.footerBackground}/>
         </div>
     )
 }

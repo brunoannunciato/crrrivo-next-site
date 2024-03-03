@@ -16,7 +16,7 @@ theme:
     footerBackground: "#103ae1"
     thumbnail: images/thumb-lifelab.png
     colorGridTitle: images/lifelab-colors-title.png
-    backgroundColor: "#7c7c7c"
+    backgroundColor: "#0047F8"
     headerColor: "#FFFFFF"
     colorGridDesc1: contentamento, <br /> lealdade, paz, <br />
       <span>tranquilidade</span>, calma, <br /> estabilidade, harmonia,<br />
@@ -29,6 +29,7 @@ theme:
       mistério <br /> <span>profundidade </span>e <br /> estilo.
     type: lifelab
     hero: images/lifelab-hero-right.png
+    heroLogo: images/lifelab-hero-logo.png
     finalParallaxBackground: "#f50"
     description: "<u>A Lifelab é uma lab de curadoria de conteúdo.</u> <br/> O
       desafio era criar uma marca que desse “voz” às pessoas - por isso as aspas

@@ -140,7 +140,7 @@ collections:
             name: 'lifelab'
             widget: object
             fields:
-              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#7c7c7c' }
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#0047F8' }
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#103ae1' }
               - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#FFFFFF' }
@@ -152,6 +152,10 @@ collections:
               - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Hero (1920 x 1072)
                 name: hero
+                widget: image
+                allow_multiple: false
+              - label: Logo Hero (653 x 274)
+                name: heroLogo
                 widget: image
                 allow_multiple: false
               - { label: Descrição, name: description, widget: Text, default: '<u>A Lifelab é uma lab de curadoria de conteúdo.</u> <br/>

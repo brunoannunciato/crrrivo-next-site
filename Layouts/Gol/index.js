@@ -13,7 +13,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 const Gol = ({data}) => {
     const theme = data.theme[0]
-    console.log(theme)
+
     return (
         <div className="gol" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
