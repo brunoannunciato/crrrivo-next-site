@@ -5,9 +5,11 @@ theme:
     colorText2: "#FFFFFF"
     colorName1: Verde floresta
     colorText3: "#FFFFFF"
-    projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
-      mudanças são a base do nosso raciocínio criativo e estratégico, que parte
-      das pessoas ao mesmo tempo em que as coloca no centro de tudo.
+    projectDescription: "Uma empresa sobre RH: relações humanas. Diferente de todas
+      as outras, a Fyll surgiu, não para falar de recursos humanos, mas em
+      relações. Veio da necessidade de sentir as pessoas, além de trazer um
+      apoio e uma escuta ativa nos seus movimentos. Projeto de branding baseado
+      em pessoas."
     colorName2: marrom terra
     parallaxImage: images/fyll-phone-transparent.png
     colorText4: "#DDB2A6"
