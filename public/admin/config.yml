@@ -358,7 +358,7 @@ collections:
                 widget: image
                 allow_multiple: false
               - label: Posts salvar icone (20 x 25)
-                name: postShare
+                name: postSave
                 widget: image
                 allow_multiple: false
               - label: Card 1 (535 x 535)
