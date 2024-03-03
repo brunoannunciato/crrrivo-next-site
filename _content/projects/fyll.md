@@ -1,0 +1,61 @@
+---
+title: fyll
+theme:
+  - colorText1: "#FFFFFF"
+    colorText2: "#FFFFFF"
+    colorName1: Verde floresta
+    colorText3: "#FFFFFF"
+    projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
+      mudanças são a base do nosso raciocínio criativo e estratégico, que parte
+      das pessoas ao mesmo tempo em que as coloca no centro de tudo.
+    colorName2: marrom terra
+    parallaxImage: images/fyll-phone-transparent.png
+    colorText4: "#DDB2A6"
+    screen1: images/fyll-player-1.png
+    colorName3: azul oceano
+    parallaxBackground: "#FFFFFF"
+    colorText5: "#FFFFFF"
+    screen2: images/fyll-player-2.png
+    colorName4: Bege areia
+    descriptionColor: "#ffffff"
+    screen3: images/fyll-player-3.png
+    colorName5: Rosa flor
+    footerColor: "#ffffff"
+    postProfile: images/fyll-card-logo.png
+    footerBackground: "#b45e3c"
+    rightText: simplificando<br />as relações<br />entre pessoas.
+    thumbnail: images/thumb-fyll.png
+    backgroundImage: images/fyll-landscape.png
+    color1: "#00534E"
+    color2: "#C26A48"
+    color3: "#203F72"
+    color4: "##FFE2D9"
+    post1: images/fyll-card-1.png
+    color5: "#BC6282"
+    post2: images/fyll-card-2.png
+    post3: images/fyll-card-3.png
+    screensBackground: "#00534E"
+    backgroundColor: "#C26A48"
+    headerColor: "#ffffff"
+    postLike: images/fyll-card-btn-1.png
+    preImage: images/fyll-logo-guide.png
+    colorRole1: Principal
+    colorRole2: secundária
+    backgroundLogo: images/fyll-k.png
+    colorRole3: secundária
+    type: Fyll
+    rightTextColor: "#ffffff"
+    hero: images/fyll-hero.png
+    postImage: images/fyll-logo-bg.png
+    colorRole4: apoio
+    colorRole5: apoio
+    description: "Uma empresa sobre RH: relações humanas. Diferente de todas as
+      outras, a Fyll surgiu, não para falar de recursos humanos, mas em
+      relações. Veio da necessidade de sentir as pessoas, além de trazer um
+      apoio e uma escuta ativa nos seus movimentos. Projeto de branding baseado
+      em pessoas."
+    postComment: images/fyll-card-btn-2.png
+    descriptionImage: images/fyll-logo.png
+    projectTitle: Fyll
+    postShare: images/fyll-card-btn-3.png
+---
