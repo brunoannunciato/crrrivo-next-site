@@ -3,13 +3,15 @@ import Leo from '../../Layouts/Leo'
 import LifeLab from '../../Layouts/LifeLab'
 import Gol from '../../Layouts/Gol'
 import Gioh from '../../Layouts/Gioh'
+import Fyll from '../../Layouts/Fyll'
 
 
 const  themes = {
     leo: Leo,
     gol: Gol,
     lifelab: LifeLab,
-    Gioh: Gioh
+    Gioh: Gioh,
+    Fyll: Fyll
 }
 
 const Project = (data) => {

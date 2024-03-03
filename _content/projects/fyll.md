@@ -31,7 +31,7 @@ theme:
     color1: "#00534E"
     color2: "#C26A48"
     color3: "#203F72"
-    color4: "##FFE2D9"
+    color4: "#FFE2D9"
     post1: images/fyll-card-1.png
     color5: "#BC6282"
     post2: images/fyll-card-2.png
@@ -40,6 +40,7 @@ theme:
     backgroundColor: "#C26A48"
     headerColor: "#ffffff"
     postLike: images/fyll-card-btn-1.png
+    postSave: images/fyll-card-btn-4.png
     preImage: images/fyll-logo-guide.png
     colorRole1: Principal
     colorRole2: secundária

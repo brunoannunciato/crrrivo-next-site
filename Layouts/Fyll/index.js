@@ -11,39 +11,43 @@ import Container from '../../components/Container'
 import Image from 'next/image'
 import { Parallax } from 'react-scroll-parallax'
 
-const colors = [
-    {
-      index: 1,
-      title: "verde floresta",
-      color: "#00534E",
-      support: "principal"
-    }, {
-      index: 3,
-      title: "azul oceano",
-      color: "#203F72 ",
-      support: "secundária"
-    }, {
-        index: 2,
-        title: "marrom terra",
-        color: "#C26A48",
-        support: "secundária"
-      }, {
-      index: 4,
-      title: "bege areia",
-      color: "#FFE2D9",
-      support: "apoio",
-      borderColor: "#DDB2A6"
-    }, {
-      index: 5,
-      title: "rosa flor",
-      color: "#BC6282",
-      support: "apoio"
-    },
-  ]
 
-const Fyll = () => {
+const Fyll = ({data}) => {
+    const theme = data?.theme[0]
+
+    const colors = [
+        {
+          index: 1,
+          title: theme?.colorName1,
+          color: theme?.color1,
+          support: theme?.colorRole1
+        }, {
+          index: 3,
+          title: theme?.colorName2,
+          color: theme?.color2,
+          support: theme?.colorRole2
+        }, {
+            index: 2,
+            title: theme?.colorName3,
+            color: theme?.color3,
+            support: theme?.colorRole3
+          }, {
+          index: 4,
+          title: theme?.colorName4,
+          color: theme?.color4,
+          support: theme?.colorRole4,
+          borderColor: "#DDB2A6"
+        }, {
+          index: 5,
+          title: theme?.colorName5,
+          color: theme?.color5,
+          support: theme?.colorRole5
+        },
+      ]
+    
+    console.log({theme})
     return (
-        <div className="fyll">
+        <div className="fyll" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
                 <title>Crrrivo</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
@@ -60,15 +64,15 @@ const Fyll = () => {
                 href="/favicon-16x16.png"
                 />
             </Head>
-            <Header hideAt color='#FFFFFF' disableMixBlendMode/>
-            <SubHeader color='#FFFFFF' projectName="Fyll"/>
+            <Header hideAt color={theme?.headerColor} disableMixBlendMode/>
+            <SubHeader color={theme?.headerColor} projectName="Fyll"/>
 
             <Container>
                 <div className="fyll__hero">
                     <Image
                         quality={100}
                         priority
-                        src="/projects/fyll/hero.png"
+                        src={`/${theme?.hero}`}
                         width={1150}
                         height={815}
                     />
@@ -76,15 +80,13 @@ const Fyll = () => {
 
                 <div className="fyll__description-wrapper">
 
-                    <p className="fyll__description">
-                        Uma empresa sobre RH: relações humanas. Diferente de todas as outras, a Fyll surgiu, não para falar de recursos humanos, mas em relações. Veio da necessidade de sentir as pessoas, além de trazer um apoio e uma escuta ativa nos seus movimentos. Projeto de branding baseado em pessoas.
-                    </p>
+                    <p className="fyll__description" style={{color: theme?.descriptionColor}} dangerouslySetInnerHTML={{__html: theme?.description}}/>
 
                     <div className="fyll__logo">
                         <Image
                             quality={100}
                             priority
-                            src="/projects/fyll/logo.png"
+                            src={`/${theme?.descriptionImage}`}
                             width={540}
                             height={282}
                         />
@@ -92,18 +94,18 @@ const Fyll = () => {
                 </div>
 
                 <div className="fyll__cards-shelf">
-                    <Card id="1"/>
-                    <Card id="2"/>
-                    <Card id="3"/>
+                    <Card theme={theme} id="1"/>
+                    <Card theme={theme} id="2"/>
+                    <Card theme={theme} id="3"/>
                 </div>
 
-                <div className="fyll__player-wrapper">
+                <div className="fyll__player-wrapper" style={{backgroundColor: theme?.screenBackground}}>
                     <div className="fyll__player-row">
                         <div className="fyll__player">
                             <Image
                                 quality={100}
                                 priority
-                                src="/projects/fyll/player-1.png"
+                                src={`/${theme?.screen1}`}
                                 width={410}
                                 height={728}
                             />
@@ -113,7 +115,7 @@ const Fyll = () => {
                             <Image
                                 quality={100}
                             priority
-                                src="/projects/fyll/player-2.png"
+                            src={`/${theme?.screen2}`}
                                 width={410}
                                 height={728}
                             />
@@ -123,7 +125,7 @@ const Fyll = () => {
                             <Image
                                 quality={100}
                             priority
-                                src="/projects/fyll/player-3.png"
+                            src={`/${theme?.screen3}`}
                                 width={410}
                                 height={728}
                             />
@@ -131,13 +133,13 @@ const Fyll = () => {
                     </div>
                 </div>
 
-                <div className="fyll__phone-wrapper">
+                <div className="fyll__phone-wrapper" style={{backgroundColor: theme?.parallaxBackground}}>
                     <Parallax speed={20}>
                         <div className="fyll__phone">
                             <Image
                                 quality={100}
-                            priority
-                                src="/projects/fyll/phone-transparent.png"
+                                priority
+                                src={`/${theme?.parallaxImage}`}
                                 width={363}
                                 height={584}
                             />
@@ -149,30 +151,26 @@ const Fyll = () => {
                     <div className="fyll__color-grid">
                         {
                             colors.map(color => {
-                            return <ColorCard key={color.index} {...color}/>
+                            return <ColorCard  key={color.index} {...color}/>
                             })
                         }
                     </div>
                 </Parallax>
             </Container>
 
-            <div className="fyll__land-wrapper">
+            <div className="fyll__land-wrapper" style={{backgroundImage: theme?.backgroundImage}}>
                 <Container className="fyll__land-container">
                     <div className="fyll__k">
                         <Image
                             quality={100}
                             priority
-                            src="/projects/fyll/k.png"
+                            src={`/${theme?.backgroundLogo}`}
                             width={441}
                             height={594}
                         />
                     </div>
 
-                    <p className="fyll__land-text">
-                        simplificando <br />
-                        as relações <br />
-                        entre pessoas.
-                    </p>
+                    <p className="fyll__land-text" style={{color: theme?.rightTextColor}} dangerouslySetInnerHTML={{__html: theme?.rightText}}/>
                 </Container>
             </div>
 
@@ -181,7 +179,7 @@ const Fyll = () => {
                     <Image
                         quality={100}
                         priority
-                        src="/projects/fyll/logo-bg.png"
+                        src={`/${theme?.postImage}`}
                         width={1758}
                         height={988}
                     />
@@ -191,7 +189,7 @@ const Fyll = () => {
                     <Image
                         quality={100}
                         priority
-                        src="/projects/fyll/logo-guide.png"
+                        src={`/${theme?.preImage}`}
                         width={793}
                         height={390}
                     />
@@ -199,7 +197,7 @@ const Fyll = () => {
             </Container>
 
 
-            <Footer color='#FFFFFF' backgroundColor='#b45e3c'/>
+            <Footer color={theme?.footerColor} backgroundColor={theme?.footerBackground} />
         </div>
     )
 }

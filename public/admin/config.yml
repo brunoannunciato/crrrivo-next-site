@@ -403,7 +403,7 @@ collections:
               - { label: Grid cor nome - 3, name: colorName3, widget: string, default: 'azul oceano' }
               - { label: Grid cor função - 3, name: colorRole3, widget: string, default: 'secundária' }
               - { label: Grid cor de texto - 3, name: colorText3, widget: string, default: '#FFFFFF' }
-              - { label: Grid cor - 4, name: color4, widget: string, default: '##FFE2D9' }
+              - { label: Grid cor - 4, name: color4, widget: string, default: '#FFE2D9' }
               - { label: Grid cor nome - 4, name: colorName4, widget: string, default: 'Bege areia' }
               - { label: Grid cor função - 4, name: colorRole4, widget: string, default: 'apoio' }
               - { label: Grid cor de texto - 4, name: colorText4, widget: string, default: '#DDB2A6' }
