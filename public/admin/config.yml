@@ -429,7 +429,7 @@ collections:
                 name: preImage
                 widget: image
                 allow_multiple: false
-                        - label: 'Fyll'
+          - label: 'Ana Hirata'
             name: 'Ana Hirata'
             widget: object
             fields:
@@ -470,12 +470,12 @@ collections:
               - label: Imagem de acessário parallax 1 (862 x 233)
                 name: parallaxAcessory1
                 widget: image
-              - { label: Cor de background da página (segunda metade), name: backgroundColor2, widget: string, default: '#EA6D80' }
+              - { label: Cor de background da página (segunda metade), name: backgroundColor2, widget: string, default: '#EEEEEE' }
               - label: Imagem do parallax 2 (1280 x 1260)
                 name: parallaxImage2
                 widget: image
                 allow_multiple: false
-              - { label: Cor background parallax 2, name: parallaxBackground2, widget: string, default: '#EEEEEE' }
+              - { label: Cor background parallax 2, name: parallaxBackground2, widget: string, default: '#EA6D80' }
               - label: Imagem de acessário parallax 2 (318 x 124)
                 name: parallaxAcessory2
                 widget: image
@@ -499,8 +499,5 @@ collections:
                 name: logoGrid
                 widget: image
               - label: Imagem pré footer (1722 x 968)
-                name: logoGrid
+                name: preFooterImage
                 widget: image
-
-       
-             

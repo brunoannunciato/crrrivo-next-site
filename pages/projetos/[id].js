@@ -4,6 +4,7 @@ import LifeLab from '../../Layouts/LifeLab'
 import Gol from '../../Layouts/Gol'
 import Gioh from '../../Layouts/Gioh'
 import Fyll from '../../Layouts/Fyll'
+import Ana from '../../Layouts/Ana'
 
 
 const  themes = {
@@ -11,7 +12,8 @@ const  themes = {
     gol: Gol,
     lifelab: LifeLab,
     Gioh: Gioh,
-    Fyll: Fyll
+    Fyll: Fyll,
+    "Ana Hirata": Ana
 }
 
 const Project = (data) => {

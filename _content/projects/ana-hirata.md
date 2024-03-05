@@ -19,7 +19,7 @@ theme:
     colorHex7text: "#F2F2F2"
     thumbnail: images/thumb-ana.png
     parallaxBackground1: "#D3D5D5"
-    parallaxBackground2: "#EEEEEE"
+    parallaxBackground2: "#EA6D80"
     parallaxImage1: images/ana-poster.png
     colorHex8text: "#F2F2F2"
     parallaxImage2: images/ana-poster-2.png
@@ -42,7 +42,7 @@ theme:
       especialmente para a chef. "
     preFooterImage: images/ana-phone.png
     colorHex5: "#760F44"
-    backgroundColor2: "#EA6D80"
+    backgroundColor2: "#EEEEEE"
     colorHex6: "#C00B53"
     colorHex7: "#EA6D80"
     projectTitle: Ana Hirata

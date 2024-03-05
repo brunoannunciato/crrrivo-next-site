@@ -10,44 +10,48 @@ import Container from '../../components/Container'
 import Image from 'next/image'
 import { Parallax } from 'react-scroll-parallax'
 
-const colors = [
-    {
-        color: "#F2F2F2",
-        backgroundColor: "#000000"
-    },
-    {
-        color: "#000000",
-        backgroundColor: "#EAEAEA"
-    },
-    {
-        color: "#F2F2F2",
-        backgroundColor: "#0441AD"
-    },
-    {
-        color: "#F2F2F2",
-        backgroundColor: "#10AEC4"
-    },
-    {
-        color: "#F2F2F2",
-        backgroundColor: "#760F44"
-    },
-    {
-        color: "#F2F2F2",
-        backgroundColor: "#C00B53"
-    },
-    {
-        color: "#F2F2F2",
-        backgroundColor: "#EA6D80"
-    },
-    {
-        color: "#F2F2F2",
-        backgroundColor: "#FBBB8A"
-    }
-]
+const Ana = ({data}) => {
+    const theme = data.theme[0] && data.theme[0]
 
-const Gol = () => {
+    const colors = [
+        {
+            color: theme?.colorHex1text,
+            backgroundColor: theme?.colorHex1
+        },
+        {
+            color: theme?.colorHex1text,
+            backgroundColor: theme?.colorHex2
+        },
+        {
+            color: theme?.colorHex1text,
+            backgroundColor: theme?.colorHex3
+        },
+        {
+            color: theme?.colorHex1text,
+            backgroundColor: theme?.colorHex4
+        },
+        {
+            color: theme?.colorHex1text,
+            backgroundColor: theme?.colorHex5
+        },
+        {
+            color: theme?.colorHex1text,
+            backgroundColor: theme?.colorHex6
+        },
+        {
+            color: theme?.colorHex1text,
+            backgroundColor: theme?.colorHex7
+        },
+        {
+            color: theme?.colorHex1text,
+            backgroundColor: theme?.colorHex8
+        }
+    ]
+
+    console.log(theme)
+
     return (
-        <div className="ana">
+        <div className="ana" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
                 <title>Crrrivo</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
@@ -64,22 +68,19 @@ const Gol = () => {
                 href="/favicon-16x16.png"
                 />
             </Head>
-            <Header hideAt color='#000000' disableMixBlendMode/>
-            <SubHeader color='#000000' projectName="Ana Hirata "/>
+            <Header hideAt color={theme?.headerColor} disableMixBlendMode/>
+            <SubHeader color={theme?.headerColor} projectName="Ana Hirata "/>
 
-            <div className="ana__hero">
+            <div className="ana__hero" style={{backgroundImage: `url('/${theme?.hero}')`}}>
                 <Container className="ana__hero-container">
-                    <p className="ana__description">
-                        <u>Branding para a Ana Hirata.</u><br/>
-                        Para este projeto, usamos como premissa, uma massa fermentando. a primeira letra mais light e a última mais bold, passando a sensação de uma massa crescendo, como em um processo de fermentação natural. além de trazer uma tipologia desenhada especialmente para a chef. 
-                    </p>
+                    <p className="ana__description" style={{color: theme?.descriptionColor}} dangerouslySetInnerHTML={{__html: theme?.description}}/>
                 </Container>
             </div>
 
             <Container className="ana__container">
                 <div className="ana__portifolio-1">
                     <Image
-                        src="/projects/ana/portifolio-1.png"
+                        src={`/${theme?.postHero1}`}
                         width={273}
                         height={99}
                         quality={100}
@@ -89,7 +90,7 @@ const Gol = () => {
 
                 <div className="ana__portifolio-2">
                     <Image
-                        src="/projects/ana/portifolio-2.png"
+                        src={`/${theme?.postHero2}`}
                         width={933}
                         height={539}
                         quality={100}
@@ -99,7 +100,7 @@ const Gol = () => {
 
                 <div className="ana__portifolio-3">
                     <Image
-                        src="/projects/ana/portifolio-3.png"
+                        src={`/${theme?.postHero3}`}
                         width={296}
                         height={170}
                         quality={100}
@@ -107,27 +108,37 @@ const Gol = () => {
                     />
                 </div>
 
-                <div className="ana__poster-1-wrapper">
-                        <div className="ana__poster-1">
-                            <Parallax speed={20}>
-                                <Image
-                                    src="/projects/ana/poster.png"
-                                    width={1280}
-                                    height={1263}
-                                    quality={100}
-                                    priority
-                                />
-                            </Parallax>
-                        </div>
+                <div className="ana__poster-1-wrapper" style={{backgroundColor: theme?.parallaxBackground1}}>
+                    <div className="ana__poster-1">
+                        <Parallax speed={20}>
+                            <Image
+                                src={`/${theme?.parallaxImage1}`}
+                                width={1280}
+                                height={1263}
+                                quality={100}
+                                priority
+                            />
+                        </Parallax>
+                    </div>
+
+                    <div className="ana__knife">
+                        <Image
+                            src={`/${theme?.parallaxAcessory1}`}
+                            width={862}
+                            height={233}
+                            quality={100}
+                            priority
+                        />
+                    </div>
                 </div>
                 </Container>
-                <div className="ana__second-part">
+                <div className="ana__second-part" style={{backgroundColor: theme?.backgroundColor2}}>
                     <Container className="ana__container">
-                    <div className="ana__poster-2-wrapper">
+                    <div className="ana__poster-2-wrapper" style={{backgroundColor: theme?.parallaxBackground2}}>
                         <div className="ana__poster-2">
                             <Parallax speed={-20}>
                                 <Image
-                                    src="/projects/ana/poster-2.png"
+                                    src={`/${theme?.parallaxImage2}`}
                                     width={1280}
                                     height={1260}
                                     quality={100}
@@ -135,6 +146,16 @@ const Gol = () => {
                                 />
                             </Parallax>
                         </div>
+
+                        <div className="ana__bread">
+                        <Image
+                            src={`/${theme?.parallaxAcessory2}`}
+                            width={318}
+                            height={124}
+                            quality={100}
+                            priority
+                        />
+                    </div>
                     </div>
 
                     <div className="ana__color-grid">
@@ -149,7 +170,7 @@ const Gol = () => {
                 <div className="ana__variants">
                     <div className="ana__variants-content">
                         <Image
-                            src="/projects/ana/variants.png"
+                            src={`/${theme?.logoGrid}`}
                             width={1234}
                             height={611}
                             quality={100}
@@ -160,7 +181,7 @@ const Gol = () => {
 
                 <div className="ana__phone">
                     <Image
-                        src="/projects/ana/phone.png"
+                        src={`/${theme?.preFooterImage}`}
                         width={1722}
                         height={968}
                         quality={100}
@@ -171,9 +192,9 @@ const Gol = () => {
                
 
 
-            <Footer color='#000000 ' backgroundColor='#f2f2f2'/>
+            <Footer color={theme?.footerColor} backgroundColor={theme?.footerBackground} />
         </div>
     )
 }
 
-export default Gol
+export default Ana
