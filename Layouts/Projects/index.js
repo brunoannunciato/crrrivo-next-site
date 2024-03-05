@@ -56,12 +56,12 @@ const projects = [
       image: "/images/thumb-ana.png",
       title: "Ana Hirata",
       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projects/ana-hirata"
+      link: "/projetos/ana-hirata"
   },
   {
     id: 7,
     image: "/images/thumb-cafe.png",
-    title: "Café na Cama ",
+    title: "Café na Cama",
     description: "Penamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
     link: "/projects/cafe-na-cama"
   },
