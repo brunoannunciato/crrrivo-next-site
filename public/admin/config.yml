@@ -429,5 +429,78 @@ collections:
                 name: preImage
                 widget: image
                 allow_multiple: false
-              
+                        - label: 'Fyll'
+            name: 'Ana Hirata'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#E9E9E9' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#000000' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#f2f2f2' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#000000' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Ana Hirata' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Hero (1920 x 1334)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - { label: Descrição, name: description, widget: Text, default: "<u>Branding para a Ana Hirata.</u><br/>
+                        Para este projeto, usamos como premissa, uma massa fermentando. a primeira letra mais light e a última mais bold, passando a sensação de uma massa crescendo, como em um processo de fermentação natural. além de trazer uma tipologia desenhada especialmente para a chef. " }
+              - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#ffffff" } 
+              - label: Imagem pós hero 1 (173 x 99)
+                name: postHero1
+                widget: image
+                allow_multiple: false
+              - label: Imagem pós hero 2 (993 x 539)
+                name: postHero2
+                widget: image
+                allow_multiple: false
+              - label: Imagem pós hero 3 (170 x 100)
+                name: postHero3
+                widget: image
+                allow_multiple: false
+              - label: Imagem do parallax 1 (1280 x 1263)
+                name: parallaxImage1
+                widget: image
+                allow_multiple: false
+              - { label: Cor background parallax, name: parallaxBackground1, widget: string, default: '#D3D5D5' }
+              - label: Imagem de acessário parallax 1 (862 x 233)
+                name: parallaxAcessory1
+                widget: image
+              - { label: Cor de background da página (segunda metade), name: backgroundColor2, widget: string, default: '#EA6D80' }
+              - label: Imagem do parallax 2 (1280 x 1260)
+                name: parallaxImage2
+                widget: image
+                allow_multiple: false
+              - { label: Cor background parallax 2, name: parallaxBackground2, widget: string, default: '#EEEEEE' }
+              - label: Imagem de acessário parallax 2 (318 x 124)
+                name: parallaxAcessory2
+                widget: image
+              - { label: Cor do texto identidade 1, name: colorHex1text, widget: string, default: '#F2F2F2' }
+              - { label: Cor identidade 1, name: colorHex1, widget: string, default: '#000000' }
+              - { label: Cor do texto identidade 2, name: colorHex2text, widget: string, default: '#000000' }
+              - { label: Cor identidade 2, name: colorHex2, widget: string, default: '#EAEAEA' }
+              - { label: Cor do texto identidade 3, name: colorHex3text, widget: string, default: '#F2F2F2' }
+              - { label: Cor identidade 3, name: colorHex3, widget: string, default: '#0441AD' }
+              - { label: Cor do texto identidade 4, name: colorHex4text, widget: string, default: '#F2F2F2' }
+              - { label: Cor identidade 4, name: colorHex4, widget: string, default: '#10AEC4' }
+              - { label: Cor do texto identidade 5, name: colorHex5text, widget: string, default: '#F2F2F2' }
+              - { label: Cor identidade 5, name: colorHex5, widget: string, default: '#760F44' }
+              - { label: Cor do texto identidade 6, name: colorHex6text, widget: string, default: '#F2F2F2' }
+              - { label: Cor identidade 6, name: colorHex6, widget: string, default: '#C00B53' }
+              - { label: Cor do texto identidade 7, name: colorHex7text, widget: string, default: '#F2F2F2' }
+              - { label: Cor identidade 7, name: colorHex7, widget: string, default: '#EA6D80' }
+              - { label: Cor do texto identidade 8, name: colorHex8text, widget: string, default: '#F2F2F2' }
+              - { label: Cor identidade 8, name: colorHex8, widget: string, default: '#FBBB8A' }
+              - label: Grid de logos (1234 x 611)
+                name: logoGrid
+                widget: image
+              - label: Imagem pré footer (1722 x 968)
+                name: logoGrid
+                widget: image
+
+       
              
