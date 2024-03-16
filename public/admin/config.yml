@@ -501,3 +501,131 @@ collections:
               - label: Imagem pré footer (1722 x 968)
                 name: preFooterImage
                 widget: image
+          - label: 'Cafe na Cama'
+            name: 'Cafe na Cama'
+            widget: object
+            fields:
+              - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#E9E9E9' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#000000' }
+              - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#f2f2f2' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#000000' }
+              - label: Thumbnail página de projetos (849 x 478)
+                name: thumbnail
+                widget: image
+                allow_multiple: false
+              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Ana Hirata' }
+              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
+              - label: Parallax Image (1764 x 1224)
+                name: hero
+                widget: image
+                allow_multiple: false
+              - { label: Cor de fundo parallax,  name: parallaxBg, widget: string, default: "#EAE9E5" } 
+              - { label: Descrição, name: description, widget: Text, default: "<u>Branding para o Café na Cama.</u> A ideia é posicionar a marca como referência para clientes de classe A. Busca proporcionar uma experiência de hotel de luxo em casa." }
+              - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#212121" }
+              - label: Imagem descrição (467 x 246)
+                name: descriptionImage
+                widget: image
+                allow_multiple: false
+              - label: Card 1 (283 x 449)
+                name: card1
+                widget: image
+                allow_multiple: false
+              - label: Card 2 (283 x 449)
+                name: card2
+                widget: image
+                allow_multiple: false
+              - label: Card 3 (283 x 449)
+                name: card3
+                widget: image
+                allow_multiple: false
+              - label: Card 4 (283 x 449)
+                name: card4
+                widget: image
+                allow_multiple: false
+              - label: Card 5 (283 x 449)
+                name: card5
+                widget: image
+                allow_multiple: false
+              - label: Imagem pós cards (1760 x 1232)
+                name: middleImage
+                widget: image
+                allow_multiple: false
+              - label: Ícone das cores (51 x 50)
+                name: colorIcon
+                widget: image
+                allow_multiple: false
+              - { label: "Cor 1: nome", name: color1Name, widget: string, default: "CINZA" } 
+              - { label: "Cor 1: R", name: color1r, widget: string, default: "234" }
+              - { label: "Cor 1: G", name: color1g, widget: string, default: "233" }
+              - { label: "Cor 1: B", name: color1b, widget: string, default: "229" }
+              - { label: "Cor 1: Cor do texto", name: color1textColor, widget: string, default: "#212121" }
+              - { label: "Cor 2: nome", name: color2Name, widget: string, default: "PRETO" } 
+              - { label: "Cor 2: R", name: color2r, widget: string, default: "33" }
+              - { label: "Cor 2: G", name: color2g, widget: string, default: "33" }
+              - { label: "Cor 2: B", name: color2b, widget: string, default: "33" }
+              - { label: "Cor 2: Cor do texto", name: color2textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 3: nome", name: color3Name, widget: string, default: "TERRA" } 
+              - { label: "Cor 3: R", name: color3r, widget: string, default: "192" }
+              - { label: "Cor 3: G", name: color3g, widget: string, default: "90" }
+              - { label: "Cor 3: B", name: color3b, widget: string, default: "56" }
+              - { label: "Cor 3: Cor do texto", name: color3textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 4: nome", name: color4Name, widget: string, default: "VERDE" } 
+              - { label: "Cor 4: R", name: color4r, widget: string, default: "77" }
+              - { label: "Cor 4: G", name: color4g, widget: string, default: "104" }
+              - { label: "Cor 4: B", name: color4b, widget: string, default: "71" }
+              - { label: "Cor 4: Cor do texto", name: color4textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 5: nome", name: color5Name, widget: string, default: "AMARELO" } 
+              - { label: "Cor 5: R", name: color5r, widget: string, default: "242" }
+              - { label: "Cor 5: G", name: color5g, widget: string, default: "164" }
+              - { label: "Cor 5: B", name: color5b, widget: string, default: "87" }
+              - { label: "Cor 5: Cor do texto", name: color5textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 6: nome", name: color6Name, widget: string, default: "Azul" } 
+              - { label: "Cor 6: R", name: color6r, widget: string, default: "32" }
+              - { label: "Cor 6: G", name: color6g, widget: string, default: "58" }
+              - { label: "Cor 6: B", name: color6b, widget: string, default: "122" }
+              - { label: "Cor 6: Cor do texto", name: color6textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 7: nome", name: color7Name, widget: string, default: "VERDE" } 
+              - { label: "Cor 7: R", name: color7r, widget: string, default: "166" }
+              - { label: "Cor 7: G", name: color7g, widget: string, default: "209" }
+              - { label: "Cor 7: B", name: color7b, widget: string, default: "194" }
+              - { label: "Cor 7: Cor do texto", name: color7textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 8: nome", name: color8Name, widget: string, default: "ROSA" } 
+              - { label: "Cor 8: R", name: color8r, widget: string, default: "237" }
+              - { label: "Cor 8: G", name: color8g, widget: string, default: "164" }
+              - { label: "Cor 8: B", name: color8b, widget: string, default: "191" }
+              - { label: "Cor 8: Cor do texto", name: color8textColor, widget: string, default: "#ffffff" }
+              - label: Card pós cores 1 (324 x 231)
+                name: cardColor1
+                widget: image
+                allow_multiple: false
+              - label: Card pós cores 2 (324 x 231)
+                name: cardColor2
+                widget: image
+                allow_multiple: false
+              - label: Card pós cores 3 (324 x 231)
+                name: cardColor3
+                widget: image
+                allow_multiple: false
+              - label: Card pós cores 4 (324 x 231)
+                name: cardColor4
+                widget: image
+                allow_multiple: false
+              - label: Card pós cores 5 (324 x 231)
+                name: cardColor5
+                widget: image
+                allow_multiple: false
+              - label: Logos esquerda (431 x 597)
+                name: logosLeft
+                widget: image
+                allow_multiple: false
+              - label: Logos direita (774 x 517)
+                name: logosRight
+                widget: image
+                allow_multiple: false
+              - { label: "Cor pré footer 1", name: colorPreFooter1, widget: string, default: "#212121" }
+              - { label: "Cor pré footer 2", name: colorPreFooter2, widget: string, default: "#4D6847" }
+              - { label: "Cor pré footer 3", name: colorPreFooter3, widget: string, default: "#4D6847" }
+              - { label: "Cor pré footer 4", name: colorPreFooter4, widget: string, default: "#203A7A" }
+              
+
+       
