@@ -63,7 +63,7 @@ const projects = [
     image: "/images/thumb-cafe.png",
     title: "Café na Cama",
     description: "Penamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-    link: "/projects/cafe-na-cama"
+    link: "/projetos/cafe-na-cama"
   },
 ]
 export default function Projects() {

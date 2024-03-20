@@ -52,15 +52,15 @@ theme:
     color3g: "90"
     colorPreFooter2: "#4D6847"
     color2g: "33"
-    colorPreFooter3: "#4D6847"
+    colorPreFooter3: "#203A7A"
     color1Name: CINZA
     color1g: "233"
-    colorPreFooter4: "#203A7A"
+    colorPreFooter4: "#EDA4BF"
     color2Name: PRETO
     type: Cafe na Cama
     hero: images/cafe-hero.png
     color3Name: TERRA
-    parallaxBg: "#EAE9E5"
+    parallaxBg: "#203A7A"
     colorIcon: images/cafe-ico.png
     color4Name: VERDE
     description: <u>Branding para o Café na Cama.</u> A ideia é posicionar a marca
@@ -74,6 +74,6 @@ theme:
     cardColor2: images/cafe-seal-2.png
     color6r: "32"
     color7Name: VERDE
-    descriptionImage: images/cafe-logo.png
+    descriptionImage: images/cafe-logo.svg
     projectTitle: Ana Hirata
 ---

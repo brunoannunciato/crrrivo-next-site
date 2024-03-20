@@ -519,10 +519,10 @@ collections:
                 name: hero
                 widget: image
                 allow_multiple: false
-              - { label: Cor de fundo parallax,  name: parallaxBg, widget: string, default: "#EAE9E5" } 
+              - { label: Cor de fundo parallax,  name: parallaxBg, widget: string, default: "#203A7A" } 
               - { label: Descrição, name: description, widget: Text, default: "<u>Branding para o Café na Cama.</u> A ideia é posicionar a marca como referência para clientes de classe A. Busca proporcionar uma experiência de hotel de luxo em casa." }
               - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#212121" }
-              - label: Imagem descrição (467 x 246)
+              - label: Imagem descrição (467 x 246) (SVG)
                 name: descriptionImage
                 widget: image
                 allow_multiple: false
@@ -624,8 +624,8 @@ collections:
                 allow_multiple: false
               - { label: "Cor pré footer 1", name: colorPreFooter1, widget: string, default: "#212121" }
               - { label: "Cor pré footer 2", name: colorPreFooter2, widget: string, default: "#4D6847" }
-              - { label: "Cor pré footer 3", name: colorPreFooter3, widget: string, default: "#4D6847" }
-              - { label: "Cor pré footer 4", name: colorPreFooter4, widget: string, default: "#203A7A" }
+              - { label: "Cor pré footer 3", name: colorPreFooter3, widget: string, default: "#203A7A" }
+              - { label: "Cor pré footer 4", name: colorPreFooter4, widget: string, default: "#EDA4BF" }
               
 
        

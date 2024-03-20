@@ -11,61 +11,66 @@ import './cafe.scss'
 import Image from 'next/image'
 import { ReactSVG } from 'react-svg'
 
-const colors = [
-    {
-        name: "cinza",
-        r: 234,
-        g: 233,
-        b: 229,
-        color: "#000000"
-    },  {
-        name: "preto",
-        r: 33,
-        g: 33,
-        b: 33,
-        color: "#ffffff"
-    },{
-        name: "terra",
-        r: 192,
-        g: 90,
-        b: 56,
-        color: "#ffffff"
-    }, {
-        name: "verde",
-        r: 77,
-        g: 104,
-        b: 71,
-        color: "#ffffff"
-    }, {
-        name: "amarelo",
-        r: 242,
-        g: 164,
-        b: 87,
-        color: "#ffffff"
-    }, {
-        name: "azul",
-        r: 32,
-        g: 58,
-        b: 122,
-        color: "#ffffff"
-    }, {
-        name: "verde",
-        r:  166,
-        g: 209,
-        b: 194,
-        color: "#ffffff"
-    }, {
-        name: "rosa",
-        r: 237,
-        g: 164,
-        b: 191,
-        color: "#ffffff"
-    },
-]
 
-const Cafe = () => {
+
+const Cafe = ({data}) => {
+    const theme = data?.theme[0]
+    console.log(theme)
+
+    const colors = [
+        {
+            name: theme?.color1Name,
+            r: theme?.color1r,
+            g: theme?.color1g,
+            b: theme?.color1b,
+            color: theme?.color1textColor
+        },  {
+            name: theme?.color2Name,
+            r: theme?.color2r,
+            g: theme?.color2g,
+            b: theme?.color2b,
+            color: theme?.color2textColor
+        },{
+            name: theme?.color3Name,
+            r: theme?.color3r,
+            g: theme?.color3g,
+            b: theme?.color3b,
+            color: theme?.color3textColor
+        }, {
+            name: theme?.color4Name,
+            r: theme?.color4r,
+            g: theme?.color4g,
+            b: theme?.color4b,
+            color: theme?.color4textColor
+        }, {
+            name: theme?.color5Name,
+            r: theme?.color5r,
+            g: theme?.color5g,
+            b: theme?.color5b,
+            color: theme?.color5textColor
+        }, {
+            name: theme?.color6Name,
+            r: theme?.color6r,
+            g: theme?.color6g,
+            b: theme?.color6b,
+            color: theme?.color6textColor
+        }, {
+            name: theme?.color7Name,
+            r: theme?.color7r,
+            g: theme?.color7g,
+            b: theme?.color7b,
+            color: theme?.color7textColor
+        }, {
+            name: theme?.color8Name,
+            r: theme?.color8r,
+            g: theme?.color8g,
+            b: theme?.color8b,
+            color: theme?.color8textColor
+        },
+    ]
+
     return (
-        <div className="cafe">
+        <div className="cafe" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
                 <title>Crrrivo</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
@@ -82,15 +87,15 @@ const Cafe = () => {
                 href="/favicon-16x16.png"
                 />
             </Head>
-            <Header hideAt color='#000000' disableMixBlendMode/>
-            <SubHeader color='#000000' projectName="Café na Cama"/>
+            <Header hideAt color={theme?.headerColor} disableMixBlendMode/>
+            <SubHeader color={theme?.headerColor} projectName="Café na Cama"/>
 
             <Container>
-                <div className="cafe__hero-wrapper">
+                <div className="cafe__hero-wrapper" style={{backgroundColor: theme?.parallaxBg}}>
                     <div className="cafe__hero">
                         <Parallax speed={-80}>
                             <Image
-                                src="/projects/cafe/hero.png"
+                                src={`/${theme?.hero}`}
                                 width={1764}
                                 height={1224}
                                 quality={100}
@@ -103,7 +108,7 @@ const Cafe = () => {
                 <div className="cafe__description-wrapper">
                     <div className="cafe__logo">
                         <ReactSVG
-                            src="/projects/cafe/logo.svg"
+                            src={`/${theme?.descriptionImage}`}
                             width={558}
                             height={294}
                             quality={100}
@@ -111,15 +116,13 @@ const Cafe = () => {
                         />
                     </div>
                     
-                    <p className="cafe__description">
-                        <u>Branding para o Café na Cama.</u> A ideia é posicionar a marca como referência para clientes de classe A. Busca proporcionar uma experiência de hotel de luxo em casa.
-                    </p>
+                    <p className="cafe__description" style={{color: theme?.descriptionColor}} dangerouslySetInnerHTML={{__html: theme?.description}}/>
                 </div>
 
                 <div className="cafe__card-grid">
                     <div className="cafe__card">
                         <Image
-                            src="/projects/cafe/card-1.png"
+                            src={`/${theme?.card1}`}
                             width={283}
                             height={448}
                             quality={100}
@@ -129,7 +132,7 @@ const Cafe = () => {
 
                     <div className="cafe__card">
                         <Image
-                            src="/projects/cafe/card-2.png"
+                            src={`/${theme?.card2}`}
                             width={283}
                             height={448}
                             quality={100}
@@ -139,7 +142,7 @@ const Cafe = () => {
 
                     <div className="cafe__card">
                         <Image
-                            src="/projects/cafe/card-3.png"
+                            src={`/${theme?.card3}`}
                             width={283}
                             height={448}
                             quality={100}
@@ -149,7 +152,7 @@ const Cafe = () => {
 
                     <div className="cafe__card">
                         <Image
-                            src="/projects/cafe/card-4.png"
+                            src={`/${theme?.card4}`}
                             width={283}
                             height={448}
                             quality={100}
@@ -159,7 +162,7 @@ const Cafe = () => {
 
                     <div className="cafe__card">
                         <Image
-                            src="/projects/cafe/card-5.png"
+                            src={`/${theme?.card5}`}
                             width={283}
                             height={448}
                             quality={100}
@@ -170,7 +173,7 @@ const Cafe = () => {
 
                 <div className="cafe__jornal">
                     <Image
-                        src="/projects/cafe/jornal.png"
+                        src={`/${theme?.middleImage}`}
                         width={1760} 
                         height={1232}
                         quality={100}
@@ -182,7 +185,7 @@ const Cafe = () => {
                     <div className="cafe__color-grid">
                         {
                             colors.map((color) => {
-                                return <Card key={color.name} {...color} />
+                                return <Card key={color.name} icon={theme?.colorIcon} {...color} />
                             })
                         }
                     </div>
@@ -191,7 +194,7 @@ const Cafe = () => {
                         <div className="cafe__seal-shelf">
                             <div className="cafe__seal">
                                 <Image
-                                    src="/projects/cafe/seal-1.png"
+                                    src={`/${theme?.cardColor1}`}
                                     width={324}
                                     height={321}
                                     priority
@@ -200,7 +203,7 @@ const Cafe = () => {
 
                             <div className="cafe__seal">
                                 <Image
-                                    src="/projects/cafe/seal-2.png"
+                                    src={`/${theme?.cardColor2}`}
                                     width={324}
                                     height={321}
                                     priority
@@ -209,7 +212,7 @@ const Cafe = () => {
 
                             <div className="cafe__seal">
                                 <Image
-                                    src="/projects/cafe/seal-3.png"
+                                    src={`/${theme?.cardColor3}`}
                                     width={324}
                                     height={321}
                                     priority
@@ -218,7 +221,7 @@ const Cafe = () => {
 
                             <div className="cafe__seal">
                                 <Image
-                                    src="/projects/cafe/seal-4.png"
+                                    src={`/${theme?.cardColor4}`}
                                     width={324}
                                     height={321}
                                     priority
@@ -227,7 +230,7 @@ const Cafe = () => {
 
                             <div className="cafe__seal">
                                 <Image
-                                    src="/projects/cafe/seal-5.png"
+                                    src={`/${theme?.cardColor5}`}
                                     width={324}
                                     height={321}
                                     priority
@@ -241,7 +244,7 @@ const Cafe = () => {
                 <div className="cafe__logos">
                     <div className="cafe__logo">
                         <Image
-                            src="/projects/cafe/logos-left.png"
+                            src={`/${theme?.logosLeft}`}
                             width={431}
                             height={597}
                             priority
@@ -250,7 +253,7 @@ const Cafe = () => {
 
                     <div className="cafe__logo">
                         <Image
-                            src="/projects/cafe/logos-right.png"
+                            src={`/${theme?.logosRight}`}
                             width={774}
                             height={517}
                             priority
@@ -258,11 +261,11 @@ const Cafe = () => {
                     </div>
                 </div>
 
-                <div className="cafe__colors-footer" />
+                <div className="cafe__colors-footer" style={{background: `linear-gradient(90deg, ${theme?.colorPreFooter1} 0%, ${theme?.colorPreFooter1} 33%, ${theme?.colorPreFooter2} 33%, ${theme?.colorPreFooter2} 55%, ${theme?.colorPreFooter3} 55%, ${theme?.colorPreFooter3} 77%, ${theme?.colorPreFooter4} 77%, ${theme?.colorPreFooter4} 100%)`}}/>
             </Container>
 
 
-            <Footer color='#000000' backgroundColor='#dfddd7'/>
+            <Footer color={theme?.footerColor} backgroundColor={theme?.footerBackground}/>
         </div>
     )
 }
