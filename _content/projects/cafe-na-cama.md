@@ -74,6 +74,6 @@ theme:
     cardColor2: images/cafe-seal-2.png
     color6r: "32"
     color7Name: VERDE
-    descriptionImage: images/cafe-logo.png
+    descriptionImage: images/cafe-logo.svg
     projectTitle: Ana Hirata
 ---
