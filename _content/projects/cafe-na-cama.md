@@ -1,5 +1,7 @@
 ---
 title: cafe-na-cama
+actived: true
+showInProjects: true
 theme:
   - cardColor3: images/cafe-seal-3.png
     color8Name: ROSA

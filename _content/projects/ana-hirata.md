@@ -1,5 +1,7 @@
 ---
 title: ana-hirata
+actived: true
+showInProjects: true
 theme:
   - colorHex8: "#FBBB8A"
     projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e

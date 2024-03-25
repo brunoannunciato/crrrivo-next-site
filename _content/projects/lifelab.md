@@ -1,5 +1,7 @@
 ---
 title: lifelab
+actived: true
+showInProjects: true
 theme:
   - colorGridImage2: images/lifelab-lab-logo.png
     colorGridHex2: "#FF6400"

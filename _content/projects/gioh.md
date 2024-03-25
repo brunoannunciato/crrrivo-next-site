@@ -1,5 +1,7 @@
 ---
 title: gioh
+actived: true
+showInProjects: true
 theme:
   - centralTextColor: "#ffffff"
     card1: images/gioh-card-1.png

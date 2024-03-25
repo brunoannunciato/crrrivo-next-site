@@ -1,5 +1,7 @@
 ---
 title: gol-smiles
+actived: true
+showInProjects: true
 theme:
   - card1: images/gol-card-1.png
     card2: images/gol-card-2.png

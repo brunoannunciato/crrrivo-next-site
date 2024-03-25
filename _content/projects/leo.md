@@ -1,5 +1,7 @@
 ---
 title: leo
+actived: true
+showInProjects: true
 theme:
   - colorText1: "#FFFFFF"
     card1: images/card-1.png

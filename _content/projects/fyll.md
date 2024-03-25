@@ -1,5 +1,7 @@
 ---
 title: fyll
+actived: true
+showInProjects: true
 theme:
   - colorText1: "#FFFFFF"
     colorText2: "#FFFFFF"

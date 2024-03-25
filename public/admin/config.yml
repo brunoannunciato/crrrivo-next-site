@@ -12,6 +12,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: url do projeto, name: title, widget: string, default: 'leo' }
+      - {label: "Ativa", name: "actived", widget: "boolean", default: false}
+      - {label: "Aparecer em projetos", name: "showInProjects", widget: "boolean", default: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - label: "Tema"
         name: "theme"
         widget: "list"
