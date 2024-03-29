@@ -2,16 +2,18 @@
 title: fyll
 actived: true
 showInProjects: true
+thumbnail: images/thumb-fyll.png
+projectTitle: Fyll
+projectDescription: "Uma empresa sobre RH: relações humanas. Diferente de todas
+  as outras, a Fyll surgiu, não para falar de recursos humanos, mas em
+  relações. Veio da necessidade de sentir as pessoas, além de trazer um
+  apoio e uma escuta ativa nos seus movimentos. Projeto de branding baseado
+  em pessoas."
 theme:
   - colorText1: "#FFFFFF"
     colorText2: "#FFFFFF"
     colorName1: Verde floresta
     colorText3: "#FFFFFF"
-    projectDescription: "Uma empresa sobre RH: relações humanas. Diferente de todas
-      as outras, a Fyll surgiu, não para falar de recursos humanos, mas em
-      relações. Veio da necessidade de sentir as pessoas, além de trazer um
-      apoio e uma escuta ativa nos seus movimentos. Projeto de branding baseado
-      em pessoas."
     colorName2: marrom terra
     parallaxImage: images/fyll-phone-transparent.png
     colorText4: "#DDB2A6"
@@ -28,7 +30,6 @@ theme:
     postProfile: images/fyll-card-logo.png
     footerBackground: "#b45e3c"
     rightText: simplificando<br />as relações<br />entre pessoas.
-    thumbnail: images/thumb-fyll.png
     backgroundImage: images/fyll-landscape.png
     color1: "#00534E"
     color2: "#C26A48"
@@ -61,6 +62,5 @@ theme:
       em pessoas."
     postComment: images/fyll-card-btn-2.png
     descriptionImage: images/fyll-logo.png
-    projectTitle: Fyll
     postShare: images/fyll-card-btn-3.png
 ---

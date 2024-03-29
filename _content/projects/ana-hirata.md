@@ -2,11 +2,13 @@
 title: ana-hirata
 actived: true
 showInProjects: true
+thumbnail: images/thumb-ana.png
+projectTitle: Ana Hirata
+projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
+  mudanças são a base do nosso raciocínio criativo e estratégico, que parte
+  das pessoas ao mesmo tempo em que as coloca no centro de tudo.
 theme:
   - colorHex8: "#FBBB8A"
-    projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
-      mudanças são a base do nosso raciocínio criativo e estratégico, que parte
-      das pessoas ao mesmo tempo em que as coloca no centro de tudo.
     colorHex1text: "#F2F2F2"
     parallaxAcessory1: images/ana-knife.png
     descriptionColor: "#ffffff"
@@ -19,7 +21,6 @@ theme:
     colorHex5text: "#F2F2F2"
     colorHex6text: "#F2F2F2"
     colorHex7text: "#F2F2F2"
-    thumbnail: images/thumb-ana.png
     parallaxBackground1: "#D3D5D5"
     parallaxBackground2: "#EA6D80"
     parallaxImage1: images/ana-poster.png
@@ -47,5 +48,4 @@ theme:
     backgroundColor2: "#EEEEEE"
     colorHex6: "#C00B53"
     colorHex7: "#EA6D80"
-    projectTitle: Ana Hirata
 ---

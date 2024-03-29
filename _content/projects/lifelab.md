@@ -2,21 +2,20 @@
 title: lifelab
 actived: true
 showInProjects: true
+thumbnail: images/thumb-lifelab.png
+projectTitle: Life Lab
+projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.
 theme:
   - colorGridImage2: images/lifelab-lab-logo.png
     colorGridHex2: "#FF6400"
     colorGridImage3: images/lifelab-expo.png
     colorGridHex3: "#000000"
-    projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
-      mudanças são a base do nosso raciocínio criativo e estratégico, que parte
-      das pessoas ao mesmo tempo em que as coloca no centro de tudo.
     imageParallaxFinal: images/lifelab-stickers.png
     postParallaxImage: images/lifelab-outdoor.png
     parallaxImage: images/lifelab-plastic.png
     parallaxBackground: "#f5f5f5"
     footerColor: "#FFFFFF"
     footerBackground: "#103ae1"
-    thumbnail: images/thumb-lifelab.png
     colorGridTitle: images/lifelab-colors-title.png
     backgroundColor: "#0047F8"
     headerColor: "#FFFFFF"
@@ -42,6 +41,5 @@ theme:
     colorGridImage1: images/lifelab-life-logo.png
     colorGridHex1: "#0047FD"
     descriptionImage: images/lifelab-quote.png
-    projectTitle: Life L
     colorGridName3: black
 ---

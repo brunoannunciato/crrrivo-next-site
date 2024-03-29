@@ -2,6 +2,9 @@
 title: gioh
 actived: false
 showInProjects: true
+thumbnail: images/thumb-gioh.png
+projectTitle: Gióh
+projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.
 theme:
   - centralTextColor: "#ffffff"
     card1: images/gioh-card-1.png
@@ -10,9 +13,6 @@ theme:
       autocuidado. "
     card2: images/gioh-card-2.png
     imagePreFooter: images/gioh-logo-mini.png
-    projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
-      mudanças são a base do nosso raciocínio criativo e estratégico, que parte
-      das pessoas ao mesmo tempo em que as coloca no centro de tudo.
     card3: images/gioh-card-3.png
     card4: images/gioh-card-4.png
     card5: images/gioh-card-5.png
@@ -31,7 +31,6 @@ theme:
     card9: images/gioh-card-9.png
     preFooterText: versão reduzida<br />2cm de altura
     color3Hex: "#211C18"
-    thumbnail: images/thumb-gioh.png
     color2Hex: "#C19D85"
     color1Image: images/gioh-tijolos.jpg
     color1Hex: "#C19D85"
@@ -49,5 +48,4 @@ theme:
     color2background: "#FFDCC5"
     color3background: "#211C18"
     descriptionImage: images/gioh-logo.png
-    projectTitle: Gióh
 ---

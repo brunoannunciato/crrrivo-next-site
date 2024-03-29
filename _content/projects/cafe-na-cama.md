@@ -2,6 +2,9 @@
 title: cafe-na-cama
 actived: true
 showInProjects: true
+thumbnail: images/thumb-cafe.png
+projectTitle: Ana Hirata
+projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.
 theme:
   - cardColor3: images/cafe-seal-3.png
     color8Name: ROSA
@@ -16,9 +19,6 @@ theme:
     color7textColor: "#ffffff"
     color2r: "33"
     color6textColor: "#ffffff"
-    projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
-      mudanças são a base do nosso raciocínio criativo e estratégico, que parte
-      das pessoas ao mesmo tempo em que as coloca no centro de tudo.
     card3: images/cafe-card-3.png
     color1r: "234"
     color5textColor: "#ffffff"
@@ -32,7 +32,6 @@ theme:
     color1textColor: "#212121"
     footerColor: "#000000"
     footerBackground: "#f2f2f2"
-    thumbnail: images/thumb-cafe.png
     color8b: "191"
     color7b: "194"
     logosLeft: images/cafe-logos-left.png
@@ -77,5 +76,4 @@ theme:
     color6r: "32"
     color7Name: VERDE
     descriptionImage: images/cafe-logo.svg
-    projectTitle: Ana Hirata
 ---

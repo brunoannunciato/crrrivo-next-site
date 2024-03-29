@@ -14,6 +14,12 @@ collections:
       - { label: url do projeto, name: title, widget: string, default: 'leo' }
       - {label: "Ativa", name: "actived", widget: "boolean", default: false}
       - {label: "Aparecer em projetos", name: "showInProjects", widget: "boolean", default: false}
+      - label: Thumbnail página de projetos (849 x 478)
+        name: thumbnail
+        widget: image
+        allow_multiple: false
+      - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Leo Madeiras' }
+      - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
       - label: "Tema"
         name: "theme"
         widget: "list"
@@ -26,12 +32,6 @@ collections:
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#F4E84F' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#193D27' }
               - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#E7B228' }
-              - label: Thumbnail página de projetos (849 x 478)
-                name: thumbnail
-                widget: image
-                allow_multiple: false
-              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Leo Madeiras' }
-              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Hero - esquerda (653 x 274)
                 name: heroLeft
                 widget: image
@@ -93,12 +93,6 @@ collections:
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#6F6F6F' }
               - { label: Cor de texto do rodapé, name: footerTextColor, widget: string, default: '#FFFFFF' }
-              - label: Thumbnail página de projetos (849 x 478)
-                name: thumbnail
-                widget: image
-                allow_multiple: false
-              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Gol Smiles' }
-              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Hero (1920 x 1072)
                 name: hero
                 widget: image
@@ -146,12 +140,6 @@ collections:
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#103ae1' }
               - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#FFFFFF' }
-              - label: Thumbnail página de projetos (849 x 478)
-                name: thumbnail
-                widget: image
-                allow_multiple: false
-              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Lifelab' }
-              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Hero (1920 x 1072)
                 name: hero
                 widget: image
@@ -230,12 +218,6 @@ collections:
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#211C18' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#b88f74' }
               - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#211C18' }
-              - label: Thumbnail página de projetos (849 x 478)
-                name: thumbnail
-                widget: image
-                allow_multiple: false
-              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Gióh' }
-              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Hero (1764 x 1224)
                 name: hero
                 widget: image
@@ -327,12 +309,6 @@ collections:
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#ffffff' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#b45e3c' }
               - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#ffffff' }
-              - label: Thumbnail página de projetos (849 x 478)
-                name: thumbnail
-                widget: image
-                allow_multiple: false
-              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Fyll' }
-              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Hero (1150 x 815)
                 name: hero
                 widget: image
@@ -439,12 +415,6 @@ collections:
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#000000' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#f2f2f2' }
               - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#000000' }
-              - label: Thumbnail página de projetos (849 x 478)
-                name: thumbnail
-                widget: image
-                allow_multiple: false
-              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Ana Hirata' }
-              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Hero (1920 x 1334)
                 name: hero
                 widget: image
@@ -511,12 +481,6 @@ collections:
               - { label: Cor de texto do header, name: headerColor, widget: string, default: '#000000' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#f2f2f2' }
               - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#000000' }
-              - label: Thumbnail página de projetos (849 x 478)
-                name: thumbnail
-                widget: image
-                allow_multiple: false
-              - { label: Título página de projetos, name: projectTitle, widget: string, default: 'Ana Hirata' }
-              - { label: Descrição página de projetos, name: projectDescription, widget: text, default: 'Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.' }
               - label: Parallax Image (1764 x 1224)
                 name: hero
                 widget: image
