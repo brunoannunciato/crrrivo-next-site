@@ -8,64 +8,7 @@ import SubHeader from '../../components/SubHeader';
 import "./projects.scss"
 import Link from 'next/link';
 import { ReactSVG } from 'react-svg';
-
-
-// const projects = [
-//   {
-//       id: 1,
-//       image: "/images/thumb-leo.png",
-//       title: "Leo Madeiras",
-//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-//       link: "/projetos/leo"
-//   },
-
-//   {
-//       id: 2,
-//       image: "/images/thumb-gol.png",
-//       title: "Gol Smiles",
-//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-//       link: "/projetos/gol-smiles"
-//   },
-
-//   {
-//       id: 3,
-//       image: "/images/thumb-lifelab.png",
-//       title: "Lifelab",
-//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-//       link: "/projetos/lifelab"
-//   },
-
-//   {
-//       id: 4,
-//       image: "/images/thumb-gioh.png",
-//       title: "Gióh",
-//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-//       link: "/projetos/gioh"
-//   },
-
-//   {
-//       id: 5,
-//       image: "/images/thumb-fyll.png",
-//       title: "Fyll",
-//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-//       link: "/projects/fyll"
-//   },
-
-//   {
-//       id: 6,
-//       image: "/images/thumb-ana.png",
-//       title: "Ana Hirata",
-//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-//       link: "/projetos/ana-hirata"
-//   },
-//   {
-//     id: 7,
-//     image: "/images/thumb-cafe.png",
-//     title: "Café na Cama",
-//     description: "Penamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-//     link: "/projetos/cafe-na-cama"
-//   },
-// ]
+import classNames from 'classnames';
 
 
 export default function Projects({posts}) {
@@ -81,6 +24,10 @@ export default function Projects({posts}) {
   }).filter(post => {
     return post.actived
   })
+
+  const highlightProjects = projects.slice(0, 4)
+  const otherProjects = projects.slice(4)
+  console.log(otherProjects)
 
 
   const scrollToTop = () => {
@@ -115,9 +62,41 @@ export default function Projects({posts}) {
       <div className="projects__container">
         <div className="projects__shelf">
           {
-            projects.map(({id, image, title, description, link}) => {
+            highlightProjects.map(({id, image, title, description, link}) => {
               return (
-                <div className='projects__project' key={id}>
+                <div className="projects__project" key={id}>
+                  <div className="projects__project-image">
+                    <Link href={link}>
+                      <Image
+                        src={`/${image}`}
+                        width={849}
+                        height={478}
+                      />
+                    </Link>
+                  </div>
+
+                  <div className="projects__project-content">
+                    <Link href={link}>
+                      <div className="projects__project-title">
+                        {title}
+                      </div>
+                    </Link>
+
+                    <div className="projects__project-description">
+                      {description}
+                    </div>
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
+
+        <div className="projects__list">
+        {
+            otherProjects.map(({id, image, title, description, link}) => {
+              return (
+                <div className={classNames('projects__project projects__list-item', {'--inverted' : Number(id) % 2 !== 0})} key={id}>
                   <div className="projects__project-image">
                     <Link href={link}>
                       <Image
