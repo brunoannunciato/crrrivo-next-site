@@ -11,7 +11,7 @@ import Container from '../../components/Container'
 
 const Lifelab = ({data}) => {
     const theme = data.theme[0]
-    console.log(theme)
+    
     return (
         <div className="life-lab" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>

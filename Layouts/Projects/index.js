@@ -69,7 +69,6 @@ import { ReactSVG } from 'react-svg';
 
 
 export default function Projects({posts}) {
-  console.log(posts)
   const projects = posts.map((post, index) => {
     return {
       id: index,
@@ -91,8 +90,6 @@ export default function Projects({posts}) {
       behavior: 'smooth'
     });
   }
-
-  console.log(posts)
 
   return (
     <Layout className="projects">

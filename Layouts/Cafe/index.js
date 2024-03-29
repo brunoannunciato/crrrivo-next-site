@@ -15,7 +15,6 @@ import { ReactSVG } from 'react-svg'
 
 const Cafe = ({data}) => {
     const theme = data?.theme[0]
-    console.log(theme)
 
     const colors = [
         {

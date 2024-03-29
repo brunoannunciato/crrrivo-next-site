@@ -48,8 +48,6 @@ const Ana = ({data}) => {
         }
     ]
 
-    console.log(theme)
-
     return (
         <div className="ana" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>

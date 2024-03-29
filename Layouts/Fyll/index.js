@@ -44,8 +44,7 @@ const Fyll = ({data}) => {
           support: theme?.colorRole5
         },
       ]
-    
-    console.log({theme})
+      
     return (
         <div className="fyll" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
