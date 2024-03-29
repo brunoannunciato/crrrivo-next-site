@@ -10,63 +10,80 @@ import Link from 'next/link';
 import { ReactSVG } from 'react-svg';
 
 
-const projects = [
-  {
-      id: 1,
-      image: "/images/thumb-leo.png",
-      title: "Leo Madeiras",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projetos/leo"
-  },
+// const projects = [
+//   {
+//       id: 1,
+//       image: "/images/thumb-leo.png",
+//       title: "Leo Madeiras",
+//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+//       link: "/projetos/leo"
+//   },
 
-  {
-      id: 2,
-      image: "/images/thumb-gol.png",
-      title: "Gol Smiles",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projetos/gol-smiles"
-  },
+//   {
+//       id: 2,
+//       image: "/images/thumb-gol.png",
+//       title: "Gol Smiles",
+//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+//       link: "/projetos/gol-smiles"
+//   },
 
-  {
-      id: 3,
-      image: "/images/thumb-lifelab.png",
-      title: "Lifelab",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projetos/lifelab"
-  },
+//   {
+//       id: 3,
+//       image: "/images/thumb-lifelab.png",
+//       title: "Lifelab",
+//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+//       link: "/projetos/lifelab"
+//   },
 
-  {
-      id: 4,
-      image: "/images/thumb-gioh.png",
-      title: "Gióh",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projetos/gioh"
-  },
+//   {
+//       id: 4,
+//       image: "/images/thumb-gioh.png",
+//       title: "Gióh",
+//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+//       link: "/projetos/gioh"
+//   },
 
-  {
-      id: 5,
-      image: "/images/thumb-fyll.png",
-      title: "Fyll",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projects/fyll"
-  },
+//   {
+//       id: 5,
+//       image: "/images/thumb-fyll.png",
+//       title: "Fyll",
+//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+//       link: "/projects/fyll"
+//   },
 
-  {
-      id: 6,
-      image: "/images/thumb-ana.png",
-      title: "Ana Hirata",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-      link: "/projetos/ana-hirata"
-  },
-  {
-    id: 7,
-    image: "/images/thumb-cafe.png",
-    title: "Café na Cama",
-    description: "Penamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
-    link: "/projetos/cafe-na-cama"
-  },
-]
-export default function Projects() {
+//   {
+//       id: 6,
+//       image: "/images/thumb-ana.png",
+//       title: "Ana Hirata",
+//       description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+//       link: "/projetos/ana-hirata"
+//   },
+//   {
+//     id: 7,
+//     image: "/images/thumb-cafe.png",
+//     title: "Café na Cama",
+//     description: "Penamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+//     link: "/projetos/cafe-na-cama"
+//   },
+// ]
+
+
+export default function Projects({posts}) {
+  console.log(posts)
+  const projects = posts.map((post, index) => {
+    return {
+      id: index,
+      actived: post?.showInProjects,
+      image: post?.thumbnail,
+      title: post?.projectTitle,
+      description: post?.projectDescription,
+      link: `/projetos/${post?.title}`
+    }
+  }).filter(post => {
+    return post.actived
+  })
+
+
   const scrollToTop = () => {
     window.scroll({
       top: 0, 
@@ -74,6 +91,8 @@ export default function Projects() {
       behavior: 'smooth'
     });
   }
+
+  console.log(posts)
 
   return (
     <Layout className="projects">
@@ -105,7 +124,7 @@ export default function Projects() {
                   <div className="projects__project-image">
                     <Link href={link}>
                       <Image
-                        src={image}
+                        src={`/${image}`}
                         width={849}
                         height={478}
                       />

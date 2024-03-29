@@ -4,7 +4,7 @@ import matter from 'gray-matter'
 
 const postsDirectory = path.join(process.cwd(), '_content/projects')
 
-export const getSortedPostsData = () => {
+export const getAllPosts = () => {
 
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map(fileName => {
@@ -25,7 +25,7 @@ export const getSortedPostsData = () => {
     }
   })
 
-  return sortedPosts
+  return allPostsData
 }
 
 export const getAllPostIds = () => {

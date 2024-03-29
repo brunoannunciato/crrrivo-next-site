@@ -15,6 +15,9 @@ const nextConfig = {
       if (!`${one.issuer?.and}`.includes('_app')) return;
       one.issuer.and = [path.resolve(__dirname)];
     });
+
+    config.resolve.fallback = { fs: false };
+    
     return config;
   },
 };
