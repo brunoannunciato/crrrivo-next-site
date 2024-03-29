@@ -12,7 +12,7 @@ const ProjectsNav = () => {
     return (
         <section className="projects-nav">
             
-            <Link href="/projects">
+            <Link href="/projetos">
                 <Container className="projects-nav__container">
                         <h1 className="projects-nav__title">
                             Projetos

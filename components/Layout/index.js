@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const Layout = ({ children, className }) => {
   const router = useRouter()
 
-  const isProject = router.pathname === '/projects'
+  const isProject = router.pathname === '/projetos'
 
   return (
     <motion.div

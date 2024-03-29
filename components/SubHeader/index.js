@@ -10,7 +10,7 @@ const SubHeader = ({color = "#ffffff", projectName}) => {
 
     return (
         <Container className="sub-header" style={{color}}>
-            <Link href="/projects">
+            <Link href="/projetos">
                 <h2 className="sub-header__title">
                         Projetos
                 </h2>
