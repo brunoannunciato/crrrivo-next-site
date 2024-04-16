@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ReactSVG } from 'react-svg';
+import Image from '../Image';
 import classNames from 'classnames';
 
 import './header.scss';
@@ -24,7 +24,7 @@ const Header = ({hideAt = false, color = "#ffffff", disableMixBlendMode}) => {
     <header className={headerClass} style={{ color, borderColor: color }}>
       <div className="header__logo-wrapper">
         <Link href="/">
-         <ReactSVG src='/images/logo.svg' className="header__logo" />
+         <Image src='/images/logo.svg' className="header__logo" />
         </Link>
       </div>
 

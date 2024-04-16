@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from '../../components/Image';
 
 import Header from '../../components/Header';
 import Layout from '../../components/Layout';
@@ -7,7 +7,6 @@ import SubHeader from '../../components/SubHeader';
 
 import "./projects.scss"
 import Link from 'next/link';
-import { ReactSVG } from 'react-svg';
 import classNames from 'classnames';
 
 
@@ -126,7 +125,7 @@ export default function Projects({posts}) {
 
         <div className="projects__arrow-wrapper" onClick={scrollToTop}>
           <div className="projects__arrow">
-            <ReactSVG
+            <Image
               src='/images/arrow.svg'
             />
           </div>

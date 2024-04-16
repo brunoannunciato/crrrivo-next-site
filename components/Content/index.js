@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 
-import Image from 'next/image';
+import Image from '../Image';
 import Email from './components/Email';
 import Values from './components/Values';
 import classNames from 'classnames';

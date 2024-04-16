@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from '../Image';
 import isClient from '../../utils/isClient';
 
 import "./projects-nav.scss"
-import { ReactSVG } from 'react-svg';
 import Container from '../Container';
 
 const ProjectsNav = () => {
@@ -18,7 +17,7 @@ const ProjectsNav = () => {
                             Projetos
                         </h1>
 
-                        <ReactSVG src="/images/arrow.svg" className="projects-nav__arrow" />
+                        <Image src="/images/arrow.svg" className="projects-nav__arrow" />
                 </Container>
             </Link>
         </section>

@@ -1,6 +1,6 @@
 ---
 title: gioh
-actived: false
+actived: true
 showInProjects: true
 thumbnail: images/thumb-gioh.png
 projectTitle: Gióh

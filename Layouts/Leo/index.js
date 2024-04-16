@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from '../../components/Image';
 import { Parallax } from 'react-scroll-parallax';
 
 import Header from '../../components/Header';

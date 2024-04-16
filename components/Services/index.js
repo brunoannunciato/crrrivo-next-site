@@ -1,8 +1,7 @@
-import Image from 'next/image';
+import Image from '../Image';
 import isClient from '../../utils/isClient';
 
 import './services.scss';
-import { ReactSVG } from 'react-svg';
 
 const Services = () => {
   const isMobile = isClient() && window.outerWidth < 768;
@@ -32,7 +31,7 @@ const Services = () => {
             return (
               <li key={item} className="services__item">
                 <div className="services__icon">
-                  <ReactSVG
+                  <Image
                     src="/images/arrow.svg"
                     alt=""
                     width={isMobile ? '28px' : '56px'}
