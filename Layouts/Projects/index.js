@@ -15,7 +15,7 @@ const projects = [
       id: 1,
       image: "/images/thumb-leo.png",
       title: "Leo Madeiras",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      description: "Campanha para a Leo Madeiras, pensada de forma 360. Unindo social, e-commerce e campanha publicitária para a Leoquidação, que já é um clássico de vendas da marca e que em 2024, foi um sucesso absoluto.",
       link: "/projetos/leo"
   },
 
@@ -23,7 +23,7 @@ const projects = [
       id: 2,
       image: "/images/thumb-gol.png",
       title: "Gol Smiles",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      description: "Campanha completa de endomarketing para a Gol Smiles, que fala sobre inovação e os novos caminhos para o futuro da empresa e dos colaboradores, com um evento chamado Unland, que faz parte dos eventos anuais da Gol.",
       link: "/projetos/gol-smiles"
   },
 
@@ -31,7 +31,7 @@ const projects = [
       id: 3,
       image: "/images/thumb-lifelab.png",
       title: "Lifelab",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      description: "Branding criado para a Life Lab, empresa do Caetano Tona, organizador do TEDx e criador de conteúdo. A marca foi desenvolvida com o intuito de dar voz às pessoas. É uma empresa de desenvolvimento humano.",
       link: "/projects/life-lab"
   },
 
@@ -39,7 +39,7 @@ const projects = [
       id: 4,
       image: "/images/thumb-gioh.png",
       title: "Gióh",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      description: "O projeto de branding criado para a Gióh surgiu para ressignificar o mercado de acupuntura no Brasil, trazendo novos assets visuais para o mercado, que anda na contramão. Inovação e terapias específicas faz da Gióh uma marca ímpar.",
       link: "/projects/gioh"
   },
 
@@ -47,7 +47,7 @@ const projects = [
       id: 5,
       image: "/images/thumb-fyll.png",
       title: "Fyll",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      description: "“Não há linhas retas na natureza”. É a premissa que norteia toda a identidade visual da Fyll. Branding focado na natureza, pessoas e relações. A marca tem um posicionamento bem sólido, além de trazer as relações humanas como ponto focal.",
       link: "/projects/fyll"
   },
 
@@ -55,14 +55,14 @@ const projects = [
       id: 6,
       image: "/images/thumb-ana.png",
       title: "Ana Hirata",
-      description: "Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+      description: "Marca criada para a Chef Ana Hirata, que estava entrando em um reality show de culinária na Rede Record. Foi criado um logo que representa os estágios da fermentação de um pão, para dar o mesmo dinamismo do processo à marca.",
       link: "/projects/ana-hirata"
   },
   {
     id: 7,
     image: "/images/thumb-cafe.png",
     title: "Café na Cama ",
-    description: "Penamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.",
+    description: "Projeto criado para trazer de volta as clássicas cestas de café da manhã dos anos 90, mas com um toque de luxo e pratos criados por chefs de cozinha, além de uma identidade toda pensada nos grandes tabloides globais.  ",
     link: "/projects/cafe-na-cama"
   },
 ]
