@@ -7,7 +7,7 @@ import Gioh from '../../Layouts/Gioh'
 import Fyll from '../../Layouts/Fyll'
 import Ana from '../../Layouts/Ana'
 import Cafe from '../../Layouts/Cafe'
-import { useEffect } from "react"
+import { Suspense, useEffect } from "react"
 
 const  themes = {
     leo: Leo,
@@ -31,7 +31,9 @@ const Project = (data) => {
     }, [])
 
     return(
+      <Suspense fallback={<>CARREGANDO</>}>
         <Layout data={data} />
+      </Suspense>
     )
 }
 
