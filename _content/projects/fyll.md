@@ -4,11 +4,7 @@ actived: true
 showInProjects: true
 thumbnail: images/thumb-fyll.png
 projectTitle: Fyll
-projectDescription: "Uma empresa sobre RH: relações humanas. Diferente de todas
-  as outras, a Fyll surgiu, não para falar de recursos humanos, mas em
-  relações. Veio da necessidade de sentir as pessoas, além de trazer um
-  apoio e uma escuta ativa nos seus movimentos. Projeto de branding baseado
-  em pessoas."
+projectDescription: “Não há linhas retas na natureza”. É a premissa que norteia toda a identidade visual da Fyll. Branding focado na natureza, pessoas e relações. A marca tem um posicionamento bem sólido, além de trazer as relações humanas como ponto focal.
 theme:
   - colorText1: "#FFFFFF"
     colorText2: "#FFFFFF"

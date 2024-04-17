@@ -4,7 +4,7 @@ actived: true
 showInProjects: true
 thumbnail: images/thumb-leo.png
 projectTitle: Leo Madeiras
-projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.
+projectDescription: Campanha para a Leo Madeiras, pensada de forma 360. Unindo social, e-commerce e campanha publicitária para a Leoquidação, que já é um clássico de vendas da marca e que em 2024, foi um sucesso absoluto.
 theme:
   - colorText1: "#FFFFFF"
     card1: images/card-1.png

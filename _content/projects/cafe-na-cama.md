@@ -3,8 +3,8 @@ title: cafe-na-cama
 actived: true
 showInProjects: true
 thumbnail: images/thumb-cafe.png
-projectTitle: Ana Hirata
-projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.
+projectTitle: Café na Cama
+projectDescription: Projeto criado para trazer de volta as clássicas cestas de café da manhã dos anos 90, mas com um toque de luxo e pratos criados por chefs de cozinha, além de uma identidade toda pensada nos grandes tabloides globais.
 theme:
   - cardColor3: images/cafe-seal-3.png
     color8Name: ROSA

@@ -4,7 +4,7 @@ actived: true
 showInProjects: true
 thumbnail: images/thumb-gol.png
 projectTitle: Gol Smiles
-projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.
+projectDescription: Campanha completa de endomarketing para a Gol Smiles, que fala sobre inovação e os novos caminhos para o futuro da empresa e dos colaboradores, com um evento chamado Unland, que faz parte dos eventos anuais da Gol.
 theme:
   - card1: images/gol-card-1.png
     card2: images/gol-card-2.png

@@ -4,7 +4,7 @@ actived: true
 showInProjects: true
 thumbnail: images/thumb-gioh.png
 projectTitle: Gióh
-projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.
+projectDescription: O projeto de branding criado para a Gióh surgiu para ressignificar o mercado de acupuntura no Brasil, trazendo novos assets visuais para o mercado, que anda na contramão. Inovação e terapias específicas faz da Gióh uma marca ímpar.
 theme:
   - centralTextColor: "#ffffff"
     card1: images/gioh-card-1.png

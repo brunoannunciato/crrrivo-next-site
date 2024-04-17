@@ -4,7 +4,7 @@ actived: true
 showInProjects: true
 thumbnail: images/thumb-lifelab.png
 projectTitle: Life Lab
-projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e mudanças são a base do nosso raciocínio criativo e estratégico, que parte das pessoas ao mesmo tempo em que as coloca no centro de tudo.
+projectDescription: Branding criado para a Life Lab, empresa do Caetano Tona, organizador do TEDx e criador de conteúdo. A marca foi desenvolvida com o intuito de dar voz às pessoas. É uma empresa de desenvolvimento humano.
 theme:
   - colorGridImage2: images/lifelab-lab-logo.png
     colorGridHex2: "#FF6400"

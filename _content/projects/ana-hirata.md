@@ -4,9 +4,7 @@ actived: true
 showInProjects: true
 thumbnail: images/thumb-ana.png
 projectTitle: Ana Hirata
-projectDescription: Pensamos olhando para o mundo. Hábitos, tendências e
-  mudanças são a base do nosso raciocínio criativo e estratégico, que parte
-  das pessoas ao mesmo tempo em que as coloca no centro de tudo.
+projectDescription: Marca criada para a Chef Ana Hirata, que estava entrando em um reality show de culinária na Rede Record. Foi criado um logo que representa os estágios da fermentação de um pão, para dar o mesmo dinamismo do processo à marca.
 theme:
   - colorHex8: "#FBBB8A"
     colorHex1text: "#F2F2F2"
