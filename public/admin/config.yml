@@ -2,6 +2,7 @@ backend:
   name: github
   repo: brunoannunciato/crrrivo-next-site
   branch: stage # Branch to update (optional; defaults to master)
+  base_url: https://crrrivo-next-site-stg.vercel.app/
 media_folder: public/images
 public_folder: images
 collections:
