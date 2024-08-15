@@ -1,23 +1,23 @@
-import Image from 'next/image';
-import isClient from '../../utils/isClient';
+import Image from "next/image"
+import isClient from "../../utils/isClient"
 
-import './services.scss';
-import { ReactSVG } from 'react-svg';
+import "./services.scss"
+import { ReactSVG } from "react-svg"
 
 const Services = () => {
-  const isMobile = isClient() && window.outerWidth < 768;
+  const isMobile = isClient() && window.outerWidth < 768
 
   const servicesList = [
-    'Branding',
-    'Publicidade',
-    'Websites',
-    'Identidade',
-    'Impressos',
-    'Direção de arte',
-    'Estratégia',
-    'Digital',
-    'Motion'
-  ];
+    "Branding",
+    "Publicidade",
+    "Websites",
+    "Identidade",
+    "Impressos",
+    "Direção de arte",
+    "Estratégia",
+    "Digital",
+    "IA",
+  ]
 
   return (
     <section className="services">
@@ -35,14 +35,14 @@ const Services = () => {
                   <ReactSVG
                     src="/images/arrow.svg"
                     alt=""
-                    width={isMobile ? '28px' : '56px'}
-                    height={isMobile ? '14px' : '44px'}
+                    width={isMobile ? "28px" : "56px"}
+                    height={isMobile ? "14px" : "44px"}
                     className="services__arrow"
                   />
                 </div>
                 <h3 className="services__item-name">{item}</h3>
               </li>
-            );
+            )
           })}
         </ul>
 
@@ -54,7 +54,7 @@ const Services = () => {
         </p>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services
