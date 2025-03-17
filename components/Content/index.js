@@ -67,8 +67,6 @@ const Content = () => {
           <div className="content__right" ref={containerRef}>
             <Email titleHeight={titleHeight} mailRef={mailRef} />
 
-            <Stone />
-
             <div
               className={classNames('content__values-wrapper', {})}
               ref={valuesWrapperRef}
