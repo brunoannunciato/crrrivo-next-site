@@ -5,7 +5,7 @@ import isClient from '../../utils/isClient';
 import Container from "../Container";
 
 import "./sub-header.scss"
-const SubHeader = ({color = "#ffffff", projectName}) => {
+const SubHeader = ({color = "#edebe5", projectName}) => {
     const isMobile = isClient() && window.outerWidth < 768;
 
     return (

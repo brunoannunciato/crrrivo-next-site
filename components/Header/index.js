@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import './header.scss';
 import Link from 'next/link';
 
-const Header = ({hideAt = false, color = "#ffffff", disableMixBlendMode}) => {
+const Header = ({hideAt = false, color = "#edebe5", disableMixBlendMode}) => {
   const [language, setLanguage] = useState('pt');
 
   const enClasses = classNames('header__language-selector', {
@@ -22,6 +22,17 @@ const Header = ({hideAt = false, color = "#ffffff", disableMixBlendMode}) => {
 
   return (
     <header className={headerClass} style={{ color, borderColor: color }}>
+      <style>
+        {
+          `
+          path,
+          .std0 {
+            fill: ${color};
+          }
+          `
+        }
+        
+      </style>
       <div className="header__logo-wrapper">
         <Link href="/">
           <ReactSVG

@@ -16,10 +16,10 @@
   &.--disabled {
     mix-blend-mode: initial;
     
-    .st0,
-    path {
-      fill: #222;
-    }
+    // .st0,
+    // path {
+    //   fill: #222;
+    // }
   }
 
   &__content-wrapper {
@@ -36,10 +36,10 @@
   &__logo {
     cursor: pointer;
 
-    path,
-    .st0 {
-      fill: #ddd;
-    }
+    // path,
+    // .st0 {
+    //   fill: #ddd;
+    // }
 
     &-wrapper {
       width: 150px;

@@ -53,23 +53,23 @@ collections:
               - { label: Grid cor - 1, name: color1, widget: string, default: '#204F32' }
               - { label: Grid cor nome - 1, name: colorName1, widget: string, default: 'Verde Leo' }
               - { label: Grid cor função - 1, name: colorRole1, widget: string, default: 'Principal' }
-              - { label: Grid cor de texto - 1, name: colorText1, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 1, name: colorText1, widget: string, default: '#edebe5' }
               - { label: Grid cor - 2, name: color2, widget: string, default: '#204F32' }
               - { label: Grid cor nome - 2, name: colorName2, widget: string, default: 'Verde Leo' }
               - { label: Grid cor função - 2, name: colorRole2, widget: string, default: 'Principal' }
-              - { label: Grid cor de texto - 2, name: colorText2, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 2, name: colorText2, widget: string, default: '#edebe5' }
               - { label: Grid cor - 3, name: color3, widget: string, default: '#204F32' }
               - { label: Grid cor nome - 3, name: colorName3, widget: string, default: 'Verde Leo' }
               - { label: Grid cor função - 3, name: colorRole3, widget: string, default: 'Principal' }
-              - { label: Grid cor de texto - 3, name: colorText3, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 3, name: colorText3, widget: string, default: '#edebe5' }
               - { label: Grid cor - 4, name: color4, widget: string, default: '#204F32' }
               - { label: Grid cor nome - 4, name: colorName4, widget: string, default: 'Verde Leo' }
               - { label: Grid cor função - 4, name: colorRole4, widget: string, default: 'Principal' }
-              - { label: Grid cor de texto - 4, name: colorText4, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 4, name: colorText4, widget: string, default: '#edebe5' }
               - { label: Grid cor - 5, name: color5, widget: string, default: '#204F32' }
               - { label: Grid cor nome - 5, name: colorName5, widget: string, default: 'Verde Leo' }
               - { label: Grid cor função - 5, name: colorRole5, widget: string, default: 'Principal' }
-              - { label: Grid cor de texto - 5, name: colorText5, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 5, name: colorText5, widget: string, default: '#edebe5' }
               - label: Imagem Card de cima (416 x 416)
                 name: card1
                 widget: image
@@ -91,9 +91,9 @@ collections:
             widget: object
             fields:
               - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#7c7c7c' }
-              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#edebe5' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#6F6F6F' }
-              - { label: Cor de texto do rodapé, name: footerTextColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de texto do rodapé, name: footerTextColor, widget: string, default: '#edebe5' }
               - label: Hero (1920 x 1072)
                 name: hero
                 widget: image
@@ -138,9 +138,9 @@ collections:
             widget: object
             fields:
               - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#0047F8' }
-              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#edebe5' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#103ae1' }
-              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#FFFFFF' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#edebe5' }
               - label: Hero (1920 x 1072)
                 name: hero
                 widget: image
@@ -247,7 +247,7 @@ collections:
                 allow_multiple: false
               - { label: Texto central, name: centralText, widget: text, default: "nós pensamos em um espaço onde você se sinta segura, confortável e livre para cuidar do seu corpo e mente. a gióh é um lugar para o seu autocuidado. " }
               - { label: Arroba central, name: centralAt, widget: string, default: "@giohacupuntura" }
-              - { label: Cor de texto central, name: centralTextColor, widget: string, default: "#ffffff" }
+              - { label: Cor de texto central, name: centralTextColor, widget: string, default: "#edebe5" }
               - label: Imagem Parallax 1 (1760 x 990)
                 name: parallax1
                 widget: image
@@ -307,15 +307,15 @@ collections:
             widget: object
             fields:
               - { label: Cor de fundo, name: backgroundColor, widget: string, default: '#C26A48' }
-              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#ffffff' }
+              - { label: Cor de texto do header, name: headerColor, widget: string, default: '#edebe5' }
               - { label: Cor de fundo do rodapé, name: footerBackground, widget: string, default: '#b45e3c' }
-              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#ffffff' }
+              - { label: Cor de texto do rodapé, name: footerColor, widget: string, default: '#edebe5' }
               - label: Hero (1150 x 815)
                 name: hero
                 widget: image
                 allow_multiple: false
               - { label: Descrição, name: description, widget: Text, default: "Uma empresa sobre RH: relações humanas. Diferente de todas as outras, a Fyll surgiu, não para falar de recursos humanos, mas em relações. Veio da necessidade de sentir as pessoas, além de trazer um apoio e uma escuta ativa nos seus movimentos. Projeto de branding baseado em pessoas." }
-              - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#ffffff" } 
+              - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#edebe5" } 
               - label: Imagem da descrição (540 x 282)
                 name: descriptionImage
                 widget: image
@@ -365,7 +365,7 @@ collections:
                 name: screen3
                 widget: image
                 allow_multiple: false
-              - { label: Cor de background do parallax, name: parallaxBackground, widget: string, default: "#FFFFFF" }
+              - { label: Cor de background do parallax, name: parallaxBackground, widget: string, default: "#edebe5" }
               - label: Imagem parallax (363 x 584)
                 name: parallaxImage
                 widget: image
@@ -373,15 +373,15 @@ collections:
               - { label: Grid cor - 1, name: color1, widget: string, default: '#00534E' }
               - { label: Grid cor nome - 1, name: colorName1, widget: string, default: 'Verde floresta' }
               - { label: Grid cor função - 1, name: colorRole1, widget: string, default: 'Principal' }
-              - { label: Grid cor de texto - 1, name: colorText1, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 1, name: colorText1, widget: string, default: '#edebe5' }
               - { label: Grid cor - 2, name: color2, widget: string, default: '#C26A48' }
               - { label: Grid cor nome - 2, name: colorName2, widget: string, default: 'marrom terra' }
               - { label: Grid cor função - 2, name: colorRole2, widget: string, default: 'secundária' }
-              - { label: Grid cor de texto - 2, name: colorText2, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 2, name: colorText2, widget: string, default: '#edebe5' }
               - { label: Grid cor - 3, name: color3, widget: string, default: '#203F72' }
               - { label: Grid cor nome - 3, name: colorName3, widget: string, default: 'azul oceano' }
               - { label: Grid cor função - 3, name: colorRole3, widget: string, default: 'secundária' }
-              - { label: Grid cor de texto - 3, name: colorText3, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 3, name: colorText3, widget: string, default: '#edebe5' }
               - { label: Grid cor - 4, name: color4, widget: string, default: '#FFE2D9' }
               - { label: Grid cor nome - 4, name: colorName4, widget: string, default: 'Bege areia' }
               - { label: Grid cor função - 4, name: colorRole4, widget: string, default: 'apoio' }
@@ -389,7 +389,7 @@ collections:
               - { label: Grid cor - 5, name: color5, widget: string, default: '#BC6282' }
               - { label: Grid cor nome - 5, name: colorName5, widget: string, default: 'Rosa flor' }
               - { label: Grid cor função - 5, name: colorRole5, widget: string, default: 'apoio' }
-              - { label: Grid cor de texto - 5, name: colorText5, widget: string, default: '#FFFFFF' }
+              - { label: Grid cor de texto - 5, name: colorText5, widget: string, default: '#edebe5' }
               - label: Sobreposição background (1920 x 1280)
                 name: backgroundImage
                 widget: image
@@ -399,7 +399,7 @@ collections:
                 widget: image
                 allow_multiple: false
               - { label: Texto de sobreposição, name: rightText, widget: text, default: 'simplificando<br />as relações<br />entre pessoas.' }
-              - { label: Cor do texto de sobreposição, name: rightTextColor, widget: string, default: '#ffffff' }
+              - { label: Cor do texto de sobreposição, name: rightTextColor, widget: string, default: '#edebe5' }
               - label: Imagem pós sobreposição (1758 x 988)
                 name: postImage
                 widget: image
@@ -422,7 +422,7 @@ collections:
                 allow_multiple: false
               - { label: Descrição, name: description, widget: Text, default: "<u>Branding para a Ana Hirata.</u><br/>
                         Para este projeto, usamos como premissa, uma massa fermentando. a primeira letra mais light e a última mais bold, passando a sensação de uma massa crescendo, como em um processo de fermentação natural. além de trazer uma tipologia desenhada especialmente para a chef. " }
-              - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#ffffff" } 
+              - { label: Cor de descrição, name: descriptionColor, widget: string, default: "#edebe5" } 
               - label: Imagem pós hero 1 (173 x 99)
                 name: postHero1
                 widget: image
@@ -530,37 +530,37 @@ collections:
               - { label: "Cor 2: R", name: color2r, widget: string, default: "33" }
               - { label: "Cor 2: G", name: color2g, widget: string, default: "33" }
               - { label: "Cor 2: B", name: color2b, widget: string, default: "33" }
-              - { label: "Cor 2: Cor do texto", name: color2textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 2: Cor do texto", name: color2textColor, widget: string, default: "#edebe5" }
               - { label: "Cor 3: nome", name: color3Name, widget: string, default: "TERRA" } 
               - { label: "Cor 3: R", name: color3r, widget: string, default: "192" }
               - { label: "Cor 3: G", name: color3g, widget: string, default: "90" }
               - { label: "Cor 3: B", name: color3b, widget: string, default: "56" }
-              - { label: "Cor 3: Cor do texto", name: color3textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 3: Cor do texto", name: color3textColor, widget: string, default: "#edebe5" }
               - { label: "Cor 4: nome", name: color4Name, widget: string, default: "VERDE" } 
               - { label: "Cor 4: R", name: color4r, widget: string, default: "77" }
               - { label: "Cor 4: G", name: color4g, widget: string, default: "104" }
               - { label: "Cor 4: B", name: color4b, widget: string, default: "71" }
-              - { label: "Cor 4: Cor do texto", name: color4textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 4: Cor do texto", name: color4textColor, widget: string, default: "#edebe5" }
               - { label: "Cor 5: nome", name: color5Name, widget: string, default: "AMARELO" } 
               - { label: "Cor 5: R", name: color5r, widget: string, default: "242" }
               - { label: "Cor 5: G", name: color5g, widget: string, default: "164" }
               - { label: "Cor 5: B", name: color5b, widget: string, default: "87" }
-              - { label: "Cor 5: Cor do texto", name: color5textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 5: Cor do texto", name: color5textColor, widget: string, default: "#edebe5" }
               - { label: "Cor 6: nome", name: color6Name, widget: string, default: "Azul" } 
               - { label: "Cor 6: R", name: color6r, widget: string, default: "32" }
               - { label: "Cor 6: G", name: color6g, widget: string, default: "58" }
               - { label: "Cor 6: B", name: color6b, widget: string, default: "122" }
-              - { label: "Cor 6: Cor do texto", name: color6textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 6: Cor do texto", name: color6textColor, widget: string, default: "#edebe5" }
               - { label: "Cor 7: nome", name: color7Name, widget: string, default: "VERDE" } 
               - { label: "Cor 7: R", name: color7r, widget: string, default: "166" }
               - { label: "Cor 7: G", name: color7g, widget: string, default: "209" }
               - { label: "Cor 7: B", name: color7b, widget: string, default: "194" }
-              - { label: "Cor 7: Cor do texto", name: color7textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 7: Cor do texto", name: color7textColor, widget: string, default: "#edebe5" }
               - { label: "Cor 8: nome", name: color8Name, widget: string, default: "ROSA" } 
               - { label: "Cor 8: R", name: color8r, widget: string, default: "237" }
               - { label: "Cor 8: G", name: color8g, widget: string, default: "164" }
               - { label: "Cor 8: B", name: color8b, widget: string, default: "191" }
-              - { label: "Cor 8: Cor do texto", name: color8textColor, widget: string, default: "#ffffff" }
+              - { label: "Cor 8: Cor do texto", name: color8textColor, widget: string, default: "#edebe5" }
               - label: Card pós cores 1 (324 x 231)
                 name: cardColor1
                 widget: image
