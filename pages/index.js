@@ -30,15 +30,15 @@ export default function Home() {
           src="https://www.googletagmanager.com/gtag/js?id=G-PHGSS40QTR"
         />
 
-        <Script id="google-analytics">
-          {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-PHGSS40QTR'});
-          `}
-        </Script>
       </Head>
+      <Script id="google-analytics">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PHGSS40QTR'});
+        `}
+      </Script>
       <Header />
       <Content />
       <Services />
