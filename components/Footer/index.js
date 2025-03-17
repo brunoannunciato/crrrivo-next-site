@@ -30,7 +30,7 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
               <div className="footer__section">
                 <a
                   className="footer__text"
-                  href="https://www.linkedin.com/company/estudiocrrrivo/"
+                  href="https://www.linkedin.com/company/estudiocrivo/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -38,7 +38,7 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
                 </a>
                 <a
                   className="footer__text"
-                  href="https://www.instagram.com/crrrivo/"
+                  href="https://www.instagram.com/crivo/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -49,7 +49,7 @@ const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
           </div>
 
           <p className="footer__text footer__copyright">
-            COPYRIGHT © CRRRIVO
+            COPYRIGHT © CRIVO
           </p>
         </div>
       </div>

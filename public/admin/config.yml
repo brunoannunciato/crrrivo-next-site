@@ -45,7 +45,7 @@ collections:
                 name: parallaxImage
                 widget: image
                 allow_multiple: false
-              - { label: Descrição do projeto, name: description, widget: text, default: 'A Crrrivo e a Leo tem uma parceria sólida, onde criamos campanhas institucionais, além de peças de e-commerce e redes sociais. É um projeto 360º, onde trabalhamos em várias frentes. O resultado dessa parceria é que sempre estamos batendo recorde de vendas e resultados incríveis.' }
+              - { label: Descrição do projeto, name: description, widget: text, default: 'A Crivo e a Leo tem uma parceria sólida, onde criamos campanhas institucionais, além de peças de e-commerce e redes sociais. É um projeto 360º, onde trabalhamos em várias frentes. O resultado dessa parceria é que sempre estamos batendo recorde de vendas e resultados incríveis.' }
               - label: Imagem cheia (1920 x 1330)
                 name: fullImage
                 widget: image

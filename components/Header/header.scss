@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 51px 0 20px;
-  border-bottom: 2px solid white;
+  padding: 51px 0 45px;
+  border-bottom: 2px solid #edebe5;
   position: fixed;
   top: 0;
   width: 90%;
@@ -15,6 +15,11 @@
 
   &.--disabled {
     mix-blend-mode: initial;
+    
+    .st0,
+    path {
+      fill: #222;
+    }
   }
 
   &__content-wrapper {
@@ -30,6 +35,17 @@
   
   &__logo {
     cursor: pointer;
+
+    path,
+    .st0 {
+      fill: #ddd;
+    }
+
+    &-wrapper {
+      width: 150px;
+      height: 123px;
+      margin-bottom: -36px;
+    }
   }
 
   &__user {
@@ -57,7 +73,7 @@
   }
   
   &__language-selector {
-    color: white;
+    color: #edebe5;
     background-color: transparent;
     border: none;
     font-size: 20px;

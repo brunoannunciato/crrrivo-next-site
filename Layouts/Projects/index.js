@@ -40,7 +40,7 @@ export default function Projects({posts}) {
   return (
     <Layout className="projects">
       <Head>
-        <title>Crrrivo</title>
+        <title>Crivo</title>
         <link rel="shortcut icon" href="/favicon.ico" />
         <link
           rel="icon"

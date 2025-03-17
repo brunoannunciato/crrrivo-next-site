@@ -48,7 +48,7 @@ const Fyll = ({data}) => {
     return (
         <div className="fyll" style={{backgroundColor: theme?.backgroundColor}}>
             <Head>
-                <title>Crrrivo</title>
+                <title>Crivo</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <link
                 rel="icon"

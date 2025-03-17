@@ -1,22 +1,22 @@
-import Image from '../Image';
-import isClient from '../../utils/isClient';
+import Image from "next/image"
+import isClient from "../../utils/isClient"
 
-import './services.scss';
+import "./services.scss"
 
 const Services = () => {
-  const isMobile = isClient() && window.outerWidth < 768;
+  const isMobile = isClient() && window.outerWidth < 768
 
   const servicesList = [
-    'Branding',
-    'Publicidade',
-    'Websites',
-    'Identidade',
-    'Impressos',
-    'Direção de arte',
-    'Estratégia',
-    'Digital',
-    'Motion'
-  ];
+    "Branding",
+    "Publicidade",
+    "Websites",
+    "Identidade",
+    "Impressos",
+    "Direção de arte",
+    "Estratégia",
+    "Digital",
+    "IA",
+  ]
 
   return (
     <section className="services">
@@ -34,26 +34,26 @@ const Services = () => {
                   <Image
                     src="/images/arrow.svg"
                     alt=""
-                    width={isMobile ? '28px' : '56px'}
-                    height={isMobile ? '14px' : '44px'}
+                    width={isMobile ? "28px" : "56px"}
+                    height={isMobile ? "14px" : "44px"}
                     className="services__arrow"
                   />
                 </div>
                 <h3 className="services__item-name">{item}</h3>
               </li>
-            );
+            )
           })}
         </ul>
 
         <p className="services__contact-text">
           Fale com a gente. <br />
-          <a href="mailto:contato@crrrivo.cc" className="services__mail-link">
-            contato@crrrivo.cc
+          <a href="mailto:pessoas@crivo.cc" className="services__mail-link">
+            pessoas@crivo.cc
           </a>
         </p>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services
