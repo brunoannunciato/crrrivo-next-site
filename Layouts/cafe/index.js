@@ -67,7 +67,7 @@ const Cafe = () => {
     return (
         <div className="cafe">
             <Head>
-                <title>Crrrivo</title>
+                <title>Crivo</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <link
                 rel="icon"

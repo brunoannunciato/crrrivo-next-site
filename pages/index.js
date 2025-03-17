@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Crrrivo</title>
+        <title>Crivo</title>
         <link rel="shortcut icon" href="/favicon.ico" />
         <link
           rel="icon"

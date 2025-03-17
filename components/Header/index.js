@@ -24,7 +24,12 @@ const Header = ({hideAt = false, color = "#ffffff", disableMixBlendMode}) => {
     <header className={headerClass} style={{ color, borderColor: color }}>
       <div className="header__logo-wrapper">
         <Link href="/">
-         <ReactSVG src='/images/logo.svg' className="header__logo" />
+          <ReactSVG
+            src='/images/logo.svg'
+            className="header__logo" 
+            width="300px"
+            height="207px"
+          />
         </Link>
       </div>
 
@@ -32,12 +37,12 @@ const Header = ({hideAt = false, color = "#ffffff", disableMixBlendMode}) => {
         !hideAt ?
         <div className="header__content-wrapper">
         <a
-          href="https://www.instagram.com/crrrivo/"
+          href="https://www.instagram.com/crivo/"
           target="_blank"
           rel="noreferrer"
           className="header__user"
         >
-          @CRRRIVO
+          @CRIVO
         </a>
 
         <div className="header__language-switcher">

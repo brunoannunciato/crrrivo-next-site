@@ -18,9 +18,9 @@ const Email = ({ titleHeight, mailRef }) => {
         ref={mailRef}
         style={{ top: `calc(15vh + ${marginSize}px + 55px)` }}
       >
-        CONTATO@
+        PESSOAS@
         <br />
-        CRRRIVO.CC
+        CRIVO.CC
       </p>
     </div>
   );

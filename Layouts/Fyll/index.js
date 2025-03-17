@@ -45,7 +45,7 @@ const Fyll = () => {
     return (
         <div className="fyll">
             <Head>
-                <title>Crrrivo</title>
+                <title>Crivo</title>
                 <link rel="shortcut icon" href="/favicon.ico" />
                 <link
                 rel="icon"
