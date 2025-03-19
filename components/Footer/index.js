@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from '../Image';
 import './footer.scss';
 
-const Footer = ({ color = "#000", backgroundColor = "#F2F2F2" }) => {
+const Footer = ({ color = "#000", backgroundColor }) => {
   return (
     <footer className="footer" style={{color, backgroundColor}}>
       <div className="container">

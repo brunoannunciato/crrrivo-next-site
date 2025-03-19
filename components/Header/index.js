@@ -48,12 +48,12 @@ const Header = ({hideAt = false, color = "#edebe5", disableMixBlendMode}) => {
         !hideAt ?
         <div className="header__content-wrapper">
         <a
-          href="https://www.instagram.com/crivo/"
+          href="https://www.instagram.com/crrrivo/"
           target="_blank"
           rel="noreferrer"
           className="header__user"
         >
-          @CRIVO
+          @CRRRIVO
         </a>
 
         <div className="header__language-switcher">
